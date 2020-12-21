@@ -1,0 +1,997 @@
+'+++++++++++++++++++++
+Qualify
+'+++++++++++++++++++++
+
+Game:, "Assetto Corsa"
+Session:, "Qualify"
+Track:, "hockenheim_2018"
+Pole, "McLarenTim(01:44.9640)"
+Lasted laps, "6"
+Host, "Unknown"
+
+
+
+Qualify result
+'======================
+Pos,   Class, Team, Vehicle, Driver, Laps, Best lap, Gap
+"1",   "", "", "ks_porsche_cayman_gt4_clubsport", "McLarenTim", "6", "01:44.9640", "-",
+"2",   "", "", "ks_porsche_cayman_gt4_clubsport", "PhotonBurst", "6", "01:45.0720", "00:00.1080",
+"3",   "", "", "ks_porsche_cayman_gt4_clubsport", "Electro", "5", "01:45.1380", "00:00.1740",
+"4",   "", "", "ks_porsche_cayman_gt4_clubsport", "gunciz", "5", "01:45.3890", "00:00.4250",
+"5",   "", "", "ks_porsche_cayman_gt4_clubsport", "NotJames", "5", "01:45.4360", "00:00.4720",
+"6",   "", "", "ks_porsche_cayman_gt4_clubsport", "gman197002", "5", "01:45.9630", "00:00.9990",
+"7",   "", "", "ks_porsche_cayman_gt4_clubsport", "MrGrinder", "5", "01:45.9670", "00:01.0030",
+"8",   "", "", "ks_porsche_cayman_gt4_clubsport", "Salzeder", "4", "01:46.0310", "00:01.0670",
+"9",   "", "", "ks_porsche_cayman_gt4_clubsport", "Georgin", "5", "01:46.3640", "00:01.4000",
+"10",   "", "", "ks_porsche_cayman_gt4_clubsport", "Echo51", "5", "01:47.1750", "00:02.2110",
+"11",   "", "", "ks_porsche_cayman_gt4_clubsport", "Crosdale", "4", "01:47.7180", "00:02.7540",
+"12",   "", "", "ks_porsche_cayman_gt4_clubsport", "Trempale", "0", "-", "-",
+"13",   "", "", "ks_porsche_cayman_gt4_clubsport", "Waffles", "0", "-", "-",
+
+Qualify laps
+'======================
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"McLarenTim"
+"1 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:54.4460", "32.3570", "48.2220", "33.8670",  "F:H - R:H",     
+"2 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.3290", "23.9790", "48.1230", "33.2270",  "F:H - R:H",     
+"3 ", ks_porsche_cayman_gt4_clubsport, no,"0", "02:10.5970", "48.9890", "48.6860", "32.9220",  "F:H - R:H",     
+"4 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:44.9640", "23.9230", "48.1860", "32.8550",  "F:H - R:H",     
+"5 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:44.9890", "23.8000", "48.2000", "32.9890",  "F:H - R:H",     
+"6 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.0890", "23.9000", "48.1690", "33.0200",  "F:H - R:H",     
+Average,,,"01:50.9023", "29.4913", "48.2643", "33.1467"
+Best possible,,, "01:44.7780", "23.8000", "48.1230", "32.8550"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"PhotonBurst"
+"1 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:55.0360", "33.5410", "48.5370", "32.9580",  "F:H - R:H",     
+"2 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.0720", "23.9680", "48.2670", "32.8370",  "F:H - R:H",     
+"3 ", ks_porsche_cayman_gt4_clubsport, no,"0", "02:22.0780", "60.5380", "48.4380", "33.1020",  "F:H - R:H",     
+"4 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.2880", "24.0900", "48.1490", "33.0490",  "F:H - R:H",     
+"5 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:47.1170", "24.2680", "48.2490", "34.6000",  "F:H - R:H",     
+"6 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.3930", "24.1850", "48.0330", "33.1750",  "F:H - R:H",     
+Average,,,"01:53.3306", "31.7650", "48.2788", "33.2868"
+Best possible,,, "01:44.8380", "23.9680", "48.0330", "32.8370"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Electro"
+"1 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:55.6930", "32.9830", "48.9290", "33.7810",  "F:H - R:H",     
+"2 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:49.5900", "24.1620", "50.0170", "35.4110",  "F:H - R:H",     
+"3 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.3810", "23.7410", "48.4520", "33.1880",  "F:H - R:H",     
+"4 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.2280", "23.8990", "48.2490", "33.0800",  "F:H - R:H",     
+"5 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.1380", "23.8990", "48.1630", "33.0760",  "F:H - R:H",     
+Average,,,"01:48.2060", "25.7368", "48.7620", "33.7072"
+Best possible,,, "01:44.9800", "23.7410", "48.1630", "33.0760"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"gunciz"
+"1 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:57.5260", "34.1540", "48.8660", "34.5060",  "F:H - R:H",     
+"2 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.9800", "24.0130", "48.4420", "33.5250",  "F:H - R:H",     
+"3 ", ks_porsche_cayman_gt4_clubsport, no,"0", "02:15.2100", "52.8680", "48.5960", "33.7460",  "F:H - R:H",     
+"4 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.7230", "23.9300", "48.3400", "33.4530",  "F:H - R:H",     
+"5 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.3890", "23.8180", "48.1270", "33.4440",  "F:H - R:H",     
+Average,,,"01:53.9656", "31.7566", "48.4742", "33.7348"
+Best possible,,, "01:45.3890", "23.8180", "48.1270", "33.4440"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"NotJames"
+"1 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:53.6820", "31.5520", "48.5010", "33.6290",  "F:H - R:H",     
+"2 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.6140", "24.2320", "48.3520", "33.0300",  "F:H - R:H",     
+"3 ", ks_porsche_cayman_gt4_clubsport, no,"0", "02:00.6560", "27.4750", "56.5070", "36.6740",  "F:H - R:H",     
+"4 ", ks_porsche_cayman_gt4_clubsport, no,"0", "02:17.4640", "55.8430", "48.4160", "33.2050",  "F:H - R:H",     
+"5 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.4360", "24.0270", "48.2300", "33.1790",  "F:H - R:H",     
+Average,,,"01:56.5704", "32.6258", "50.0012", "33.9434"
+Best possible,,, "01:45.2870", "24.0270", "48.2300", "33.0300"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"gman197002"
+"1 ", ks_porsche_cayman_gt4_clubsport, no,"0", "02:04.9580", "42.1450", "49.0720", "33.7410",  "F:H - R:H",     
+"2 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.0850", "23.8880", "48.7000", "33.4970",  "F:H - R:H",     
+"3 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:47.2510", "24.2710", "48.5960", "34.3840",  "F:H - R:H",     
+"4 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.9630", "24.0260", "48.5110", "33.4260",  "F:H - R:H",     
+"5 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.5150", "24.0790", "48.8480", "33.5880",  "F:H - R:H",     
+Average,,,"01:50.1544", "27.6818", "48.7454", "33.7272"
+Best possible,,, "01:45.8250", "23.8880", "48.5110", "33.4260"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"MrGrinder"
+"1 ", ks_porsche_cayman_gt4_clubsport, no,"0", "02:12.5920", "42.7540", "51.0700", "38.7680",  "F:H - R:H",     
+"2 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.1200", "24.1980", "48.4280", "33.4940",  "F:H - R:H",     
+"3 ", ks_porsche_cayman_gt4_clubsport, no,"0", "03:06.4760", "104.3560", "48.6000", "33.5200",  "F:H - R:H",     
+"4 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.6390", "24.1130", "48.4470", "34.0790",  "F:H - R:H",     
+"5 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.9670", "24.1750", "48.3880", "33.4040",  "F:H - R:H",     
+Average,,,"02:07.5588", "43.9192", "48.9866", "34.6530"
+Best possible,,, "01:45.9050", "24.1130", "48.3880", "33.4040"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Salzeder"
+"1 ", ks_porsche_cayman_gt4_clubsport, no,"0", "02:02.2680", "39.7690", "48.7300", "33.7690",  "F:H - R:H",     
+"2 ", ks_porsche_cayman_gt4_clubsport, no,"0", "03:07.9190", "105.4620", "48.8690", "33.5880",  "F:H - R:H",     
+"3 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.0310", "24.1590", "48.5280", "33.3440",  "F:H - R:H",     
+"4 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:47.0490", "24.5180", "48.8570", "33.6740",  "F:H - R:H",     
+Average,,,"02:10.8168", "48.4770", "48.7460", "33.5938"
+Best possible,,, "01:46.0310", "24.1590", "48.5280", "33.3440"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Georgin"
+"1 ", ks_porsche_cayman_gt4_clubsport, no,"0", "02:23.6420", "59.7890", "48.9560", "34.8970",  "F:H - R:H",     
+"2 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.3640", "24.1270", "48.3790", "33.8580",  "F:H - R:H",     
+"3 ", ks_porsche_cayman_gt4_clubsport, no,"0", "03:35.8950", "133.7520", "48.5280", "33.6150",  "F:H - R:H",     
+"4 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:47.0630", "24.1820", "48.6860", "34.1950",  "F:H - R:H",     
+"5 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.4950", "24.3290", "48.6090", "33.5570",  "F:H - R:H",     
+Average,,,"02:15.8918", "53.2358", "48.6316", "34.0244"
+Best possible,,, "01:46.0630", "24.1270", "48.3790", "33.5570"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Echo51"
+"1 ", ks_porsche_cayman_gt4_clubsport, no,"0", "02:20.7030", "56.9130", "49.7020", "34.0880",  "F:H - R:H",     
+"2 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:48.1620", "24.3580", "49.8920", "33.9120",  "F:H - R:H",     
+"3 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:51.3610", "24.2230", "48.9460", "38.1920",  "F:H - R:H",     
+"4 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:49.0490", "24.5260", "48.7440", "35.7790",  "F:H - R:H",     
+"5 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:47.1750", "24.3210", "49.0580", "33.7960",  "F:H - R:H",     
+Average,,,"01:55.2900", "30.8682", "49.2684", "35.1534"
+Best possible,,, "01:46.7630", "24.2230", "48.7440", "33.7960"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Crosdale"
+"1 ", ks_porsche_cayman_gt4_clubsport, no,"0", "02:00.3480", "36.2560", "49.4730", "34.6190",  "F:H - R:H",     
+"2 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:48.1800", "25.1860", "48.8380", "34.1560",  "F:H - R:H",     
+"3 ", ks_porsche_cayman_gt4_clubsport, no,"0", "02:18.4690", "53.6620", "48.9650", "35.8420",  "F:H - R:H",     
+"4 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:47.7180", "24.7830", "48.9370", "33.9980",  "F:H - R:H",     
+Average,,,"01:58.6789", "34.9718", "49.0533", "34.6538"
+Best possible,,, "01:47.6190", "24.7830", "48.8380", "33.9980"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Trempale"
+No laps for this driver
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Waffles"
+No laps for this driver
+
+
+Qualify best laps
+'======================
+'------------------------
+Overall top (20)
+'------------------------
+Driver, Vehicle, Time, Gap,
+"McLarenTim", "ks_porsche_cayman_gt4_clubsport", "01:44.9640", ""
+"McLarenTim", "ks_porsche_cayman_gt4_clubsport", "01:44.9890", "0.025"
+"PhotonBurst", "ks_porsche_cayman_gt4_clubsport", "01:45.0720", "0.108"
+"McLarenTim", "ks_porsche_cayman_gt4_clubsport", "01:45.0890", "0.125"
+"Electro", "ks_porsche_cayman_gt4_clubsport", "01:45.1380", "0.174"
+"Electro", "ks_porsche_cayman_gt4_clubsport", "01:45.2280", "0.264"
+"PhotonBurst", "ks_porsche_cayman_gt4_clubsport", "01:45.2880", "0.324"
+"McLarenTim", "ks_porsche_cayman_gt4_clubsport", "01:45.3290", "0.365"
+"Electro", "ks_porsche_cayman_gt4_clubsport", "01:45.3810", "0.417"
+"gunciz", "ks_porsche_cayman_gt4_clubsport", "01:45.3890", "0.425"
+"PhotonBurst", "ks_porsche_cayman_gt4_clubsport", "01:45.3930", "0.429"
+"NotJames", "ks_porsche_cayman_gt4_clubsport", "01:45.4360", "0.472"
+"NotJames", "ks_porsche_cayman_gt4_clubsport", "01:45.6140", "0.65"
+"gunciz", "ks_porsche_cayman_gt4_clubsport", "01:45.7230", "0.759"
+"gman197002", "ks_porsche_cayman_gt4_clubsport", "01:45.9630", "0.999"
+"MrGrinder", "ks_porsche_cayman_gt4_clubsport", "01:45.9670", "1.003"
+"gunciz", "ks_porsche_cayman_gt4_clubsport", "01:45.9800", "1.016"
+"Salzeder", "ks_porsche_cayman_gt4_clubsport", "01:46.0310", "1.067"
+"gman197002", "ks_porsche_cayman_gt4_clubsport", "01:46.0850", "1.121"
+"MrGrinder", "ks_porsche_cayman_gt4_clubsport", "01:46.1200", "1.156"
+
+
+'------------------------
+Per driver
+'------------------------
+Driver, Vehicle, Time, Gap,
+"McLarenTim", "ks_porsche_cayman_gt4_clubsport", "01:44.9640", ""
+"PhotonBurst", "ks_porsche_cayman_gt4_clubsport", "01:45.0720", "0.108"
+"Electro", "ks_porsche_cayman_gt4_clubsport", "01:45.1380", "0.174"
+"gunciz", "ks_porsche_cayman_gt4_clubsport", "01:45.3890", "0.425"
+"NotJames", "ks_porsche_cayman_gt4_clubsport", "01:45.4360", "0.472"
+"gman197002", "ks_porsche_cayman_gt4_clubsport", "01:45.9630", "0.999"
+"MrGrinder", "ks_porsche_cayman_gt4_clubsport", "01:45.9670", "1.003"
+"Salzeder", "ks_porsche_cayman_gt4_clubsport", "01:46.0310", "1.067"
+"Georgin", "ks_porsche_cayman_gt4_clubsport", "01:46.3640", "1.4"
+"Echo51", "ks_porsche_cayman_gt4_clubsport", "01:47.1750", "2.211"
+"Crosdale", "ks_porsche_cayman_gt4_clubsport", "01:47.7180", "2.754"
+
+
+Qualify consistency
+'======================
+Driver, Vehicle, Consistency,
+"McLarenTim", "ks_porsche_cayman_gt4_clubsport", "99.84%  0.1717",
+"MrGrinder", "ks_porsche_cayman_gt4_clubsport", "99.61%  0.4125",
+"Georgin", "ks_porsche_cayman_gt4_clubsport", "99.61%  0.415",
+"Crosdale", "ks_porsche_cayman_gt4_clubsport", "99.57%  0.462",
+"gunciz", "ks_porsche_cayman_gt4_clubsport", "99.56%  0.4625",
+"gman197002", "ks_porsche_cayman_gt4_clubsport", "99.38%  0.654",
+"PhotonBurst", "ks_porsche_cayman_gt4_clubsport", "99.18%  0.8607",
+"Salzeder", "ks_porsche_cayman_gt4_clubsport", "99.04%  1.018",
+"Electro", "ks_porsche_cayman_gt4_clubsport", "98.48%  1.595",
+"Echo51", "ks_porsche_cayman_gt4_clubsport", "97.81%  2.349",
+"NotJames", "ks_porsche_cayman_gt4_clubsport", "92.70%  7.699",
+"Trempale", "ks_porsche_cayman_gt4_clubsport", "-",
+"Waffles", "ks_porsche_cayman_gt4_clubsport", "-",
+
+
+
+
+Qualify sectors
+'======================
+'------------------------
+Sector 1
+'------------------------
+Driver, Vehicle, Time, Gap,
+"Electro", "ks_porsche_cayman_gt4_clubsport", "23.7410", "-"
+"McLarenTim", "ks_porsche_cayman_gt4_clubsport", "23.8000", "0.0590"
+"gunciz", "ks_porsche_cayman_gt4_clubsport", "23.8180", "0.0770"
+"gman197002", "ks_porsche_cayman_gt4_clubsport", "23.8880", "0.1470"
+"PhotonBurst", "ks_porsche_cayman_gt4_clubsport", "23.9680", "0.2270"
+"NotJames", "ks_porsche_cayman_gt4_clubsport", "24.0270", "0.2860"
+"MrGrinder", "ks_porsche_cayman_gt4_clubsport", "24.1130", "0.3720"
+"Georgin", "ks_porsche_cayman_gt4_clubsport", "24.1270", "0.3860"
+"Salzeder", "ks_porsche_cayman_gt4_clubsport", "24.1590", "0.4180"
+"Echo51", "ks_porsche_cayman_gt4_clubsport", "24.2230", "0.4820"
+"Crosdale", "ks_porsche_cayman_gt4_clubsport", "24.7830", "1.0420"
+'------------------------
+Sector 2
+'------------------------
+Driver, Vehicle, Time, Gap,
+"PhotonBurst", "ks_porsche_cayman_gt4_clubsport", "48.0330", "-"
+"McLarenTim", "ks_porsche_cayman_gt4_clubsport", "48.1230", "0.0900"
+"gunciz", "ks_porsche_cayman_gt4_clubsport", "48.1270", "0.0940"
+"Electro", "ks_porsche_cayman_gt4_clubsport", "48.1630", "0.1300"
+"NotJames", "ks_porsche_cayman_gt4_clubsport", "48.2300", "0.1970"
+"Georgin", "ks_porsche_cayman_gt4_clubsport", "48.3790", "0.3460"
+"MrGrinder", "ks_porsche_cayman_gt4_clubsport", "48.3880", "0.3550"
+"gman197002", "ks_porsche_cayman_gt4_clubsport", "48.5110", "0.4780"
+"Salzeder", "ks_porsche_cayman_gt4_clubsport", "48.5280", "0.4950"
+"Echo51", "ks_porsche_cayman_gt4_clubsport", "48.7440", "0.7110"
+"Crosdale", "ks_porsche_cayman_gt4_clubsport", "48.8380", "0.8050"
+'------------------------
+Sector 3
+'------------------------
+Driver, Vehicle, Time, Gap,
+"PhotonBurst", "ks_porsche_cayman_gt4_clubsport", "32.8370", "-"
+"McLarenTim", "ks_porsche_cayman_gt4_clubsport", "32.8550", "0.0180"
+"NotJames", "ks_porsche_cayman_gt4_clubsport", "33.0300", "0.1930"
+"Electro", "ks_porsche_cayman_gt4_clubsport", "33.0760", "0.2390"
+"Salzeder", "ks_porsche_cayman_gt4_clubsport", "33.3440", "0.5070"
+"MrGrinder", "ks_porsche_cayman_gt4_clubsport", "33.4040", "0.5670"
+"gman197002", "ks_porsche_cayman_gt4_clubsport", "33.4260", "0.5890"
+"gunciz", "ks_porsche_cayman_gt4_clubsport", "33.4440", "0.6070"
+"Georgin", "ks_porsche_cayman_gt4_clubsport", "33.5570", "0.7200"
+"Echo51", "ks_porsche_cayman_gt4_clubsport", "33.7960", "0.9590"
+"Crosdale", "ks_porsche_cayman_gt4_clubsport", "33.9980", "1.1610"
+
+
+Qualify incidents worth reviewing
+'======================
+Date, Incident
+
+
+
+
+
+
+
+'+++++++++++++++++++++
+Race 1
+'+++++++++++++++++++++
+
+Game:, "Assetto Corsa"
+Session:, "Race"
+Track:, "hockenheim_2018"
+Winner, "McLarenTim"
+Led most laps, "McLarenTim"
+Best lap, "McLarenTim (01:44.8870)"
+Max laps, "13"
+Lasted laps, "13"
+Host, "Unknown"
+
+
+Race 1 result
+'======================
+Pos,    Class, Team, Vehicle, Driver, Laps, Time/Retired, Best lap, Consistency, Led, Pits,
+"1",  "", "", "ks_porsche_cayman_gt4_clubsport", "McLarenTim", "13", "    22:51.7150", "01:44.8870", "99.80%", "12", "0", 
+"2",  "", "", "ks_porsche_cayman_gt4_clubsport", "Electro", "13", "  '+00:10.1670", "01:45.2940", "99.48%", "0", "0", 
+"3",  "", "", "ks_porsche_cayman_gt4_clubsport", "PhotonBurst", "13", "  '+00:15.8830", "01:45.1080", "98.74%", "0", "0", 
+"4",  "", "", "ks_porsche_cayman_gt4_clubsport", "gunciz", "13", "  '+00:17.1570", "01:45.1600", "98.79%", "0", "0", 
+"5",  "", "", "ks_porsche_cayman_gt4_clubsport", "NotJames", "13", "  '+00:18.6980", "01:45.3780", "98.98%", "0", "0", 
+"6",  "", "", "ks_porsche_cayman_gt4_clubsport", "gman197002", "13", "  '+00:20.0310", "01:45.9040", "99.47%", "0", "0", 
+"7",  "", "", "ks_porsche_cayman_gt4_clubsport", "MrGrinder", "13", "  '+00:21.3920", "01:45.5620", "99.01%", "0", "0", 
+"8",  "", "", "ks_porsche_cayman_gt4_clubsport", "Georgin", "13", "  '+00:24.3700", "01:46.1070", "99.34%", "0", "0", 
+"9",  "", "", "ks_porsche_cayman_gt4_clubsport", "Salzeder", "13", "  '+00:24.7360", "01:46.0720", "99.34%", "0", "0", 
+"10",  "", "", "ks_porsche_cayman_gt4_clubsport", "Crosdale", "13", "  '+00:43.9340", "01:47.4850", "99.27%", "0", "0", 
+"11",  "", "", "ks_porsche_cayman_gt4_clubsport", "Echo51", "13", "  '+00:44.0760", "01:46.8290", "99.28%", "0", "0", 
+"12",  "", "", "ks_porsche_cayman_gt4_clubsport", "Trempale", "0", " DNF", "-", "-", "0", "0", 
+"13",  "", "", "ks_porsche_cayman_gt4_clubsport", "Waffles", "0", " DNF", "-", "-", "0", "0", 
+
+
+Race 1 laps
+'======================
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"McLarenTim"
+"1 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:50.7760", "29.4210", "48.4100", "32.9450",  "F:H - R:H",     
+"2 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:44.9590", "24.0360", "48.1230", "32.8000",  "F:H - R:H",     
+"3 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:44.8870", "23.8600", "48.1950", "32.8320",  "F:H - R:H",     
+"4 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.1790", "23.9910", "48.2030", "32.9850",  "F:H - R:H",     
+"5 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:44.9610", "23.9160", "48.1270", "32.9180",  "F:H - R:H",     
+"6 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:44.9300", "23.7680", "48.1510", "33.0110",  "F:H - R:H",     
+"7 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.4020", "24.1000", "48.2220", "33.0800",  "F:H - R:H",     
+"8 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.0660", "23.9710", "48.0920", "33.0030",  "F:H - R:H",     
+"9 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.1920", "24.0650", "48.1500", "32.9770",  "F:H - R:H",     
+"10 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:44.9850", "23.7280", "48.1500", "33.1070",  "F:H - R:H",     
+"11 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:44.9350", "23.8900", "48.2620", "32.7830",  "F:H - R:H",     
+"12 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.1970", "23.9640", "48.1500", "33.0830",  "F:H - R:H",     
+"13 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.2670", "23.9160", "48.2980", "33.0530",  "F:H - R:H",     
+Average,,,"01:45.5181", "24.3558", "48.1948", "32.9675"
+Best possible,,, "01:44.6030", "23.7280", "48.0920", "32.7830"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Electro"
+"1 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:52.3670", "29.8740", "49.1930", "33.3000",  "F:H - R:H",     
+"2 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.2940", "24.0100", "48.2800", "33.0040",  "F:H - R:H",     
+"3 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.5150", "24.2540", "48.2850", "32.9760",  "F:H - R:H",     
+"4 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.3520", "23.7310", "48.4380", "33.1830",  "F:H - R:H",     
+"5 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:48.0230", "25.3090", "49.4230", "33.2910",  "F:H - R:H",     
+"6 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.8330", "23.9150", "48.6010", "33.3170",  "F:H - R:H",     
+"7 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.4010", "23.8750", "48.3700", "33.1560",  "F:H - R:H",     
+"8 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.7800", "24.0100", "48.5460", "33.2240",  "F:H - R:H",     
+"9 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.6140", "23.9670", "48.3700", "33.2770",  "F:H - R:H",     
+"10 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.8070", "24.0060", "48.5050", "33.2960",  "F:H - R:H",     
+"11 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.5290", "24.0470", "48.4520", "33.0300",  "F:H - R:H",     
+"12 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.6570", "23.9950", "48.3790", "33.2830",  "F:H - R:H",     
+"13 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.7040", "24.0560", "48.4250", "33.2230",  "F:H - R:H",     
+Average,,,"01:46.2981", "24.5422", "48.5590", "33.1969"
+Best possible,,, "01:44.9870", "23.7310", "48.2800", "32.9760"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"PhotonBurst"
+"1 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:51.7200", "30.0450", "48.6310", "33.0440",  "F:H - R:H",     
+"2 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.5240", "24.2900", "48.3210", "32.9130",  "F:H - R:H",     
+"3 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.4590", "24.5050", "48.9640", "32.9900",  "F:H - R:H",     
+"4 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.1080", "24.0170", "48.2580", "32.8330",  "F:H - R:H",     
+"5 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:48.5390", "25.3350", "49.7200", "33.4840",  "F:H - R:H",     
+"6 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.0000", "24.2480", "48.2810", "33.4710",  "F:H - R:H",     
+"7 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:48.6670", "23.9990", "48.9110", "35.7570",  "F:H - R:H",     
+"8 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.3230", "24.1080", "49.0090", "33.2060",  "F:H - R:H",     
+"9 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.3610", "24.1920", "49.1890", "32.9800",  "F:H - R:H",     
+"10 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.1220", "23.8120", "48.1140", "33.1960",  "F:H - R:H",     
+"11 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.6800", "24.3560", "48.2400", "33.0840",  "F:H - R:H",     
+"12 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.4090", "23.9290", "48.4160", "34.0640",  "F:H - R:H",     
+"13 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.6940", "24.1590", "48.6130", "32.9220",  "F:H - R:H",     
+Average,,,"01:46.7389", "24.6919", "48.6667", "33.3803"
+Best possible,,, "01:44.7590", "23.8120", "48.1140", "32.8330"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"gunciz"
+"1 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:52.9680", "30.2660", "49.3390", "33.3630",  "F:H - R:H",     
+"2 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.5790", "24.0210", "48.3750", "33.1830",  "F:H - R:H",     
+"3 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.6600", "23.8760", "48.6630", "33.1210",  "F:H - R:H",     
+"4 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.1600", "23.8810", "48.2670", "33.0120",  "F:H - R:H",     
+"5 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:47.6590", "24.5750", "49.6720", "33.4120",  "F:H - R:H",     
+"6 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.7510", "24.0350", "48.4290", "33.2870",  "F:H - R:H",     
+"7 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:47.0880", "24.2290", "49.4370", "33.4220",  "F:H - R:H",     
+"8 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:47.8330", "25.2450", "49.3290", "33.2590",  "F:H - R:H",     
+"9 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.8190", "23.9860", "48.1990", "33.6340",  "F:H - R:H",     
+"10 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.1500", "23.9440", "48.2260", "33.9800",  "F:H - R:H",     
+"11 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.5040", "23.8960", "48.2810", "33.3270",  "F:H - R:H",     
+"12 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.8700", "23.9670", "48.3210", "34.5820",  "F:H - R:H",     
+"13 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.8530", "24.2740", "48.7750", "33.8040",  "F:H - R:H",     
+Average,,,"01:46.8380", "24.6304", "48.7164", "33.4912"
+Best possible,,, "01:45.0870", "23.8760", "48.1990", "33.0120"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"NotJames"
+"1 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:53.9980", "30.7700", "49.2480", "33.9800",  "F:H - R:H",     
+"2 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.9310", "24.0850", "48.6770", "33.1690",  "F:H - R:H",     
+"3 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.3780", "23.9460", "48.1860", "33.2460",  "F:H - R:H",     
+"4 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.8260", "24.2190", "48.4200", "33.1870",  "F:H - R:H",     
+"5 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.5520", "24.1750", "49.1760", "33.2010",  "F:H - R:H",     
+"6 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.2730", "24.3950", "48.5870", "33.2910",  "F:H - R:H",     
+"7 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.2860", "24.2700", "48.4740", "33.5420",  "F:H - R:H",     
+"8 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:47.8630", "24.5770", "49.8460", "33.4400",  "F:H - R:H",     
+"9 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:47.5600", "24.6610", "49.3470", "33.5520",  "F:H - R:H",     
+"10 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.8590", "24.2020", "48.2620", "33.3950",  "F:H - R:H",     
+"11 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.2060", "24.4040", "48.6090", "33.1930",  "F:H - R:H",     
+"12 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.2270", "24.1960", "48.6670", "33.3640",  "F:H - R:H",     
+"13 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.4380", "24.1730", "49.0770", "33.1880",  "F:H - R:H",     
+Average,,,"01:46.9535", "24.7748", "48.8135", "33.3652"
+Best possible,,, "01:45.3010", "23.9460", "48.1860", "33.1690"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"gman197002"
+"1 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:54.7510", "31.6040", "48.7490", "34.3980",  "F:H - R:H",     
+"2 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.0980", "24.2290", "48.5370", "33.3320",  "F:H - R:H",     
+"3 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.9750", "23.9980", "48.3750", "33.6020",  "F:H - R:H",     
+"4 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.3570", "24.2730", "48.5050", "33.5790",  "F:H - R:H",     
+"5 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.7370", "24.1710", "48.8160", "33.7500",  "F:H - R:H",     
+"6 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.5510", "24.4350", "48.6530", "33.4630",  "F:H - R:H",     
+"7 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.7890", "24.1420", "49.0230", "33.6240",  "F:H - R:H",     
+"8 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.3500", "24.0220", "48.6630", "33.6650",  "F:H - R:H",     
+"9 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.5500", "24.1740", "48.4420", "33.9340",  "F:H - R:H",     
+"10 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.1170", "24.2390", "48.4750", "33.4030",  "F:H - R:H",     
+"11 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.9040", "24.1120", "48.5420", "33.2500",  "F:H - R:H",     
+"12 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.5700", "24.1570", "48.6500", "33.7630",  "F:H - R:H",     
+"13 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.9890", "23.9280", "49.2660", "33.7950",  "F:H - R:H",     
+Average,,,"01:47.0567", "24.7295", "48.6689", "33.6583"
+Best possible,,, "01:45.5530", "23.9280", "48.3750", "33.2500"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"MrGrinder"
+"1 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:54.9180", "31.9330", "48.9650", "34.0200",  "F:H - R:H",     
+"2 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:47.1540", "24.4890", "49.1030", "33.5620",  "F:H - R:H",     
+"3 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.6950", "24.6060", "48.6980", "33.3910",  "F:H - R:H",     
+"4 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:47.1170", "24.3490", "49.0280", "33.7400",  "F:H - R:H",     
+"5 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.9410", "24.9460", "48.5230", "33.4720",  "F:H - R:H",     
+"6 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.0650", "24.2100", "48.6440", "33.2110",  "F:H - R:H",     
+"7 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.6270", "24.3040", "48.7670", "33.5560",  "F:H - R:H",     
+"8 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.6460", "24.5570", "48.6000", "33.4890",  "F:H - R:H",     
+"9 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.6210", "24.7610", "48.7180", "33.1420",  "F:H - R:H",     
+"10 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.5620", "24.0980", "48.3130", "33.1510",  "F:H - R:H",     
+"11 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.8360", "24.3190", "48.6850", "33.8320",  "F:H - R:H",     
+"12 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.1730", "24.1640", "48.7080", "33.3010",  "F:H - R:H",     
+"13 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.7990", "24.0840", "48.6090", "33.1060",  "F:H - R:H",     
+Average,,,"01:47.1658", "24.9862", "48.7201", "33.4595"
+Best possible,,, "01:45.5030", "24.0840", "48.3130", "33.1060"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Georgin"
+"1 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:55.1570", "32.4390", "48.8160", "33.9020",  "F:H - R:H",     
+"2 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:47.4710", "24.8240", "49.0050", "33.6420",  "F:H - R:H",     
+"3 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:47.6650", "24.4010", "49.7930", "33.4710",  "F:H - R:H",     
+"4 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:47.3390", "24.1210", "49.5130", "33.7050",  "F:H - R:H",     
+"5 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.6840", "24.1770", "48.9240", "33.5830",  "F:H - R:H",     
+"6 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.1070", "24.1080", "48.4420", "33.5570",  "F:H - R:H",     
+"7 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.7710", "24.2360", "48.6100", "33.9250",  "F:H - R:H",     
+"8 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.6920", "24.2160", "48.7300", "33.7460",  "F:H - R:H",     
+"9 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.1370", "24.0650", "48.6860", "33.3860",  "F:H - R:H",     
+"10 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.4610", "24.2140", "48.3890", "33.8580",  "F:H - R:H",     
+"11 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.2620", "24.0610", "48.7080", "33.4930",  "F:H - R:H",     
+"12 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.5800", "24.3070", "48.6400", "33.6330",  "F:H - R:H",     
+"13 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.7880", "24.1850", "48.4700", "34.1330",  "F:H - R:H",     
+Average,,,"01:47.3934", "24.8734", "48.8251", "33.6949"
+Best possible,,, "01:45.8360", "24.0610", "48.3890", "33.3860"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Salzeder"
+"1 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:55.9080", "32.2570", "49.5540", "34.0970",  "F:H - R:H",     
+"2 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:47.1980", "24.5380", "49.0090", "33.6510",  "F:H - R:H",     
+"3 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.6260", "24.2850", "48.7890", "33.5520",  "F:H - R:H",     
+"4 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:48.4680", "24.7040", "49.9680", "33.7960",  "F:H - R:H",     
+"5 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.8970", "24.4930", "49.1620", "33.2420",  "F:H - R:H",     
+"6 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.5020", "24.2110", "48.6540", "33.6370",  "F:H - R:H",     
+"7 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.4770", "24.2800", "48.7210", "33.4760",  "F:H - R:H",     
+"8 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.6600", "24.2880", "48.7890", "33.5830",  "F:H - R:H",     
+"9 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.6920", "24.4940", "48.9420", "33.2560",  "F:H - R:H",     
+"10 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.5230", "24.2730", "48.5820", "33.6680",  "F:H - R:H",     
+"11 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.0720", "24.3110", "48.5380", "33.2230",  "F:H - R:H",     
+"12 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.2960", "24.2340", "48.4380", "33.6240",  "F:H - R:H",     
+"13 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.1500", "24.3630", "48.4470", "33.3400",  "F:H - R:H",     
+Average,,,"01:47.4207", "24.9793", "48.8918", "33.5496"
+Best possible,,, "01:45.8720", "24.2110", "48.4380", "33.2230"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Crosdale"
+"1 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:57.2690", "32.6690", "50.1260", "34.4740",  "F:H - R:H",     
+"2 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:47.6560", "24.8520", "48.8290", "33.9750",  "F:H - R:H",     
+"3 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:47.5830", "24.4410", "49.2830", "33.8590",  "F:H - R:H",     
+"4 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:50.1820", "25.1860", "50.3820", "34.6140",  "F:H - R:H",     
+"5 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:48.1490", "24.8810", "48.8160", "34.4520",  "F:H - R:H",     
+"6 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:47.4850", "24.7520", "48.8260", "33.9070",  "F:H - R:H",     
+"7 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:47.9970", "24.7240", "48.9370", "34.3360",  "F:H - R:H",     
+"8 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:48.5570", "24.7450", "49.2160", "34.5960",  "F:H - R:H",     
+"9 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:48.1740", "24.6040", "49.6750", "33.8950",  "F:H - R:H",     
+"10 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:48.5260", "24.6600", "49.6890", "34.1770",  "F:H - R:H",     
+"11 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:47.8530", "24.7730", "48.8340", "34.2460",  "F:H - R:H",     
+"12 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:48.1750", "25.0060", "49.1310", "34.0380",  "F:H - R:H",     
+"13 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:48.0600", "24.7240", "48.9600", "34.3760",  "F:H - R:H",     
+Average,,,"01:48.8973", "25.3859", "49.2849", "34.2265"
+Best possible,,, "01:47.1160", "24.4410", "48.8160", "33.8590"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Echo51"
+"1 ", ks_porsche_cayman_gt4_clubsport, no,"0", "02:05.3890", "42.1080", "49.0850", "34.1960",  "F:H - R:H",     
+"2 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:48.6040", "24.6740", "48.9200", "35.0100",  "F:H - R:H",     
+"3 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:47.3580", "24.4540", "48.8930", "34.0110",  "F:H - R:H",     
+"4 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.9010", "24.3080", "48.8430", "33.7500",  "F:H - R:H",     
+"5 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:47.5530", "24.4380", "48.5910", "34.5240",  "F:H - R:H",     
+"6 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:47.9270", "24.7450", "48.9560", "34.2260",  "F:H - R:H",     
+"7 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:48.4480", "25.1930", "49.2710", "33.9840",  "F:H - R:H",     
+"8 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:47.8530", "24.2380", "49.1360", "34.4790",  "F:H - R:H",     
+"9 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:47.6490", "24.8390", "48.6180", "34.1920",  "F:H - R:H",     
+"10 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.8290", "24.5610", "48.5410", "33.7270",  "F:H - R:H",     
+"11 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.8410", "24.2080", "48.7890", "33.8440",  "F:H - R:H",     
+"12 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:47.2830", "24.8330", "48.6900", "33.7600",  "F:H - R:H",     
+"13 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:47.1850", "24.4710", "48.7710", "33.9430",  "F:H - R:H",     
+Average,,,"01:48.9093", "25.9285", "48.8542", "34.1266"
+Best possible,,, "01:46.4760", "24.2080", "48.5410", "33.7270"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Trempale"
+No laps for this driver
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Waffles"
+No laps for this driver
+
+
+Race 1 best laps
+'======================
+'------------------------
+Overall top (20)
+'------------------------
+Driver, Vehicle, Time, Gap,
+"McLarenTim", "ks_porsche_cayman_gt4_clubsport", "01:44.8870", ""
+"McLarenTim", "ks_porsche_cayman_gt4_clubsport", "01:44.9300", "0.043"
+"McLarenTim", "ks_porsche_cayman_gt4_clubsport", "01:44.9350", "0.048"
+"McLarenTim", "ks_porsche_cayman_gt4_clubsport", "01:44.9590", "0.072"
+"McLarenTim", "ks_porsche_cayman_gt4_clubsport", "01:44.9610", "0.074"
+"McLarenTim", "ks_porsche_cayman_gt4_clubsport", "01:44.9850", "0.098"
+"McLarenTim", "ks_porsche_cayman_gt4_clubsport", "01:45.0660", "0.179"
+"PhotonBurst", "ks_porsche_cayman_gt4_clubsport", "01:45.1080", "0.221"
+"PhotonBurst", "ks_porsche_cayman_gt4_clubsport", "01:45.1220", "0.235"
+"gunciz", "ks_porsche_cayman_gt4_clubsport", "01:45.1600", "0.273"
+"McLarenTim", "ks_porsche_cayman_gt4_clubsport", "01:45.1790", "0.292"
+"McLarenTim", "ks_porsche_cayman_gt4_clubsport", "01:45.1920", "0.305"
+"McLarenTim", "ks_porsche_cayman_gt4_clubsport", "01:45.1970", "0.31"
+"McLarenTim", "ks_porsche_cayman_gt4_clubsport", "01:45.2670", "0.38"
+"Electro", "ks_porsche_cayman_gt4_clubsport", "01:45.2940", "0.407"
+"Electro", "ks_porsche_cayman_gt4_clubsport", "01:45.3520", "0.465"
+"NotJames", "ks_porsche_cayman_gt4_clubsport", "01:45.3780", "0.491"
+"Electro", "ks_porsche_cayman_gt4_clubsport", "01:45.4010", "0.514"
+"McLarenTim", "ks_porsche_cayman_gt4_clubsport", "01:45.4020", "0.515"
+"gunciz", "ks_porsche_cayman_gt4_clubsport", "01:45.5040", "0.617"
+
+
+'------------------------
+Per driver
+'------------------------
+Driver, Vehicle, Time, Gap,
+"McLarenTim", "ks_porsche_cayman_gt4_clubsport", "01:44.8870", ""
+"PhotonBurst", "ks_porsche_cayman_gt4_clubsport", "01:45.1080", "0.221"
+"gunciz", "ks_porsche_cayman_gt4_clubsport", "01:45.1600", "0.273"
+"Electro", "ks_porsche_cayman_gt4_clubsport", "01:45.2940", "0.407"
+"NotJames", "ks_porsche_cayman_gt4_clubsport", "01:45.3780", "0.491"
+"MrGrinder", "ks_porsche_cayman_gt4_clubsport", "01:45.5620", "0.675"
+"gman197002", "ks_porsche_cayman_gt4_clubsport", "01:45.9040", "1.017"
+"Salzeder", "ks_porsche_cayman_gt4_clubsport", "01:46.0720", "1.185"
+"Georgin", "ks_porsche_cayman_gt4_clubsport", "01:46.1070", "1.22"
+"Echo51", "ks_porsche_cayman_gt4_clubsport", "01:46.8290", "1.942"
+"Crosdale", "ks_porsche_cayman_gt4_clubsport", "01:47.4850", "2.598"
+
+
+Race 1 consistency
+'======================
+Driver, Vehicle, Consistency,
+"McLarenTim", "ks_porsche_cayman_gt4_clubsport", "99.80%  0.2105",
+"Electro", "ks_porsche_cayman_gt4_clubsport", "99.48%  0.5437",
+"gman197002", "ks_porsche_cayman_gt4_clubsport", "99.47%  0.5581",
+"Georgin", "ks_porsche_cayman_gt4_clubsport", "99.34%  0.6975",
+"Salzeder", "ks_porsche_cayman_gt4_clubsport", "99.34%  0.6997",
+"Echo51", "ks_porsche_cayman_gt4_clubsport", "99.28%  0.7712",
+"Crosdale", "ks_porsche_cayman_gt4_clubsport", "99.27%  0.7797",
+"MrGrinder", "ks_porsche_cayman_gt4_clubsport", "99.01%  1.0447",
+"NotJames", "ks_porsche_cayman_gt4_clubsport", "98.98%  1.0785",
+"gunciz", "ks_porsche_cayman_gt4_clubsport", "98.79%  1.2733",
+"PhotonBurst", "ks_porsche_cayman_gt4_clubsport", "98.74%  1.3264",
+"Trempale", "ks_porsche_cayman_gt4_clubsport", "-",
+"Waffles", "ks_porsche_cayman_gt4_clubsport", "-",
+
+
+
+
+Race 1 sectors
+'======================
+'------------------------
+Sector 1
+'------------------------
+Driver, Vehicle, Time, Gap,
+"McLarenTim", "ks_porsche_cayman_gt4_clubsport", "23.7280", "-"
+"Electro", "ks_porsche_cayman_gt4_clubsport", "23.7310", "0.0030"
+"PhotonBurst", "ks_porsche_cayman_gt4_clubsport", "23.8120", "0.0840"
+"gunciz", "ks_porsche_cayman_gt4_clubsport", "23.8760", "0.1480"
+"gman197002", "ks_porsche_cayman_gt4_clubsport", "23.9280", "0.2000"
+"NotJames", "ks_porsche_cayman_gt4_clubsport", "23.9460", "0.2180"
+"Georgin", "ks_porsche_cayman_gt4_clubsport", "24.0610", "0.3330"
+"MrGrinder", "ks_porsche_cayman_gt4_clubsport", "24.0840", "0.3560"
+"Echo51", "ks_porsche_cayman_gt4_clubsport", "24.2080", "0.4800"
+"Salzeder", "ks_porsche_cayman_gt4_clubsport", "24.2110", "0.4830"
+"Crosdale", "ks_porsche_cayman_gt4_clubsport", "24.4410", "0.7130"
+'------------------------
+Sector 2
+'------------------------
+Driver, Vehicle, Time, Gap,
+"McLarenTim", "ks_porsche_cayman_gt4_clubsport", "48.0920", "-"
+"PhotonBurst", "ks_porsche_cayman_gt4_clubsport", "48.1140", "0.0220"
+"NotJames", "ks_porsche_cayman_gt4_clubsport", "48.1860", "0.0940"
+"gunciz", "ks_porsche_cayman_gt4_clubsport", "48.1990", "0.1070"
+"Electro", "ks_porsche_cayman_gt4_clubsport", "48.2800", "0.1880"
+"MrGrinder", "ks_porsche_cayman_gt4_clubsport", "48.3130", "0.2210"
+"gman197002", "ks_porsche_cayman_gt4_clubsport", "48.3750", "0.2830"
+"Georgin", "ks_porsche_cayman_gt4_clubsport", "48.3890", "0.2970"
+"Salzeder", "ks_porsche_cayman_gt4_clubsport", "48.4380", "0.3460"
+"Echo51", "ks_porsche_cayman_gt4_clubsport", "48.5410", "0.4490"
+"Crosdale", "ks_porsche_cayman_gt4_clubsport", "48.8160", "0.7240"
+'------------------------
+Sector 3
+'------------------------
+Driver, Vehicle, Time, Gap,
+"McLarenTim", "ks_porsche_cayman_gt4_clubsport", "32.7830", "-"
+"PhotonBurst", "ks_porsche_cayman_gt4_clubsport", "32.8330", "0.0500"
+"Electro", "ks_porsche_cayman_gt4_clubsport", "32.9760", "0.1930"
+"gunciz", "ks_porsche_cayman_gt4_clubsport", "33.0120", "0.2290"
+"MrGrinder", "ks_porsche_cayman_gt4_clubsport", "33.1060", "0.3230"
+"NotJames", "ks_porsche_cayman_gt4_clubsport", "33.1690", "0.3860"
+"Salzeder", "ks_porsche_cayman_gt4_clubsport", "33.2230", "0.4400"
+"gman197002", "ks_porsche_cayman_gt4_clubsport", "33.2500", "0.4670"
+"Georgin", "ks_porsche_cayman_gt4_clubsport", "33.3860", "0.6030"
+"Echo51", "ks_porsche_cayman_gt4_clubsport", "33.7270", "0.9440"
+"Crosdale", "ks_porsche_cayman_gt4_clubsport", "33.8590", "1.0760"
+
+
+Race 1 incidents worth reviewing
+'======================
+Date, Incident
+
+
+
+
+
+
+
+'+++++++++++++++++++++
+Race 2
+'+++++++++++++++++++++
+
+Game:, "Assetto Corsa"
+Session:, "Race"
+Track:, "hockenheim_2018"
+Winner, "McLarenTim"
+Led most laps, "McLarenTim"
+Best lap, "McLarenTim (01:44.8200)"
+Max laps, "13"
+Lasted laps, "13"
+Host, "Unknown"
+
+
+Race 2 result
+'======================
+Pos,    Class, Team, Vehicle, Driver, Laps, Time/Retired, Best lap, Consistency, Led, Pits,
+"1",  "", "", "ks_porsche_cayman_gt4_clubsport", "McLarenTim", "13", "    22:51.6170", "01:44.8200", "99.71%", "12", "0", 
+"2",  "", "", "ks_porsche_cayman_gt4_clubsport", "PhotonBurst", "13", "  '+00:07.0200", "01:45.2230", "99.64%", "0", "0", 
+"3",  "", "", "ks_porsche_cayman_gt4_clubsport", "Electro", "13", "  '+00:07.5560", "01:45.1310", "99.47%", "0", "0", 
+"4",  "", "", "ks_porsche_cayman_gt4_clubsport", "MrGrinder", "13", "  '+00:19.3770", "01:45.4680", "99.07%", "0", "0", 
+"5",  "", "", "ks_porsche_cayman_gt4_clubsport", "NotJames", "13", "  '+00:22.9950", "01:45.6820", "99.34%", "0", "0", 
+"6",  "", "", "ks_porsche_cayman_gt4_clubsport", "Georgin", "13", "  '+00:32.2870", "01:46.4450", "98.96%", "0", "0", 
+"7",  "", "", "ks_porsche_cayman_gt4_clubsport", "gunciz", "13", "  '+00:32.7830", "01:45.7650", "98.99%", "0", "0", 
+"8",  "", "", "ks_porsche_cayman_gt4_clubsport", "Salzeder", "13", "  '+00:33.5420", "01:46.3200", "98.85%", "0", "0", 
+"9",  "", "", "ks_porsche_cayman_gt4_clubsport", "gman197002", "13", "  '+00:35.7090", "01:45.9260", "98.94%", "0", "0", 
+"10",  "", "", "ks_porsche_cayman_gt4_clubsport", "Crosdale", "13", "  '+00:53.2780", "01:47.0710", "98.15%", "0", "0", 
+"11",  "", "", "ks_porsche_cayman_gt4_clubsport", "Echo51", "1", " ", "01:57.7640", "-", "0", "0", 
+"12",  "", "", "ks_porsche_cayman_gt4_clubsport", "Waffles", "0", " DNF", "-", "-", "0", "0", 
+"13",  "", "", "ks_porsche_cayman_gt4_clubsport", "Trempale", "0", " DNF", "-", "-", "0", "0", 
+
+
+Race 2 laps
+'======================
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"McLarenTim"
+"1 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:50.4370", "28.9870", "48.4600", "32.9900",  "F:H - R:H",     
+"2 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:44.8200", "23.8960", "48.0960", "32.8280",  "F:H - R:H",     
+"3 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.0740", "24.0250", "48.1640", "32.8850",  "F:H - R:H",     
+"4 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.0100", "23.8800", "48.2260", "32.9040",  "F:H - R:H",     
+"5 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.1390", "24.0980", "48.1190", "32.9220",  "F:H - R:H",     
+"6 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.0540", "24.0180", "48.1140", "32.9220",  "F:H - R:H",     
+"7 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.0470", "23.9310", "48.1000", "33.0160",  "F:H - R:H",     
+"8 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.3120", "24.0190", "48.3170", "32.9760",  "F:H - R:H",     
+"9 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.0570", "24.0110", "48.1230", "32.9230",  "F:H - R:H",     
+"10 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.1780", "23.8400", "48.3040", "33.0340",  "F:H - R:H",     
+"11 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.1970", "24.0540", "48.2800", "32.8630",  "F:H - R:H",     
+"12 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.0330", "23.9510", "48.2410", "32.8410",  "F:H - R:H",     
+"13 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.2910", "23.9980", "48.2360", "33.0570",  "F:H - R:H",     
+Average,,,"01:45.5115", "24.3622", "48.2138", "32.9355"
+Best possible,,, "01:44.7640", "23.8400", "48.0960", "32.8280"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"PhotonBurst"
+"1 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:51.7810", "29.7370", "48.8570", "33.1870",  "F:H - R:H",     
+"2 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.8190", "24.0620", "48.5110", "33.2460",  "F:H - R:H",     
+"3 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.1140", "23.9570", "49.0370", "33.1200",  "F:H - R:H",     
+"4 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.6560", "24.0090", "48.3840", "33.2630",  "F:H - R:H",     
+"5 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.7930", "24.1670", "48.2410", "33.3850",  "F:H - R:H",     
+"6 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.7280", "23.8420", "48.6900", "33.1960",  "F:H - R:H",     
+"7 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.8250", "24.2350", "48.4600", "33.1300",  "F:H - R:H",     
+"8 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.2820", "23.9850", "48.3160", "32.9810",  "F:H - R:H",     
+"9 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.2230", "23.9490", "48.2480", "33.0260",  "F:H - R:H",     
+"10 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.3330", "23.9370", "48.3340", "33.0620",  "F:H - R:H",     
+"11 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.3620", "23.9080", "48.3620", "33.0920",  "F:H - R:H",     
+"12 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.4690", "24.1000", "48.2270", "33.1420",  "F:H - R:H",     
+"13 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.2610", "23.9320", "48.3970", "32.9320",  "F:H - R:H",     
+Average,,,"01:46.0497", "24.4477", "48.4665", "33.1355"
+Best possible,,, "01:45.0010", "23.8420", "48.2270", "32.9320"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Electro"
+"1 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:51.4140", "29.2170", "48.7440", "33.4530",  "F:H - R:H",     
+"2 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.3840", "24.0470", "48.6090", "33.7280",  "F:H - R:H",     
+"3 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.4400", "24.0090", "48.2260", "33.2050",  "F:H - R:H",     
+"4 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.4190", "24.1180", "49.2160", "33.0850",  "F:H - R:H",     
+"5 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.7630", "24.1380", "48.4100", "33.2150",  "F:H - R:H",     
+"6 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.8010", "23.9090", "48.7090", "33.1830",  "F:H - R:H",     
+"7 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.9120", "24.0840", "48.6620", "33.1660",  "F:H - R:H",     
+"8 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.4610", "23.9760", "48.4060", "33.0790",  "F:H - R:H",     
+"9 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.8240", "24.0590", "48.5820", "33.1830",  "F:H - R:H",     
+"10 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.1310", "23.8790", "48.2770", "32.9750",  "F:H - R:H",     
+"11 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.2390", "23.8530", "48.3470", "33.0390",  "F:H - R:H",     
+"12 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.2030", "23.9470", "48.2630", "32.9930",  "F:H - R:H",     
+"13 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.1720", "23.7620", "48.2770", "33.1330",  "F:H - R:H",     
+Average,,,"01:46.0895", "24.3845", "48.5175", "33.1875"
+Best possible,,, "01:44.9630", "23.7620", "48.2260", "32.9750"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"MrGrinder"
+"1 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:54.6680", "32.3770", "48.8340", "33.4570",  "F:H - R:H",     
+"2 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.6940", "24.2170", "48.3080", "33.1690",  "F:H - R:H",     
+"3 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.4680", "23.9090", "48.3530", "33.2060",  "F:H - R:H",     
+"4 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.8120", "23.9570", "48.4830", "33.3720",  "F:H - R:H",     
+"5 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.6250", "24.1680", "49.1890", "33.2680",  "F:H - R:H",     
+"6 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:48.4430", "24.8560", "48.5500", "35.0370",  "F:H - R:H",     
+"7 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.9590", "24.1810", "48.6810", "33.0970",  "F:H - R:H",     
+"8 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:48.6060", "24.4060", "48.6720", "35.5280",  "F:H - R:H",     
+"9 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.3970", "24.7770", "48.4290", "33.1910",  "F:H - R:H",     
+"10 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.4820", "24.0060", "48.4150", "33.0610",  "F:H - R:H",     
+"11 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.0630", "23.9870", "48.7080", "33.3680",  "F:H - R:H",     
+"12 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.7330", "24.2110", "48.4560", "33.0660",  "F:H - R:H",     
+"13 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.1020", "24.0260", "48.3580", "33.7180",  "F:H - R:H",     
+Average,,,"01:47.0040", "24.8522", "48.5720", "33.5798"
+Best possible,,, "01:45.2780", "23.9090", "48.3080", "33.0610"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"NotJames"
+"1 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:58.7920", "35.9340", "48.6540", "34.2040",  "F:H - R:H",     
+"2 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:48.1810", "24.6430", "49.7120", "33.8260",  "F:H - R:H",     
+"3 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.0120", "24.1350", "48.5450", "33.3320",  "F:H - R:H",     
+"4 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.8100", "24.1620", "48.4460", "33.2020",  "F:H - R:H",     
+"5 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.6820", "24.0650", "48.3890", "33.2280",  "F:H - R:H",     
+"6 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.8280", "24.1250", "48.4380", "33.2650",  "F:H - R:H",     
+"7 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:47.0010", "24.5740", "48.8970", "33.5300",  "F:H - R:H",     
+"8 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.2310", "24.2050", "48.6230", "33.4030",  "F:H - R:H",     
+"9 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.7370", "24.2610", "48.3380", "33.1380",  "F:H - R:H",     
+"10 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.4050", "24.2350", "48.7400", "33.4300",  "F:H - R:H",     
+"11 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.0070", "24.1710", "48.5090", "33.3270",  "F:H - R:H",     
+"12 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.2070", "24.1630", "48.4380", "33.6060",  "F:H - R:H",     
+"13 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.7190", "24.1800", "48.7660", "33.7730",  "F:H - R:H",     
+Average,,,"01:47.2778", "25.1425", "48.6535", "33.4818"
+Best possible,,, "01:45.5410", "24.0650", "48.3380", "33.1380"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Georgin"
+"1 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:54.3730", "31.8200", "48.7760", "33.7770",  "F:H - R:H",     
+"2 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:47.9960", "24.8590", "48.9380", "34.1990",  "F:H - R:H",     
+"3 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.6880", "24.5860", "48.6090", "33.4930",  "F:H - R:H",     
+"4 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.4450", "24.4200", "48.5270", "33.4980",  "F:H - R:H",     
+"5 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.7510", "24.4470", "48.6940", "33.6100",  "F:H - R:H",     
+"6 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:48.9750", "24.2760", "49.0400", "35.6590",  "F:H - R:H",     
+"7 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:47.1670", "24.2450", "49.1360", "33.7860",  "F:H - R:H",     
+"8 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.5700", "24.3590", "48.8260", "33.3850",  "F:H - R:H",     
+"9 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.7320", "24.4490", "48.5460", "33.7370",  "F:H - R:H",     
+"10 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:47.6730", "24.2430", "49.1620", "34.2680",  "F:H - R:H",     
+"11 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:49.7370", "24.2900", "51.5800", "33.8670",  "F:H - R:H",     
+"12 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.6090", "24.0650", "48.6180", "33.9260",  "F:H - R:H",     
+"13 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:48.2220", "24.6520", "49.1310", "34.4390",  "F:H - R:H",     
+Average,,,"01:47.9952", "24.9778", "49.0448", "33.9726"
+Best possible,,, "01:45.9770", "24.0650", "48.5270", "33.3850"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"gunciz"
+"1 ", ks_porsche_cayman_gt4_clubsport, no,"0", "02:03.4700", "41.1250", "48.6410", "33.7040",  "F:H - R:H",     
+"2 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.1800", "23.7080", "48.7080", "33.7640",  "F:H - R:H",     
+"3 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:47.1410", "24.4990", "49.1400", "33.5020",  "F:H - R:H",     
+"4 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.8240", "24.2850", "48.5770", "33.9620",  "F:H - R:H",     
+"5 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.9560", "24.1380", "48.4280", "33.3900",  "F:H - R:H",     
+"6 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.7930", "23.9560", "48.4290", "33.4080",  "F:H - R:H",     
+"7 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.7650", "24.0890", "48.2540", "33.4220",  "F:H - R:H",     
+"8 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.8390", "23.8400", "48.4570", "33.5420",  "F:H - R:H",     
+"9 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.7890", "23.9700", "48.3120", "33.5070",  "F:H - R:H",     
+"10 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:47.1810", "23.9130", "48.5730", "34.6950",  "F:H - R:H",     
+"11 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:49.4350", "24.2460", "51.5560", "33.6330",  "F:H - R:H",     
+"12 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.5830", "24.4140", "48.4240", "33.7450",  "F:H - R:H",     
+"13 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:48.4790", "24.6810", "49.0770", "34.7210",  "F:H - R:H",     
+Average,,,"01:48.0334", "25.4511", "48.8135", "33.7688"
+Best possible,,, "01:45.3520", "23.7080", "48.2540", "33.3900"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Salzeder"
+"1 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:55.8400", "32.4100", "49.4950", "33.9350",  "F:H - R:H",     
+"2 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.8630", "24.4580", "48.8930", "33.5120",  "F:H - R:H",     
+"3 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:47.2970", "24.6870", "48.8880", "33.7220",  "F:H - R:H",     
+"4 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.3920", "24.3390", "48.7070", "33.3460",  "F:H - R:H",     
+"5 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.6410", "24.2770", "48.7210", "33.6430",  "F:H - R:H",     
+"6 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.7890", "24.4390", "48.7890", "33.5610",  "F:H - R:H",     
+"7 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:48.0590", "24.3150", "49.6790", "34.0650",  "F:H - R:H",     
+"8 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.3200", "24.4110", "48.5630", "33.3460",  "F:H - R:H",     
+"9 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.4430", "24.5690", "48.4880", "33.3860",  "F:H - R:H",     
+"10 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:48.9490", "24.5920", "49.8560", "34.5010",  "F:H - R:H",     
+"11 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:47.3170", "24.3640", "49.2210", "33.7320",  "F:H - R:H",     
+"12 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.8760", "24.4050", "48.7250", "33.7460",  "F:H - R:H",     
+"13 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:51.3940", "28.8150", "48.7880", "33.7910",  "F:H - R:H",     
+Average,,,"01:48.0907", "25.3908", "48.9856", "33.7143"
+Best possible,,, "01:46.1110", "24.2770", "48.4880", "33.3460"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"gman197002"
+"1 ", ks_porsche_cayman_gt4_clubsport, no,"0", "02:03.8430", "41.2310", "48.9740", "33.6380",  "F:H - R:H",     
+"2 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.8840", "24.1820", "49.0500", "33.6520",  "F:H - R:H",     
+"3 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:47.6570", "24.5060", "49.0950", "34.0560",  "F:H - R:H",     
+"4 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.2610", "24.0730", "48.5050", "33.6830",  "F:H - R:H",     
+"5 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:45.9260", "23.9910", "48.5370", "33.3980",  "F:H - R:H",     
+"6 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.0230", "23.9970", "48.4690", "33.5570",  "F:H - R:H",     
+"7 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.6320", "24.0830", "48.8350", "33.7140",  "F:H - R:H",     
+"8 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.6630", "24.0020", "48.8970", "33.7640",  "F:H - R:H",     
+"9 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:51.2100", "24.3780", "48.9190", "37.9130",  "F:H - R:H",     
+"10 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.7980", "24.0470", "49.0050", "33.7460",  "F:H - R:H",     
+"11 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.5340", "23.9270", "49.0050", "33.6020",  "F:H - R:H",     
+"12 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.4530", "24.1160", "48.8030", "33.5340",  "F:H - R:H",     
+"13 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:46.4390", "24.2690", "48.5290", "33.6410",  "F:H - R:H",     
+Average,,,"01:48.2557", "25.4463", "48.8172", "33.9922"
+Best possible,,, "01:45.7940", "23.9270", "48.4690", "33.3980"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Crosdale"
+"1 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:58.3220", "32.8360", "50.6930", "34.7930",  "F:H - R:H",     
+"2 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:49.8110", "24.6170", "50.2210", "34.9730",  "F:H - R:H",     
+"3 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:50.9190", "25.3730", "50.7690", "34.7770",  "F:H - R:H",     
+"4 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:48.0000", "24.8040", "48.7800", "34.4160",  "F:H - R:H",     
+"5 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:47.6530", "24.6280", "48.8020", "34.2230",  "F:H - R:H",     
+"6 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:47.9960", "24.8860", "48.9200", "34.1900",  "F:H - R:H",     
+"7 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:47.0710", "24.6720", "48.5990", "33.8000",  "F:H - R:H",     
+"8 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:50.7140", "24.7420", "48.9960", "36.9760",  "F:H - R:H",     
+"9 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:49.3980", "24.9060", "49.0810", "35.4110",  "F:H - R:H",     
+"10 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:48.3410", "25.0100", "48.9870", "34.3440",  "F:H - R:H",     
+"11 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:47.8540", "24.4110", "49.1750", "34.2680",  "F:H - R:H",     
+"12 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:50.0220", "25.9480", "49.3110", "34.7630",  "F:H - R:H",     
+"13 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:48.8100", "24.6590", "49.1950", "34.9560",  "F:H - R:H",     
+Average,,,"01:49.6086", "25.4994", "49.3484", "34.7608"
+Best possible,,, "01:46.8100", "24.4110", "48.5990", "33.8000"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Echo51"
+"1 ", ks_porsche_cayman_gt4_clubsport, no,"0", "01:57.7640", "33.3630", "49.1130", "35.2880",  "F:H - R:H",     
+Average,,,"01:57.7640", "33.3630", "49.1130", "35.2880"
+Best possible,,, "01:57.7640", "33.3630", "49.1130", "35.2880"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Waffles"
+No laps for this driver
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Trempale"
+No laps for this driver
+
+
+Race 2 best laps
+'======================
+'------------------------
+Overall top (20)
+'------------------------
+Driver, Vehicle, Time, Gap,
+"McLarenTim", "ks_porsche_cayman_gt4_clubsport", "01:44.8200", ""
+"McLarenTim", "ks_porsche_cayman_gt4_clubsport", "01:45.0100", "0.19"
+"McLarenTim", "ks_porsche_cayman_gt4_clubsport", "01:45.0330", "0.213"
+"McLarenTim", "ks_porsche_cayman_gt4_clubsport", "01:45.0470", "0.227"
+"McLarenTim", "ks_porsche_cayman_gt4_clubsport", "01:45.0540", "0.234"
+"McLarenTim", "ks_porsche_cayman_gt4_clubsport", "01:45.0570", "0.237"
+"McLarenTim", "ks_porsche_cayman_gt4_clubsport", "01:45.0740", "0.254"
+"Electro", "ks_porsche_cayman_gt4_clubsport", "01:45.1310", "0.311"
+"McLarenTim", "ks_porsche_cayman_gt4_clubsport", "01:45.1390", "0.319"
+"Electro", "ks_porsche_cayman_gt4_clubsport", "01:45.1720", "0.352"
+"McLarenTim", "ks_porsche_cayman_gt4_clubsport", "01:45.1780", "0.358"
+"McLarenTim", "ks_porsche_cayman_gt4_clubsport", "01:45.1970", "0.377"
+"Electro", "ks_porsche_cayman_gt4_clubsport", "01:45.2030", "0.383"
+"PhotonBurst", "ks_porsche_cayman_gt4_clubsport", "01:45.2230", "0.403"
+"Electro", "ks_porsche_cayman_gt4_clubsport", "01:45.2390", "0.419"
+"PhotonBurst", "ks_porsche_cayman_gt4_clubsport", "01:45.2610", "0.441"
+"PhotonBurst", "ks_porsche_cayman_gt4_clubsport", "01:45.2820", "0.462"
+"McLarenTim", "ks_porsche_cayman_gt4_clubsport", "01:45.2910", "0.471"
+"McLarenTim", "ks_porsche_cayman_gt4_clubsport", "01:45.3120", "0.492"
+"PhotonBurst", "ks_porsche_cayman_gt4_clubsport", "01:45.3330", "0.513"
+
+
+'------------------------
+Per driver
+'------------------------
+Driver, Vehicle, Time, Gap,
+"McLarenTim", "ks_porsche_cayman_gt4_clubsport", "01:44.8200", ""
+"Electro", "ks_porsche_cayman_gt4_clubsport", "01:45.1310", "0.311"
+"PhotonBurst", "ks_porsche_cayman_gt4_clubsport", "01:45.2230", "0.403"
+"MrGrinder", "ks_porsche_cayman_gt4_clubsport", "01:45.4680", "0.648"
+"NotJames", "ks_porsche_cayman_gt4_clubsport", "01:45.6820", "0.862"
+"gunciz", "ks_porsche_cayman_gt4_clubsport", "01:45.7650", "0.945"
+"gman197002", "ks_porsche_cayman_gt4_clubsport", "01:45.9260", "1.106"
+"Salzeder", "ks_porsche_cayman_gt4_clubsport", "01:46.3200", "1.5"
+"Georgin", "ks_porsche_cayman_gt4_clubsport", "01:46.4450", "1.625"
+"Crosdale", "ks_porsche_cayman_gt4_clubsport", "01:47.0710", "2.251"
+"Echo51", "ks_porsche_cayman_gt4_clubsport", "01:57.7640", "12.944"
+
+
+Race 2 consistency
+'======================
+Driver, Vehicle, Consistency,
+"McLarenTim", "ks_porsche_cayman_gt4_clubsport", "99.71%  0.3065",
+"PhotonBurst", "ks_porsche_cayman_gt4_clubsport", "99.64%  0.3808",
+"Electro", "ks_porsche_cayman_gt4_clubsport", "99.47%  0.5615",
+"NotJames", "ks_porsche_cayman_gt4_clubsport", "99.34%  0.6942",
+"MrGrinder", "ks_porsche_cayman_gt4_clubsport", "99.07%  0.9789",
+"gunciz", "ks_porsche_cayman_gt4_clubsport", "98.99%  1.0714",
+"Georgin", "ks_porsche_cayman_gt4_clubsport", "98.96%  1.1114",
+"gman197002", "ks_porsche_cayman_gt4_clubsport", "98.94%  1.1244",
+"Salzeder", "ks_porsche_cayman_gt4_clubsport", "98.85%  1.2273",
+"Crosdale", "ks_porsche_cayman_gt4_clubsport", "98.15%  1.9761",
+"Echo51", "ks_porsche_cayman_gt4_clubsport", "-",
+"Waffles", "ks_porsche_cayman_gt4_clubsport", "-",
+"Trempale", "ks_porsche_cayman_gt4_clubsport", "-",
+
+
+
+
+Race 2 sectors
+'======================
+'------------------------
+Sector 1
+'------------------------
+Driver, Vehicle, Time, Gap,
+"gunciz", "ks_porsche_cayman_gt4_clubsport", "23.7080", "-"
+"Electro", "ks_porsche_cayman_gt4_clubsport", "23.7620", "0.0540"
+"McLarenTim", "ks_porsche_cayman_gt4_clubsport", "23.8400", "0.1320"
+"PhotonBurst", "ks_porsche_cayman_gt4_clubsport", "23.8420", "0.1340"
+"MrGrinder", "ks_porsche_cayman_gt4_clubsport", "23.9090", "0.2010"
+"gman197002", "ks_porsche_cayman_gt4_clubsport", "23.9270", "0.2190"
+"NotJames", "ks_porsche_cayman_gt4_clubsport", "24.0650", "0.3570"
+"Georgin", "ks_porsche_cayman_gt4_clubsport", "24.0650", "0.3570"
+"Salzeder", "ks_porsche_cayman_gt4_clubsport", "24.2770", "0.5690"
+"Crosdale", "ks_porsche_cayman_gt4_clubsport", "24.4110", "0.7030"
+"Echo51", "ks_porsche_cayman_gt4_clubsport", "33.3630", "9.6550"
+'------------------------
+Sector 2
+'------------------------
+Driver, Vehicle, Time, Gap,
+"McLarenTim", "ks_porsche_cayman_gt4_clubsport", "48.0960", "-"
+"Electro", "ks_porsche_cayman_gt4_clubsport", "48.2260", "0.1300"
+"PhotonBurst", "ks_porsche_cayman_gt4_clubsport", "48.2270", "0.1310"
+"gunciz", "ks_porsche_cayman_gt4_clubsport", "48.2540", "0.1580"
+"MrGrinder", "ks_porsche_cayman_gt4_clubsport", "48.3080", "0.2120"
+"NotJames", "ks_porsche_cayman_gt4_clubsport", "48.3380", "0.2420"
+"gman197002", "ks_porsche_cayman_gt4_clubsport", "48.4690", "0.3730"
+"Salzeder", "ks_porsche_cayman_gt4_clubsport", "48.4880", "0.3920"
+"Georgin", "ks_porsche_cayman_gt4_clubsport", "48.5270", "0.4310"
+"Crosdale", "ks_porsche_cayman_gt4_clubsport", "48.5990", "0.5030"
+"Echo51", "ks_porsche_cayman_gt4_clubsport", "49.1130", "1.0170"
+'------------------------
+Sector 3
+'------------------------
+Driver, Vehicle, Time, Gap,
+"McLarenTim", "ks_porsche_cayman_gt4_clubsport", "32.8280", "-"
+"PhotonBurst", "ks_porsche_cayman_gt4_clubsport", "32.9320", "0.1040"
+"Electro", "ks_porsche_cayman_gt4_clubsport", "32.9750", "0.1470"
+"MrGrinder", "ks_porsche_cayman_gt4_clubsport", "33.0610", "0.2330"
+"NotJames", "ks_porsche_cayman_gt4_clubsport", "33.1380", "0.3100"
+"Salzeder", "ks_porsche_cayman_gt4_clubsport", "33.3460", "0.5180"
+"Georgin", "ks_porsche_cayman_gt4_clubsport", "33.3850", "0.5570"
+"gunciz", "ks_porsche_cayman_gt4_clubsport", "33.3900", "0.5620"
+"gman197002", "ks_porsche_cayman_gt4_clubsport", "33.3980", "0.5700"
+"Crosdale", "ks_porsche_cayman_gt4_clubsport", "33.8000", "0.9720"
+"Echo51", "ks_porsche_cayman_gt4_clubsport", "35.2880", "2.4600"
+
+
+Race 2 incidents worth reviewing
+'======================
+Date, Incident
+
+
+
+
+
+
+
+
+
