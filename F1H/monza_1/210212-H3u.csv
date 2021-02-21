@@ -1,0 +1,838 @@
+'+++++++++++++++++++++
+Qualify
+'+++++++++++++++++++++
+
+Game:, "Assetto Corsa"
+Session:, "Qualify"
+Track:, "ks_monza66, full"
+Pole, "gunciz(02:42.3430)"
+Lasted laps, "4"
+Host, "Unknown"
+
+
+
+Qualify result
+'======================
+Pos,   Class, Team, Vehicle, Driver, Laps, Best lap, Gap
+"1",   "", "", "ks_maserati_250f_12cyl", "gunciz", "3", "02:42.3430", "-",
+"2",   "", "", "ks_maserati_250f_12cyl", "Electro", "3", "02:43.1290", "00:00.7860",
+"3",   "", "", "ks_maserati_250f_12cyl", "Waffles", "3", "02:43.1440", "00:00.8010",
+"4",   "", "", "ks_maserati_250f_12cyl", "MrGrinder", "4", "02:43.2250", "00:00.8820",
+"5",   "", "", "ks_maserati_250f_12cyl", "NotJames", "3", "02:43.2780", "00:00.9350",
+"6",   "", "", "ks_maserati_250f_12cyl", "McLarenTim", "3", "02:43.7430", "00:01.4000",
+"7",   "", "", "ks_maserati_250f_12cyl", "Smartpipe", "3", "02:45.2710", "00:02.9280",
+"8",   "", "", "ks_maserati_250f_12cyl", "Georgin", "3", "02:46.2260", "00:03.8830",
+"9",   "", "", "ks_maserati_250f_12cyl", "marzen224", "2", "02:49.7140", "00:07.3710",
+"10",   "", "", "ks_maserati_250f_12cyl", "Viperion_NZ", "2", "02:50.4860", "00:08.1430",
+"11",   "", "", "ks_maserati_250f_12cyl", "Crosdale", "0", "-", "-",
+"12",   "", "", "ks_maserati_250f_12cyl", "Trempale", "0", "-", "-",
+"13",   "", "", "ks_maserati_250f_12cyl", "mitski s", "0", "-", "-",
+"14",   "", "", "ks_maserati_250f_12cyl", "Salzeder", "0", "-", "-",
+"15",   "", "", "ks_maserati_250f_12cyl", "Broadcast", "0", "-", "-",
+
+Qualify laps
+'======================
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"gunciz"
+"1 ", ks_maserati_250f_12cyl, no,"0", "03:54.0520", "129.7470", "39.4330", "64.8720",  "F:V - R:V",     
+"2 ", ks_maserati_250f_12cyl, no,"0", "02:47.1940", "63.0590", "39.2940", "64.8410",  "F:V - R:V",     
+"3 ", ks_maserati_250f_12cyl, no,"0", "02:42.3430", "58.5050", "39.0700", "64.7680",  "F:V - R:V",     
+Average,,,"03:07.8630", "83.7703", "39.2657", "64.8270"
+Best possible,,, "02:42.3430", "58.5050", "39.0700", "64.7680"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Electro"
+"1 ", ks_maserati_250f_12cyl, no,"0", "04:12.3970", "135.1090", "48.7940", "68.4940",  "F:V - R:V",     
+"2 ", ks_maserati_250f_12cyl, no,"0", "02:43.3470", "58.1640", "39.3470", "65.8360",  "F:V - R:V",     
+"3 ", ks_maserati_250f_12cyl, no,"0", "02:43.1290", "58.1300", "39.1780", "65.8210",  "F:V - R:V",     
+Average,,,"03:12.9577", "83.8010", "42.4397", "66.7170"
+Best possible,,, "02:43.1290", "58.1300", "39.1780", "65.8210"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Waffles"
+"1 ", ks_maserati_250f_12cyl, no,"0", "04:02.8300", "134.4790", "39.7800", "68.5710",  "F:V - R:V",     
+"2 ", ks_maserati_250f_12cyl, no,"0", "02:43.6930", "58.6040", "39.3620", "65.7270",  "F:V - R:V",     
+"3 ", ks_maserati_250f_12cyl, no,"0", "02:43.1440", "58.4600", "39.0510", "65.6330",  "F:V - R:V",     
+Average,,,"03:09.8891", "83.8477", "39.3977", "66.6437"
+Best possible,,, "02:43.1440", "58.4600", "39.0510", "65.6330"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"MrGrinder"
+"1 ", ks_maserati_250f_12cyl, no,"0", "04:25.4150", "152.4110", "45.0950", "67.9090",  "F:V - R:V",     
+"2 ", ks_maserati_250f_12cyl, no,"0", "02:43.7170", "59.1420", "39.5100", "65.0650",  "F:V - R:V",     
+"3 ", ks_maserati_250f_12cyl, no,"0", "02:43.2250", "59.1670", "39.1090", "64.9490",  "F:V - R:V",     
+"4 ", ks_maserati_250f_12cyl, no,"0", "02:43.4230", "58.9740", "39.3740", "65.0750",  "F:V - R:V",     
+Average,,,"03:08.9450", "82.4235", "40.7720", "65.7495"
+Best possible,,, "02:43.0320", "58.9740", "39.1090", "64.9490"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"NotJames"
+"1 ", ks_maserati_250f_12cyl, no,"0", "04:22.8570", "148.5120", "49.1260", "65.2190",  "F:V - R:V",     
+"2 ", ks_maserati_250f_12cyl, no,"0", "02:43.9800", "59.0260", "39.5100", "65.4440",  "F:V - R:V",     
+"3 ", ks_maserati_250f_12cyl, no,"0", "02:43.2780", "58.5900", "39.5540", "65.1340",  "F:V - R:V",     
+Average,,,"03:16.7050", "88.7093", "42.7300", "65.2657"
+Best possible,,, "02:43.2340", "58.5900", "39.5100", "65.1340"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"McLarenTim"
+"1 ", ks_maserati_250f_12cyl, no,"0", "03:56.7610", "131.5060", "39.8340", "65.4210",  "F:V - R:V",     
+"2 ", ks_maserati_250f_12cyl, no,"0", "02:43.7430", "58.6810", "39.8520", "65.2100",  "F:V - R:V",     
+"3 ", ks_maserati_250f_12cyl, no,"0", "02:53.5650", "61.7350", "39.3970", "72.4330",  "F:V - R:V",     
+Average,,,"03:11.3563", "83.9740", "39.6943", "67.6880"
+Best possible,,, "02:43.2880", "58.6810", "39.3970", "65.2100"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Smartpipe"
+"1 ", ks_maserati_250f_12cyl, no,"0", "04:28.9390", "156.0020", "47.0700", "65.8670",  "F:V - R:V",     
+"2 ", ks_maserati_250f_12cyl, no,"0", "02:46.6140", "60.1800", "40.5130", "65.9210",  "F:V - R:V",     
+"3 ", ks_maserati_250f_12cyl, no,"0", "02:45.2710", "59.6970", "40.5180", "65.0560",  "F:V - R:V",     
+Average,,,"03:20.2747", "91.9597", "42.7003", "65.6147"
+Best possible,,, "02:45.2660", "59.6970", "40.5130", "65.0560"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Georgin"
+"1 ", ks_maserati_250f_12cyl, no,"0", "04:16.1970", "142.7160", "46.6380", "66.8430",  "F:V - R:V",     
+"2 ", ks_maserati_250f_12cyl, no,"0", "02:47.8090", "61.0190", "40.6270", "66.1630",  "F:V - R:V",     
+"3 ", ks_maserati_250f_12cyl, no,"0", "02:46.2260", "60.2420", "40.1720", "65.8120",  "F:V - R:V",     
+Average,,,"03:16.7440", "87.9923", "42.4790", "66.2727"
+Best possible,,, "02:46.2260", "60.2420", "40.1720", "65.8120"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"marzen224"
+"1 ", ks_maserati_250f_12cyl, no,"0", "04:33.1690", "145.7110", "60.2680", "67.1900",  "F:V - R:V",     
+"2 ", ks_maserati_250f_12cyl, no,"0", "02:49.7140", "60.3860", "42.3810", "66.9470",  "F:V - R:V",     
+Average,,,"03:41.4415", "103.0485", "51.3245", "67.0685"
+Best possible,,, "02:49.7140", "60.3860", "42.3810", "66.9470"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Viperion_NZ"
+"1 ", ks_maserati_250f_12cyl, no,"0", "06:18.6360", "267.4220", "45.2300", "65.9840",  "F:V - R:V",     
+"2 ", ks_maserati_250f_12cyl, no,"0", "02:50.4860", "61.9730", "42.5530", "65.9600",  "F:V - R:V",     
+Average,,,"04:34.5610", "164.6975", "43.8915", "65.9720"
+Best possible,,, "02:50.4860", "61.9730", "42.5530", "65.9600"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Crosdale"
+No laps for this driver
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Trempale"
+No laps for this driver
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"mitski s"
+No laps for this driver
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Salzeder"
+No laps for this driver
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Broadcast"
+No laps for this driver
+
+
+Qualify best laps
+'======================
+'------------------------
+Overall top (20)
+'------------------------
+Driver, Vehicle, Time, Gap,
+"gunciz", "ks_maserati_250f_12cyl", "02:42.3430", ""
+"Electro", "ks_maserati_250f_12cyl", "02:43.1290", "0.786"
+"Waffles", "ks_maserati_250f_12cyl", "02:43.1440", "0.801"
+"MrGrinder", "ks_maserati_250f_12cyl", "02:43.2250", "0.882"
+"NotJames", "ks_maserati_250f_12cyl", "02:43.2780", "0.935"
+"Electro", "ks_maserati_250f_12cyl", "02:43.3470", "1.004"
+"MrGrinder", "ks_maserati_250f_12cyl", "02:43.4230", "1.08"
+"Waffles", "ks_maserati_250f_12cyl", "02:43.6930", "1.35"
+"MrGrinder", "ks_maserati_250f_12cyl", "02:43.7170", "1.374"
+"McLarenTim", "ks_maserati_250f_12cyl", "02:43.7430", "1.4"
+"NotJames", "ks_maserati_250f_12cyl", "02:43.9800", "1.637"
+"Smartpipe", "ks_maserati_250f_12cyl", "02:45.2710", "2.928"
+"Georgin", "ks_maserati_250f_12cyl", "02:46.2260", "3.883"
+"Smartpipe", "ks_maserati_250f_12cyl", "02:46.6140", "4.271"
+"gunciz", "ks_maserati_250f_12cyl", "02:47.1940", "4.851"
+"Georgin", "ks_maserati_250f_12cyl", "02:47.8090", "5.466"
+"marzen224", "ks_maserati_250f_12cyl", "02:49.7140", "7.371"
+"Viperion_NZ", "ks_maserati_250f_12cyl", "02:50.4860", "8.143"
+"McLarenTim", "ks_maserati_250f_12cyl", "02:53.5650", "11.222"
+"gunciz", "ks_maserati_250f_12cyl", "03:54.0520", "71.709"
+
+
+'------------------------
+Per driver
+'------------------------
+Driver, Vehicle, Time, Gap,
+"gunciz", "ks_maserati_250f_12cyl", "02:42.3430", ""
+"Electro", "ks_maserati_250f_12cyl", "02:43.1290", "0.786"
+"Waffles", "ks_maserati_250f_12cyl", "02:43.1440", "0.801"
+"MrGrinder", "ks_maserati_250f_12cyl", "02:43.2250", "0.882"
+"NotJames", "ks_maserati_250f_12cyl", "02:43.2780", "0.935"
+"McLarenTim", "ks_maserati_250f_12cyl", "02:43.7430", "1.4"
+"Smartpipe", "ks_maserati_250f_12cyl", "02:45.2710", "2.928"
+"Georgin", "ks_maserati_250f_12cyl", "02:46.2260", "3.883"
+"marzen224", "ks_maserati_250f_12cyl", "02:49.7140", "7.371"
+"Viperion_NZ", "ks_maserati_250f_12cyl", "02:50.4860", "8.143"
+
+
+Qualify consistency
+'======================
+Driver, Vehicle, Consistency,
+"Electro", "ks_maserati_250f_12cyl", "99.87%  0.218",
+"MrGrinder", "ks_maserati_250f_12cyl", "99.79%  0.345",
+"Waffles", "ks_maserati_250f_12cyl", "99.66%  0.549",
+"NotJames", "ks_maserati_250f_12cyl", "99.57%  0.702",
+"Smartpipe", "ks_maserati_250f_12cyl", "99.19%  1.343",
+"Georgin", "ks_maserati_250f_12cyl", "99.05%  1.583",
+"gunciz", "ks_maserati_250f_12cyl", "97.01%  4.851",
+"McLarenTim", "ks_maserati_250f_12cyl", "94.00%  9.822",
+"marzen224", "ks_maserati_250f_12cyl", "-",
+"Viperion_NZ", "ks_maserati_250f_12cyl", "-",
+"Crosdale", "ks_maserati_250f_12cyl", "-",
+"Trempale", "ks_maserati_250f_12cyl", "-",
+"mitski s", "ks_maserati_250f_12cyl", "-",
+"Salzeder", "ks_maserati_250f_12cyl", "-",
+"Broadcast", "ks_maserati_250f_12cyl", "-",
+
+
+
+
+Qualify sectors
+'======================
+'------------------------
+Sector 1
+'------------------------
+Driver, Vehicle, Time, Gap,
+"Electro", "ks_maserati_250f_12cyl", "58.1300", "-"
+"Waffles", "ks_maserati_250f_12cyl", "58.4600", "0.3300"
+"gunciz", "ks_maserati_250f_12cyl", "58.5050", "0.3750"
+"NotJames", "ks_maserati_250f_12cyl", "58.5900", "0.4600"
+"McLarenTim", "ks_maserati_250f_12cyl", "58.6810", "0.5510"
+"MrGrinder", "ks_maserati_250f_12cyl", "58.9740", "0.8440"
+"Smartpipe", "ks_maserati_250f_12cyl", "59.6970", "1.5670"
+"Georgin", "ks_maserati_250f_12cyl", "60.2420", "2.1120"
+"marzen224", "ks_maserati_250f_12cyl", "60.3860", "2.2560"
+"Viperion_NZ", "ks_maserati_250f_12cyl", "61.9730", "3.8430"
+'------------------------
+Sector 2
+'------------------------
+Driver, Vehicle, Time, Gap,
+"Waffles", "ks_maserati_250f_12cyl", "39.0510", "-"
+"gunciz", "ks_maserati_250f_12cyl", "39.0700", "0.0190"
+"MrGrinder", "ks_maserati_250f_12cyl", "39.1090", "0.0580"
+"Electro", "ks_maserati_250f_12cyl", "39.1780", "0.1270"
+"McLarenTim", "ks_maserati_250f_12cyl", "39.3970", "0.3460"
+"NotJames", "ks_maserati_250f_12cyl", "39.5100", "0.4590"
+"Georgin", "ks_maserati_250f_12cyl", "40.1720", "1.1210"
+"Smartpipe", "ks_maserati_250f_12cyl", "40.5130", "1.4620"
+"marzen224", "ks_maserati_250f_12cyl", "42.3810", "3.3300"
+"Viperion_NZ", "ks_maserati_250f_12cyl", "42.5530", "3.5020"
+'------------------------
+Sector 3
+'------------------------
+Driver, Vehicle, Time, Gap,
+"gunciz", "ks_maserati_250f_12cyl", "64.7680", "-"
+"MrGrinder", "ks_maserati_250f_12cyl", "64.9490", "0.1810"
+"Smartpipe", "ks_maserati_250f_12cyl", "65.0560", "0.2880"
+"NotJames", "ks_maserati_250f_12cyl", "65.1340", "0.3660"
+"McLarenTim", "ks_maserati_250f_12cyl", "65.2100", "0.4420"
+"Waffles", "ks_maserati_250f_12cyl", "65.6330", "0.8650"
+"Georgin", "ks_maserati_250f_12cyl", "65.8120", "1.0440"
+"Electro", "ks_maserati_250f_12cyl", "65.8210", "1.0530"
+"Viperion_NZ", "ks_maserati_250f_12cyl", "65.9600", "1.1920"
+"marzen224", "ks_maserati_250f_12cyl", "66.9470", "2.1790"
+
+
+Qualify incidents worth reviewing
+'======================
+Date, Incident
+
+
+
+
+
+
+
+'+++++++++++++++++++++
+Race 1
+'+++++++++++++++++++++
+
+Game:, "Assetto Corsa"
+Session:, "Race"
+Track:, "ks_monza66, full"
+Winner, "NotJames"
+Led most laps, "NotJames"
+Best lap, "Electro (02:42.2130)"
+Max laps, "8"
+Lasted laps, "8"
+Host, "Unknown"
+
+
+Race 1 result
+'======================
+Pos,    Class, Team, Vehicle, Driver, Laps, Time/Retired, Best lap, Consistency, Led, Pits,
+"1",  "", "", "ks_maserati_250f_12cyl", "NotJames", "8", "    21:58.8630", "02:42.6890", "99.54%", "6", "0", 
+"2",  "", "", "ks_maserati_250f_12cyl", "Electro", "8", "  '+00:07.6670", "02:42.2130", "98.84%", "0", "0", 
+"3",  "", "", "ks_maserati_250f_12cyl", "MrGrinder", "8", "  '+00:09.6990", "02:43.1410", "98.88%", "0", "0", 
+"4",  "", "", "ks_maserati_250f_12cyl", "Waffles", "8", "  '+00:19.5800", "02:43.6790", "98.21%", "1", "0", 
+"5",  "", "", "ks_maserati_250f_12cyl", "gunciz", "8", "  '+00:20.9890", "02:42.6300", "97.44%", "0", "0", 
+"6",  "", "", "ks_maserati_250f_12cyl", "McLarenTim", "8", "  '+00:36.5300", "02:43.1370", "99.53%", "0", "0", 
+"7",  "", "", "ks_maserati_250f_12cyl", "Georgin", "8", "  '+00:39.1340", "02:45.5970", "98.57%", "0", "0", 
+"8",  "", "", "ks_maserati_250f_12cyl", "Smartpipe", "8", "  '+00:43.5860", "02:43.6530", "96.89%", "0", "0", 
+"9",  "", "", "ks_maserati_250f_12cyl", "Viperion_NZ", "8", "  '+00:59.1350", "02:44.9510", "98.39%", "0", "0", 
+"10",  "", "", "ks_maserati_250f_12cyl", "marzen224", "8", "  '+01:50.5280", "02:51.4100", "95.91%", "0", "0", 
+"11",  "", "", "ks_maserati_250f_12cyl", "Crosdale", "0", " DNF", "-", "-", "0", "0", 
+"12",  "", "", "ks_maserati_250f_12cyl", "Trempale", "0", " DNF", "-", "-", "0", "0", 
+"13",  "", "", "ks_maserati_250f_12cyl", "mitski s", "0", " DNF", "-", "-", "0", "0", 
+"14",  "", "", "ks_maserati_250f_12cyl", "Salzeder", "0", " DNF", "-", "-", "0", "0", 
+"15",  "", "", "ks_maserati_250f_12cyl", "Broadcast", "0", " DNF", "-", "-", "0", "0", 
+
+
+Race 1 laps
+'======================
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"NotJames"
+"1 ", ks_maserati_250f_12cyl, no,"0", "02:55.5770", "70.6640", "39.3620", "65.5510",  "F:V - R:V",     
+"2 ", ks_maserati_250f_12cyl, no,"0", "02:43.5910", "59.0380", "39.2900", "65.2630",  "F:V - R:V",     
+"3 ", ks_maserati_250f_12cyl, no,"0", "02:42.6890", "58.2540", "39.2120", "65.2230",  "F:V - R:V",     
+"4 ", ks_maserati_250f_12cyl, no,"0", "02:42.7040", "58.3450", "39.1460", "65.2130",  "F:V - R:V",     
+"5 ", ks_maserati_250f_12cyl, no,"0", "02:43.7260", "58.7450", "39.6370", "65.3440",  "F:V - R:V",     
+"6 ", ks_maserati_250f_12cyl, no,"0", "02:43.5490", "58.9830", "39.3070", "65.2590",  "F:V - R:V",     
+"7 ", ks_maserati_250f_12cyl, no,"0", "02:43.6260", "59.1800", "39.3220", "65.1240",  "F:V - R:V",     
+"8 ", ks_maserati_250f_12cyl, no,"0", "02:43.4260", "58.8230", "39.3660", "65.2370",  "F:V - R:V",     
+Average,,,"02:44.8611", "60.2540", "39.3303", "65.2768"
+Best possible,,, "02:42.5240", "58.2540", "39.1460", "65.1240"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Electro"
+"1 ", ks_maserati_250f_12cyl, no,"0", "02:59.7410", "69.9680", "43.3270", "66.4460",  "F:V - R:V",     
+"2 ", ks_maserati_250f_12cyl, no,"0", "02:44.2170", "59.1410", "38.8540", "66.2220",  "F:V - R:V",     
+"3 ", ks_maserati_250f_12cyl, no,"0", "02:44.5510", "58.6080", "39.1810", "66.7620",  "F:V - R:V",     
+"4 ", ks_maserati_250f_12cyl, no,"0", "02:45.2090", "59.5770", "39.3740", "66.2580",  "F:V - R:V",     
+"5 ", ks_maserati_250f_12cyl, no,"0", "02:42.6550", "58.5570", "38.8840", "65.2140",  "F:V - R:V",     
+"6 ", ks_maserati_250f_12cyl, no,"0", "02:42.2130", "58.1140", "38.9250", "65.1740",  "F:V - R:V",     
+"7 ", ks_maserati_250f_12cyl, no,"0", "02:43.9340", "58.8150", "39.7610", "65.3580",  "F:V - R:V",     
+"8 ", ks_maserati_250f_12cyl, no,"0", "02:43.9960", "59.3210", "39.3480", "65.3270",  "F:V - R:V",     
+Average,,,"02:45.8145", "60.2626", "39.7068", "65.8451"
+Best possible,,, "02:42.1420", "58.1140", "38.8540", "65.1740"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"MrGrinder"
+"1 ", ks_maserati_250f_12cyl, no,"0", "02:55.6740", "71.3100", "39.3750", "64.9890",  "F:V - R:V",     
+"2 ", ks_maserati_250f_12cyl, no,"0", "02:50.2520", "59.0930", "45.5940", "65.5650",  "F:V - R:V",     
+"3 ", ks_maserati_250f_12cyl, no,"0", "02:43.1410", "58.7860", "39.0010", "65.3540",  "F:V - R:V",     
+"4 ", ks_maserati_250f_12cyl, no,"0", "02:43.7330", "59.2070", "39.4120", "65.1140",  "F:V - R:V",     
+"5 ", ks_maserati_250f_12cyl, no,"0", "02:44.8060", "60.2580", "39.3290", "65.2190",  "F:V - R:V",     
+"6 ", ks_maserati_250f_12cyl, no,"0", "02:43.2750", "58.9190", "39.2490", "65.1070",  "F:V - R:V",     
+"7 ", ks_maserati_250f_12cyl, no,"0", "02:43.6010", "59.2920", "39.0960", "65.2130",  "F:V - R:V",     
+"8 ", ks_maserati_250f_12cyl, no,"0", "02:44.1260", "59.2500", "39.7660", "65.1100",  "F:V - R:V",     
+Average,,,"02:46.0761", "60.7644", "40.1028", "65.2089"
+Best possible,,, "02:42.7760", "58.7860", "39.0010", "64.9890"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Waffles"
+"1 ", ks_maserati_250f_12cyl, no,"0", "02:55.1440", "69.6690", "39.7530", "65.7220",  "F:V - R:V",     
+"2 ", ks_maserati_250f_12cyl, no,"0", "02:57.8590", "71.6770", "40.8370", "65.3450",  "F:V - R:V",     
+"3 ", ks_maserati_250f_12cyl, no,"0", "02:44.2370", "59.5860", "39.3210", "65.3300",  "F:V - R:V",     
+"4 ", ks_maserati_250f_12cyl, no,"0", "02:44.1000", "59.7670", "38.9520", "65.3810",  "F:V - R:V",     
+"5 ", ks_maserati_250f_12cyl, no,"0", "02:44.8080", "59.0980", "40.4590", "65.2510",  "F:V - R:V",     
+"6 ", ks_maserati_250f_12cyl, no,"0", "02:44.1010", "59.1110", "39.6950", "65.2950",  "F:V - R:V",     
+"7 ", ks_maserati_250f_12cyl, no,"0", "02:43.6790", "58.9380", "39.5820", "65.1590",  "F:V - R:V",     
+"8 ", ks_maserati_250f_12cyl, no,"0", "02:44.5040", "59.2410", "39.5540", "65.7090",  "F:V - R:V",     
+Average,,,"02:47.3040", "62.1359", "39.7691", "65.3990"
+Best possible,,, "02:43.0490", "58.9380", "38.9520", "65.1590"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"gunciz"
+"1 ", ks_maserati_250f_12cyl, no,"0", "02:56.5290", "72.0740", "39.2900", "65.1650",  "F:V - R:V",     
+"2 ", ks_maserati_250f_12cyl, no,"0", "02:43.4130", "59.4180", "38.8620", "65.1330",  "F:V - R:V",     
+"3 ", ks_maserati_250f_12cyl, no,"0", "02:42.6300", "58.3780", "39.2400", "65.0120",  "F:V - R:V",     
+"4 ", ks_maserati_250f_12cyl, no,"0", "02:43.2860", "58.9050", "39.4060", "64.9750",  "F:V - R:V",     
+"5 ", ks_maserati_250f_12cyl, no,"0", "02:42.7310", "58.6280", "39.2580", "64.8450",  "F:V - R:V",     
+"6 ", ks_maserati_250f_12cyl, no,"0", "03:03.5220", "59.0690", "39.2850", "85.1680",  "F:V - R:V",     
+"7 ", ks_maserati_250f_12cyl, no,"0", "02:43.5570", "59.3090", "39.4020", "64.8460",  "F:V - R:V",     
+"8 ", ks_maserati_250f_12cyl, no,"0", "02:44.2040", "58.2520", "39.1500", "66.8020",  "F:V - R:V",     
+Average,,,"02:47.4840", "60.5041", "39.2366", "67.7433"
+Best possible,,, "02:41.9590", "58.2520", "38.8620", "64.8450"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"McLarenTim"
+"1 ", ks_maserati_250f_12cyl, no,"0", "03:05.2920", "72.5350", "43.5330", "69.2240",  "F:V - R:V",     
+"2 ", ks_maserati_250f_12cyl, no,"0", "03:07.4790", "59.9620", "39.6860", "87.8310",  "F:V - R:V",     
+"3 ", ks_maserati_250f_12cyl, no,"0", "02:44.1320", "59.2600", "39.6680", "65.2040",  "F:V - R:V",     
+"4 ", ks_maserati_250f_12cyl, no,"0", "02:43.1370", "58.8710", "39.2270", "65.0390",  "F:V - R:V",     
+"5 ", ks_maserati_250f_12cyl, no,"0", "02:43.4980", "59.1740", "39.3760", "64.9480",  "F:V - R:V",     
+"6 ", ks_maserati_250f_12cyl, no,"0", "02:43.1940", "58.7850", "39.4510", "64.9580",  "F:V - R:V",     
+"7 ", ks_maserati_250f_12cyl, no,"0", "02:44.0240", "59.4170", "39.6910", "64.9160",  "F:V - R:V",     
+"8 ", ks_maserati_250f_12cyl, no,"0", "02:44.6620", "59.3040", "40.3650", "64.9930",  "F:V - R:V",     
+Average,,,"02:49.4272", "60.9135", "40.1246", "68.3891"
+Best possible,,, "02:42.9280", "58.7850", "39.2270", "64.9160"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Georgin"
+"1 ", ks_maserati_250f_12cyl, no,"0", "03:04.6430", "75.4470", "41.3900", "67.8060",  "F:V - R:V",     
+"2 ", ks_maserati_250f_12cyl, no,"0", "02:48.1540", "61.2290", "39.6230", "67.3020",  "F:V - R:V",     
+"3 ", ks_maserati_250f_12cyl, no,"0", "02:50.9240", "60.5570", "44.8020", "65.5650",  "F:V - R:V",     
+"4 ", ks_maserati_250f_12cyl, no,"0", "02:46.3760", "60.8250", "40.1260", "65.4250",  "F:V - R:V",     
+"5 ", ks_maserati_250f_12cyl, no,"0", "02:46.4620", "60.0730", "40.9680", "65.4210",  "F:V - R:V",     
+"6 ", ks_maserati_250f_12cyl, no,"0", "02:45.5970", "60.0760", "40.4460", "65.0750",  "F:V - R:V",     
+"7 ", ks_maserati_250f_12cyl, no,"0", "02:47.0670", "60.2900", "41.2300", "65.5470",  "F:V - R:V",     
+"8 ", ks_maserati_250f_12cyl, no,"0", "02:48.7900", "60.2410", "43.1600", "65.3890",  "F:V - R:V",     
+Average,,,"02:49.7517", "62.3423", "41.4681", "65.9413"
+Best possible,,, "02:44.7710", "60.0730", "39.6230", "65.0750"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Smartpipe"
+"1 ", ks_maserati_250f_12cyl, no,"0", "03:06.3590", "75.3670", "40.7470", "70.2450",  "F:V - R:V",     
+"2 ", ks_maserati_250f_12cyl, no,"0", "03:03.7650", "78.3650", "39.9650", "65.4350",  "F:V - R:V",     
+"3 ", ks_maserati_250f_12cyl, no,"0", "02:44.2450", "59.0710", "39.9920", "65.1820",  "F:V - R:V",     
+"4 ", ks_maserati_250f_12cyl, no,"0", "02:46.5770", "59.0640", "42.1420", "65.3710",  "F:V - R:V",     
+"5 ", ks_maserati_250f_12cyl, no,"0", "02:47.9200", "59.6590", "42.9120", "65.3490",  "F:V - R:V",     
+"6 ", ks_maserati_250f_12cyl, no,"0", "02:45.0430", "59.7480", "40.1130", "65.1820",  "F:V - R:V",     
+"7 ", ks_maserati_250f_12cyl, no,"0", "02:43.6530", "59.4510", "39.2670", "64.9350",  "F:V - R:V",     
+"8 ", ks_maserati_250f_12cyl, no,"0", "02:44.8980", "60.1280", "39.7620", "65.0080",  "F:V - R:V",     
+Average,,,"02:50.3075", "63.8566", "40.6125", "65.8384"
+Best possible,,, "02:43.2660", "59.0640", "39.2670", "64.9350"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Viperion_NZ"
+"1 ", ks_maserati_250f_12cyl, no,"0", "03:02.3530", "74.6810", "41.1400", "66.5320",  "F:V - R:V",     
+"2 ", ks_maserati_250f_12cyl, no,"0", "03:12.7270", "60.6210", "41.0170", "91.0890",  "F:V - R:V",     
+"3 ", ks_maserati_250f_12cyl, no,"0", "02:47.4140", "60.2740", "41.5040", "65.6360",  "F:V - R:V",     
+"4 ", ks_maserati_250f_12cyl, no,"0", "02:48.5540", "62.0210", "40.8200", "65.7130",  "F:V - R:V",     
+"5 ", ks_maserati_250f_12cyl, no,"0", "02:49.1620", "61.1980", "42.2820", "65.6820",  "F:V - R:V",     
+"6 ", ks_maserati_250f_12cyl, no,"0", "02:46.3610", "60.7550", "40.1450", "65.4610",  "F:V - R:V",     
+"7 ", ks_maserati_250f_12cyl, no,"0", "02:46.5030", "60.6990", "40.2300", "65.5740",  "F:V - R:V",     
+"8 ", ks_maserati_250f_12cyl, no,"0", "02:44.9510", "59.8220", "39.8160", "65.3130",  "F:V - R:V",     
+Average,,,"02:52.2532", "62.5089", "40.8693", "68.8750"
+Best possible,,, "02:44.9510", "59.8220", "39.8160", "65.3130"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"marzen224"
+"1 ", ks_maserati_250f_12cyl, no,"0", "03:07.4670", "76.5960", "42.1960", "68.6750",  "F:V - R:V",     
+"2 ", ks_maserati_250f_12cyl, no,"0", "02:54.4470", "62.8740", "44.9320", "66.6410",  "F:V - R:V",     
+"3 ", ks_maserati_250f_12cyl, no,"0", "02:55.2430", "62.3330", "46.0360", "66.8740",  "F:V - R:V",     
+"4 ", ks_maserati_250f_12cyl, no,"0", "02:53.2870", "60.4990", "46.8130", "65.9750",  "F:V - R:V",     
+"5 ", ks_maserati_250f_12cyl, no,"0", "02:51.4100", "61.8530", "43.6420", "65.9150",  "F:V - R:V",     
+"6 ", ks_maserati_250f_12cyl, no,"0", "02:54.2600", "65.2700", "41.3960", "67.5940",  "F:V - R:V",     
+"7 ", ks_maserati_250f_12cyl, no,"0", "03:05.1050", "61.5980", "56.5650", "66.9420",  "F:V - R:V",     
+"8 ", ks_maserati_250f_12cyl, no,"0", "03:08.2010", "67.1870", "50.7060", "70.3080",  "F:V - R:V",     
+Average,,,"02:58.6776", "64.7763", "46.5358", "67.3655"
+Best possible,,, "02:47.8100", "60.4990", "41.3960", "65.9150"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Crosdale"
+No laps for this driver
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Trempale"
+No laps for this driver
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"mitski s"
+No laps for this driver
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Salzeder"
+No laps for this driver
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Broadcast"
+No laps for this driver
+
+
+Race 1 best laps
+'======================
+'------------------------
+Overall top (20)
+'------------------------
+Driver, Vehicle, Time, Gap,
+"Electro", "ks_maserati_250f_12cyl", "02:42.2130", ""
+"gunciz", "ks_maserati_250f_12cyl", "02:42.6300", "0.417"
+"Electro", "ks_maserati_250f_12cyl", "02:42.6550", "0.442"
+"NotJames", "ks_maserati_250f_12cyl", "02:42.6890", "0.476"
+"NotJames", "ks_maserati_250f_12cyl", "02:42.7040", "0.491"
+"gunciz", "ks_maserati_250f_12cyl", "02:42.7310", "0.518"
+"McLarenTim", "ks_maserati_250f_12cyl", "02:43.1370", "0.924"
+"MrGrinder", "ks_maserati_250f_12cyl", "02:43.1410", "0.928"
+"McLarenTim", "ks_maserati_250f_12cyl", "02:43.1940", "0.981"
+"MrGrinder", "ks_maserati_250f_12cyl", "02:43.2750", "1.062"
+"gunciz", "ks_maserati_250f_12cyl", "02:43.2860", "1.073"
+"gunciz", "ks_maserati_250f_12cyl", "02:43.4130", "1.2"
+"NotJames", "ks_maserati_250f_12cyl", "02:43.4260", "1.213"
+"McLarenTim", "ks_maserati_250f_12cyl", "02:43.4980", "1.285"
+"NotJames", "ks_maserati_250f_12cyl", "02:43.5490", "1.336"
+"gunciz", "ks_maserati_250f_12cyl", "02:43.5570", "1.344"
+"NotJames", "ks_maserati_250f_12cyl", "02:43.5910", "1.378"
+"MrGrinder", "ks_maserati_250f_12cyl", "02:43.6010", "1.388"
+"NotJames", "ks_maserati_250f_12cyl", "02:43.6260", "1.413"
+"Smartpipe", "ks_maserati_250f_12cyl", "02:43.6530", "1.44"
+
+
+'------------------------
+Per driver
+'------------------------
+Driver, Vehicle, Time, Gap,
+"Electro", "ks_maserati_250f_12cyl", "02:42.2130", ""
+"gunciz", "ks_maserati_250f_12cyl", "02:42.6300", "0.417"
+"NotJames", "ks_maserati_250f_12cyl", "02:42.6890", "0.476"
+"McLarenTim", "ks_maserati_250f_12cyl", "02:43.1370", "0.924"
+"MrGrinder", "ks_maserati_250f_12cyl", "02:43.1410", "0.928"
+"Smartpipe", "ks_maserati_250f_12cyl", "02:43.6530", "1.44"
+"Waffles", "ks_maserati_250f_12cyl", "02:43.6790", "1.466"
+"Viperion_NZ", "ks_maserati_250f_12cyl", "02:44.9510", "2.738"
+"Georgin", "ks_maserati_250f_12cyl", "02:45.5970", "3.384"
+"marzen224", "ks_maserati_250f_12cyl", "02:51.4100", "9.197"
+
+
+Race 1 consistency
+'======================
+Driver, Vehicle, Consistency,
+"NotJames", "ks_maserati_250f_12cyl", "99.54%  0.748",
+"McLarenTim", "ks_maserati_250f_12cyl", "99.53%  0.765",
+"MrGrinder", "ks_maserati_250f_12cyl", "98.88%  1.8245",
+"Electro", "ks_maserati_250f_12cyl", "98.84%  1.8807",
+"Georgin", "ks_maserati_250f_12cyl", "98.57%  2.3652",
+"Viperion_NZ", "ks_maserati_250f_12cyl", "98.39%  2.6478",
+"Waffles", "ks_maserati_250f_12cyl", "98.21%  2.9225",
+"gunciz", "ks_maserati_250f_12cyl", "97.44%  4.1555",
+"Smartpipe", "ks_maserati_250f_12cyl", "96.89%  5.0883",
+"marzen224", "ks_maserati_250f_12cyl", "95.91%  7.0138",
+"Crosdale", "ks_maserati_250f_12cyl", "-",
+"Trempale", "ks_maserati_250f_12cyl", "-",
+"mitski s", "ks_maserati_250f_12cyl", "-",
+"Salzeder", "ks_maserati_250f_12cyl", "-",
+"Broadcast", "ks_maserati_250f_12cyl", "-",
+
+
+
+
+Race 1 sectors
+'======================
+'------------------------
+Sector 1
+'------------------------
+Driver, Vehicle, Time, Gap,
+"Electro", "ks_maserati_250f_12cyl", "58.1140", "-"
+"gunciz", "ks_maserati_250f_12cyl", "58.2520", "0.1380"
+"NotJames", "ks_maserati_250f_12cyl", "58.2540", "0.1400"
+"McLarenTim", "ks_maserati_250f_12cyl", "58.7850", "0.6710"
+"MrGrinder", "ks_maserati_250f_12cyl", "58.7860", "0.6720"
+"Waffles", "ks_maserati_250f_12cyl", "58.9380", "0.8240"
+"Smartpipe", "ks_maserati_250f_12cyl", "59.0640", "0.9500"
+"Viperion_NZ", "ks_maserati_250f_12cyl", "59.8220", "1.7080"
+"Georgin", "ks_maserati_250f_12cyl", "60.0730", "1.9590"
+"marzen224", "ks_maserati_250f_12cyl", "60.4990", "2.3850"
+'------------------------
+Sector 2
+'------------------------
+Driver, Vehicle, Time, Gap,
+"Electro", "ks_maserati_250f_12cyl", "38.8540", "-"
+"gunciz", "ks_maserati_250f_12cyl", "38.8620", "0.0080"
+"Waffles", "ks_maserati_250f_12cyl", "38.9520", "0.0980"
+"MrGrinder", "ks_maserati_250f_12cyl", "39.0010", "0.1470"
+"NotJames", "ks_maserati_250f_12cyl", "39.1460", "0.2920"
+"McLarenTim", "ks_maserati_250f_12cyl", "39.2270", "0.3730"
+"Smartpipe", "ks_maserati_250f_12cyl", "39.2670", "0.4130"
+"Georgin", "ks_maserati_250f_12cyl", "39.6230", "0.7690"
+"Viperion_NZ", "ks_maserati_250f_12cyl", "39.8160", "0.9620"
+"marzen224", "ks_maserati_250f_12cyl", "41.3960", "2.5420"
+'------------------------
+Sector 3
+'------------------------
+Driver, Vehicle, Time, Gap,
+"gunciz", "ks_maserati_250f_12cyl", "64.8450", "-"
+"McLarenTim", "ks_maserati_250f_12cyl", "64.9160", "0.0710"
+"Smartpipe", "ks_maserati_250f_12cyl", "64.9350", "0.0900"
+"MrGrinder", "ks_maserati_250f_12cyl", "64.9890", "0.1440"
+"Georgin", "ks_maserati_250f_12cyl", "65.0750", "0.2300"
+"NotJames", "ks_maserati_250f_12cyl", "65.1240", "0.2790"
+"Waffles", "ks_maserati_250f_12cyl", "65.1590", "0.3140"
+"Electro", "ks_maserati_250f_12cyl", "65.1740", "0.3290"
+"Viperion_NZ", "ks_maserati_250f_12cyl", "65.3130", "0.4680"
+"marzen224", "ks_maserati_250f_12cyl", "65.9150", "1.0700"
+
+
+Race 1 incidents worth reviewing
+'======================
+Date, Incident
+
+
+
+
+
+
+
+'+++++++++++++++++++++
+Race 2
+'+++++++++++++++++++++
+
+Game:, "Assetto Corsa"
+Session:, "Race"
+Track:, "ks_monza66, full"
+Winner, "Electro"
+Led most laps, "Smartpipe"
+Best lap, "Electro (02:42.0340)"
+Max laps, "8"
+Lasted laps, "8"
+Host, "Unknown"
+
+
+Race 2 result
+'======================
+Pos,    Class, Team, Vehicle, Driver, Laps, Time/Retired, Best lap, Consistency, Led, Pits,
+"1",  "", "", "ks_maserati_250f_12cyl", "Electro", "8", "    22:02.5340", "02:42.0340", "98.96%", "0", "0", 
+"2",  "", "", "ks_maserati_250f_12cyl", "McLarenTim", "8", "  '+00:03.8030", "02:42.3570", "98.55%", "0", "0", 
+"3",  "", "", "ks_maserati_250f_12cyl", "NotJames", "8", "  '+00:06.9590", "02:42.7800", "99.28%", "1", "0", 
+"4",  "", "", "ks_maserati_250f_12cyl", "Waffles", "8", "  '+00:07.5190", "02:43.5290", "99.03%", "0", "0", 
+"5",  "", "", "ks_maserati_250f_12cyl", "gunciz", "8", "  '+00:27.1310", "02:42.9660", "98.49%", "0", "0", 
+"6",  "", "", "ks_maserati_250f_12cyl", "Georgin", "8", "  '+00:44.6780", "02:43.9220", "97.62%", "0", "0", 
+"7",  "", "", "ks_maserati_250f_12cyl", "MrGrinder", "8", "  '+02:35.4050", "02:43.2270", "97.36%", "0", "0", 
+"8",  "", "", "ks_maserati_250f_12cyl", "Smartpipe", "7", "  '+-00:01.7370", "02:42.9470", "99.48%", "6", "0", 
+"9",  "", "", "ks_maserati_250f_12cyl", "marzen224", "6", "  '+01:18.6650", "02:47.2710", "96.31%", "0", "0", 
+"10",  "", "", "ks_maserati_250f_12cyl", "Viperion_NZ", "0", " DNF", "-", "-", "0", "0", 
+"11",  "", "", "ks_maserati_250f_12cyl", "Broadcast", "0", " DNF", "-", "-", "0", "0", 
+
+
+Race 2 laps
+'======================
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Electro"
+"1 ", ks_maserati_250f_12cyl, no,"0", "02:58.1860", "72.6120", "40.0590", "65.5150",  "F:V - R:V",     
+"2 ", ks_maserati_250f_12cyl, no,"0", "02:44.0760", "59.3920", "39.0820", "65.6020",  "F:V - R:V",     
+"3 ", ks_maserati_250f_12cyl, no,"0", "02:43.4480", "58.9050", "39.1810", "65.3620",  "F:V - R:V",     
+"4 ", ks_maserati_250f_12cyl, no,"0", "02:42.0340", "57.6030", "39.0910", "65.3400",  "F:V - R:V",     
+"5 ", ks_maserati_250f_12cyl, no,"0", "02:43.3330", "57.9790", "39.7390", "65.6150",  "F:V - R:V",     
+"6 ", ks_maserati_250f_12cyl, no,"0", "02:42.6720", "58.1770", "39.0290", "65.4660",  "F:V - R:V",     
+"7 ", ks_maserati_250f_12cyl, no,"0", "02:44.3350", "59.0480", "39.3130", "65.9740",  "F:V - R:V",     
+"8 ", ks_maserati_250f_12cyl, no,"0", "02:44.4350", "59.6840", "39.1910", "65.5600",  "F:V - R:V",     
+Average,,,"02:45.3149", "60.4250", "39.3356", "65.5543"
+Best possible,,, "02:41.9720", "57.6030", "39.0290", "65.3400"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"McLarenTim"
+"1 ", ks_maserati_250f_12cyl, no,"0", "02:55.7140", "69.5270", "40.7660", "65.4210",  "F:V - R:V",     
+"2 ", ks_maserati_250f_12cyl, no,"0", "02:45.7900", "58.9640", "40.9190", "65.9070",  "F:V - R:V",     
+"3 ", ks_maserati_250f_12cyl, no,"0", "02:44.1790", "58.4250", "40.3560", "65.3980",  "F:V - R:V",     
+"4 ", ks_maserati_250f_12cyl, no,"0", "02:42.9960", "58.5640", "39.4380", "64.9940",  "F:V - R:V",     
+"5 ", ks_maserati_250f_12cyl, no,"0", "02:43.7050", "58.7160", "39.6040", "65.3850",  "F:V - R:V",     
+"6 ", ks_maserati_250f_12cyl, no,"0", "02:42.3570", "58.2810", "39.2040", "64.8720",  "F:V - R:V",     
+"7 ", ks_maserati_250f_12cyl, no,"0", "02:43.4840", "59.0260", "39.4250", "65.0330",  "F:V - R:V",     
+"8 ", ks_maserati_250f_12cyl, no,"0", "02:48.1360", "64.1090", "39.2950", "64.7320",  "F:V - R:V",     
+Average,,,"02:45.7952", "60.7015", "39.8759", "65.2178"
+Best possible,,, "02:42.2170", "58.2810", "39.2040", "64.7320"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"NotJames"
+"1 ", ks_maserati_250f_12cyl, no,"0", "02:58.0660", "72.8970", "39.3470", "65.8220",  "F:V - R:V",     
+"2 ", ks_maserati_250f_12cyl, no,"0", "02:42.7800", "58.2310", "39.1360", "65.4130",  "F:V - R:V",     
+"3 ", ks_maserati_250f_12cyl, no,"0", "02:43.0340", "58.7200", "39.0470", "65.2670",  "F:V - R:V",     
+"4 ", ks_maserati_250f_12cyl, no,"0", "02:43.2180", "58.3900", "39.4790", "65.3490",  "F:V - R:V",     
+"5 ", ks_maserati_250f_12cyl, no,"0", "02:43.0880", "58.5220", "39.3520", "65.2140",  "F:V - R:V",     
+"6 ", ks_maserati_250f_12cyl, no,"0", "02:42.8030", "58.4220", "39.0820", "65.2990",  "F:V - R:V",     
+"7 ", ks_maserati_250f_12cyl, no,"0", "02:44.7030", "59.4920", "39.4750", "65.7360",  "F:V - R:V",     
+"8 ", ks_maserati_250f_12cyl, no,"0", "02:46.8190", "59.4810", "41.0130", "66.3250",  "F:V - R:V",     
+Average,,,"02:45.5639", "60.5194", "39.4914", "65.5531"
+Best possible,,, "02:42.4920", "58.2310", "39.0470", "65.2140"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Waffles"
+"1 ", ks_maserati_250f_12cyl, no,"0", "02:55.8080", "70.3460", "39.4650", "65.9970",  "F:V - R:V",     
+"2 ", ks_maserati_250f_12cyl, no,"0", "02:49.2520", "59.0200", "40.2340", "69.9980",  "F:V - R:V",     
+"3 ", ks_maserati_250f_12cyl, no,"0", "02:44.0850", "58.8300", "39.5180", "65.7370",  "F:V - R:V",     
+"4 ", ks_maserati_250f_12cyl, no,"0", "02:43.5290", "58.5360", "39.2930", "65.7000",  "F:V - R:V",     
+"5 ", ks_maserati_250f_12cyl, no,"0", "02:45.2690", "58.8000", "40.5980", "65.8710",  "F:V - R:V",     
+"6 ", ks_maserati_250f_12cyl, no,"0", "02:44.0000", "58.6650", "39.7250", "65.6100",  "F:V - R:V",     
+"7 ", ks_maserati_250f_12cyl, no,"0", "02:44.0460", "58.9350", "39.5370", "65.5740",  "F:V - R:V",     
+"8 ", ks_maserati_250f_12cyl, no,"0", "02:44.0600", "58.8510", "39.3920", "65.8170",  "F:V - R:V",     
+Average,,,"02:46.2562", "60.2479", "39.7203", "66.2880"
+Best possible,,, "02:43.4030", "58.5360", "39.2930", "65.5740"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"gunciz"
+"1 ", ks_maserati_250f_12cyl, no,"0", "03:14.1800", "75.2100", "53.7200", "65.2500",  "F:V - R:V",     
+"2 ", ks_maserati_250f_12cyl, no,"0", "02:42.9660", "58.7720", "39.0960", "65.0980",  "F:V - R:V",     
+"3 ", ks_maserati_250f_12cyl, no,"0", "02:47.9170", "63.8770", "38.9210", "65.1190",  "F:V - R:V",     
+"4 ", ks_maserati_250f_12cyl, no,"0", "02:46.1370", "58.8020", "40.4650", "66.8700",  "F:V - R:V",     
+"5 ", ks_maserati_250f_12cyl, no,"0", "02:43.2870", "58.8370", "39.2760", "65.1740",  "F:V - R:V",     
+"6 ", ks_maserati_250f_12cyl, no,"0", "02:43.9350", "59.3630", "39.5460", "65.0260",  "F:V - R:V",     
+"7 ", ks_maserati_250f_12cyl, no,"0", "02:44.0610", "59.6150", "39.6180", "64.8280",  "F:V - R:V",     
+"8 ", ks_maserati_250f_12cyl, no,"0", "02:47.1930", "62.1530", "39.8120", "65.2280",  "F:V - R:V",     
+Average,,,"02:48.7095", "62.0786", "41.3068", "65.3241"
+Best possible,,, "02:42.5210", "58.7720", "38.9210", "64.8280"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Georgin"
+"1 ", ks_maserati_250f_12cyl, no,"0", "03:16.3510", "74.8290", "55.4850", "66.0370",  "F:V - R:V",     
+"2 ", ks_maserati_250f_12cyl, no,"0", "02:45.0200", "59.5490", "39.7260", "65.7450",  "F:V - R:V",     
+"3 ", ks_maserati_250f_12cyl, no,"0", "02:45.6610", "60.3300", "39.7520", "65.5790",  "F:V - R:V",     
+"4 ", ks_maserati_250f_12cyl, no,"0", "02:44.5570", "59.7070", "39.7310", "65.1190",  "F:V - R:V",     
+"5 ", ks_maserati_250f_12cyl, no,"0", "02:43.9220", "59.3690", "39.4120", "65.1410",  "F:V - R:V",     
+"6 ", ks_maserati_250f_12cyl, no,"0", "02:49.3870", "62.0570", "41.9760", "65.3540",  "F:V - R:V",     
+"7 ", ks_maserati_250f_12cyl, no,"0", "02:54.6960", "59.9000", "48.3400", "66.4560",  "F:V - R:V",     
+"8 ", ks_maserati_250f_12cyl, no,"0", "02:47.6420", "62.1670", "40.1220", "65.3530",  "F:V - R:V",     
+Average,,,"02:50.9045", "62.2385", "43.0680", "65.5980"
+Best possible,,, "02:43.9000", "59.3690", "39.4120", "65.1190"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"MrGrinder"
+"1 ", ks_maserati_250f_12cyl, no,"0", "03:08.2580", "81.9140", "40.9780", "65.3660",  "F:V - R:V",     
+"2 ", ks_maserati_250f_12cyl, no,"0", "02:45.9360", "61.1120", "39.5730", "65.2510",  "F:V - R:V",     
+"3 ", ks_maserati_250f_12cyl, no,"0", "02:56.3990", "65.6540", "45.2710", "65.4740",  "F:V - R:V",     
+"4 ", ks_maserati_250f_12cyl, no,"0", "02:43.2270", "59.0690", "39.1100", "65.0480",  "F:V - R:V",     
+"5 ", ks_maserati_250f_12cyl, no,"0", "02:43.6550", "59.4170", "39.0960", "65.1420",  "F:V - R:V",     
+"6 ", ks_maserati_250f_12cyl, no,"0", "02:44.4500", "59.5020", "39.9320", "65.0160",  "F:V - R:V",     
+"7 ", ks_maserati_250f_12cyl, no,"0", "02:44.7610", "59.4570", "39.8420", "65.4620",  "F:V - R:V",     
+"8 ", ks_maserati_250f_12cyl, no,"0", "02:49.9880", "59.7560", "44.8470", "65.3850",  "F:V - R:V",     
+Average,,,"02:49.5842", "63.2351", "41.0811", "65.2680"
+Best possible,,, "02:43.1810", "59.0690", "39.0960", "65.0160"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Smartpipe"
+"1 ", ks_maserati_250f_12cyl, no,"0", "02:54.4860", "69.2400", "39.8960", "65.3500",  "F:V - R:V",     
+"2 ", ks_maserati_250f_12cyl, no,"0", "02:43.1970", "58.7690", "39.2990", "65.1290",  "F:V - R:V",     
+"3 ", ks_maserati_250f_12cyl, no,"0", "02:43.8940", "58.7160", "40.0580", "65.1200",  "F:V - R:V",     
+"4 ", ks_maserati_250f_12cyl, no,"0", "02:44.2730", "59.4600", "39.7250", "65.0880",  "F:V - R:V",     
+"5 ", ks_maserati_250f_12cyl, no,"0", "02:42.9470", "58.7320", "39.1680", "65.0470",  "F:V - R:V",     
+"6 ", ks_maserati_250f_12cyl, no,"0", "02:43.4920", "59.0250", "39.3380", "65.1290",  "F:V - R:V",     
+"7 ", ks_maserati_250f_12cyl, no,"0", "02:44.0760", "59.1980", "39.8350", "65.0430",  "F:V - R:V",     
+Average,,,"02:45.1950", "60.4486", "39.6170", "65.1294"
+Best possible,,, "02:42.9270", "58.7160", "39.1680", "65.0430"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"marzen224"
+"1 ", ks_maserati_250f_12cyl, no,"0", "03:31.3790", "76.5500", "68.3780", "66.4510",  "F:V - R:V",     
+"2 ", ks_maserati_250f_12cyl, no,"0", "02:57.3070", "59.2230", "51.7770", "66.3070",  "F:V - R:V",     
+"3 ", ks_maserati_250f_12cyl, no,"0", "02:47.5000", "60.4860", "40.9500", "66.0640",  "F:V - R:V",     
+"4 ", ks_maserati_250f_12cyl, no,"0", "02:51.4240", "58.9290", "46.3860", "66.1090",  "F:V - R:V",     
+"5 ", ks_maserati_250f_12cyl, no,"0", "02:47.2710", "60.3690", "40.9720", "65.9300",  "F:V - R:V",     
+"6 ", ks_maserati_250f_12cyl, no,"0", "02:57.5610", "60.8800", "47.0110", "69.6700",  "F:V - R:V",     
+Average,,,"02:58.7404", "62.7395", "49.2457", "66.7552"
+Best possible,,, "02:45.8090", "58.9290", "40.9500", "65.9300"
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Viperion_NZ"
+No laps for this driver
+
+Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
+"Broadcast"
+No laps for this driver
+
+
+Race 2 best laps
+'======================
+'------------------------
+Overall top (20)
+'------------------------
+Driver, Vehicle, Time, Gap,
+"Electro", "ks_maserati_250f_12cyl", "02:42.0340", ""
+"McLarenTim", "ks_maserati_250f_12cyl", "02:42.3570", "0.323"
+"Electro", "ks_maserati_250f_12cyl", "02:42.6720", "0.638"
+"NotJames", "ks_maserati_250f_12cyl", "02:42.7800", "0.746"
+"NotJames", "ks_maserati_250f_12cyl", "02:42.8030", "0.769"
+"Smartpipe", "ks_maserati_250f_12cyl", "02:42.9470", "0.913"
+"gunciz", "ks_maserati_250f_12cyl", "02:42.9660", "0.932"
+"McLarenTim", "ks_maserati_250f_12cyl", "02:42.9960", "0.962"
+"NotJames", "ks_maserati_250f_12cyl", "02:43.0340", "1"
+"NotJames", "ks_maserati_250f_12cyl", "02:43.0880", "1.054"
+"Smartpipe", "ks_maserati_250f_12cyl", "02:43.1970", "1.163"
+"NotJames", "ks_maserati_250f_12cyl", "02:43.2180", "1.184"
+"MrGrinder", "ks_maserati_250f_12cyl", "02:43.2270", "1.193"
+"gunciz", "ks_maserati_250f_12cyl", "02:43.2870", "1.253"
+"Electro", "ks_maserati_250f_12cyl", "02:43.3330", "1.299"
+"Electro", "ks_maserati_250f_12cyl", "02:43.4480", "1.414"
+"McLarenTim", "ks_maserati_250f_12cyl", "02:43.4840", "1.45"
+"Smartpipe", "ks_maserati_250f_12cyl", "02:43.4920", "1.458"
+"Waffles", "ks_maserati_250f_12cyl", "02:43.5290", "1.495"
+"MrGrinder", "ks_maserati_250f_12cyl", "02:43.6550", "1.621"
+
+
+'------------------------
+Per driver
+'------------------------
+Driver, Vehicle, Time, Gap,
+"Electro", "ks_maserati_250f_12cyl", "02:42.0340", ""
+"McLarenTim", "ks_maserati_250f_12cyl", "02:42.3570", "0.323"
+"NotJames", "ks_maserati_250f_12cyl", "02:42.7800", "0.746"
+"Smartpipe", "ks_maserati_250f_12cyl", "02:42.9470", "0.913"
+"gunciz", "ks_maserati_250f_12cyl", "02:42.9660", "0.932"
+"MrGrinder", "ks_maserati_250f_12cyl", "02:43.2270", "1.193"
+"Waffles", "ks_maserati_250f_12cyl", "02:43.5290", "1.495"
+"Georgin", "ks_maserati_250f_12cyl", "02:43.9220", "1.888"
+"marzen224", "ks_maserati_250f_12cyl", "02:47.2710", "5.237"
+
+
+Race 2 consistency
+'======================
+Driver, Vehicle, Consistency,
+"Smartpipe", "ks_maserati_250f_12cyl", "99.48%  0.8394",
+"NotJames", "ks_maserati_250f_12cyl", "99.28%  1.1642",
+"Waffles", "ks_maserati_250f_12cyl", "99.03%  1.5897",
+"Electro", "ks_maserati_250f_12cyl", "98.96%  1.6825",
+"McLarenTim", "ks_maserati_250f_12cyl", "98.55%  2.358",
+"gunciz", "ks_maserati_250f_12cyl", "98.49%  2.4557",
+"Georgin", "ks_maserati_250f_12cyl", "97.62%  3.9052",
+"MrGrinder", "ks_maserati_250f_12cyl", "97.36%  4.3045",
+"marzen224", "ks_maserati_250f_12cyl", "96.31%  6.177",
+"Viperion_NZ", "ks_maserati_250f_12cyl", "-",
+"Broadcast", "ks_maserati_250f_12cyl", "-",
+
+
+
+
+Race 2 sectors
+'======================
+'------------------------
+Sector 1
+'------------------------
+Driver, Vehicle, Time, Gap,
+"Electro", "ks_maserati_250f_12cyl", "57.6030", "-"
+"NotJames", "ks_maserati_250f_12cyl", "58.2310", "0.6280"
+"McLarenTim", "ks_maserati_250f_12cyl", "58.2810", "0.6780"
+"Waffles", "ks_maserati_250f_12cyl", "58.5360", "0.9330"
+"Smartpipe", "ks_maserati_250f_12cyl", "58.7160", "1.1130"
+"gunciz", "ks_maserati_250f_12cyl", "58.7720", "1.1690"
+"marzen224", "ks_maserati_250f_12cyl", "58.9290", "1.3260"
+"MrGrinder", "ks_maserati_250f_12cyl", "59.0690", "1.4660"
+"Georgin", "ks_maserati_250f_12cyl", "59.3690", "1.7660"
+'------------------------
+Sector 2
+'------------------------
+Driver, Vehicle, Time, Gap,
+"gunciz", "ks_maserati_250f_12cyl", "38.9210", "-"
+"Electro", "ks_maserati_250f_12cyl", "39.0290", "0.1080"
+"NotJames", "ks_maserati_250f_12cyl", "39.0470", "0.1260"
+"MrGrinder", "ks_maserati_250f_12cyl", "39.0960", "0.1750"
+"Smartpipe", "ks_maserati_250f_12cyl", "39.1680", "0.2470"
+"McLarenTim", "ks_maserati_250f_12cyl", "39.2040", "0.2830"
+"Waffles", "ks_maserati_250f_12cyl", "39.2930", "0.3720"
+"Georgin", "ks_maserati_250f_12cyl", "39.4120", "0.4910"
+"marzen224", "ks_maserati_250f_12cyl", "40.9500", "2.0290"
+'------------------------
+Sector 3
+'------------------------
+Driver, Vehicle, Time, Gap,
+"McLarenTim", "ks_maserati_250f_12cyl", "64.7320", "-"
+"gunciz", "ks_maserati_250f_12cyl", "64.8280", "0.0960"
+"MrGrinder", "ks_maserati_250f_12cyl", "65.0160", "0.2840"
+"Smartpipe", "ks_maserati_250f_12cyl", "65.0430", "0.3110"
+"Georgin", "ks_maserati_250f_12cyl", "65.1190", "0.3870"
+"NotJames", "ks_maserati_250f_12cyl", "65.2140", "0.4820"
+"Electro", "ks_maserati_250f_12cyl", "65.3400", "0.6080"
+"Waffles", "ks_maserati_250f_12cyl", "65.5740", "0.8420"
+"marzen224", "ks_maserati_250f_12cyl", "65.9300", "1.1980"
+
+
+Race 2 incidents worth reviewing
+'======================
+Date, Incident
+
+
+
+
+
+
+
+
+
