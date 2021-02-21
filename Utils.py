@@ -10,7 +10,7 @@ def read_drivers_table(series_directory):
 
 
 # Read series points scoring info
-def read_points_table(series_directory):
+def read_scoring_table(series_directory):
     points_table_file = "{}/points_table.csv".format(series_directory)
     table = pd.read_csv(points_table_file, dtype=object)
     table = table.astype(int)

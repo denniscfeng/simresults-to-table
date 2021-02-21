@@ -14,8 +14,10 @@ class ChampionshipPoints:
         self.rounds_to_include = rounds_to_include
         self.drop_week = drop_week
 
+        print("Creating championship points tables for:", series)
+
         self.series_drivers_table = Utils.read_drivers_table(series)
-        self.series_points_table = Utils.read_points_table(series)  # TODO rename to scoring table
+        self.series_scoring_table = Utils.read_scoring_table(series)
         self.series_tracks_table = Utils.read_tracks_table(series)
 
         self.series_race_sessions = [session for session in series_sessions if session.startswith("Race")]
@@ -25,7 +27,6 @@ class ChampionshipPoints:
         drivers_points_table_unsorted = self.__construct_drivers_points()
         self.drivers_totals_table, self.drivers_points_table = self.__construct_drivers_totals_and_sort_drivers_points(
             drivers_points_table_unsorted)
-        print("Created championship points for:", series)
 
     def __read_race_reports(self):
         race_reports = {}
@@ -37,7 +38,7 @@ class ChampionshipPoints:
                 try:
                     race_reports[race] = RaceReport(self.series_sessions, self.series, race,
                                                     drivers_table=self.series_drivers_table,
-                                                    points_table=self.series_points_table,
+                                                    scoring_table=self.series_scoring_table,
                                                     csv_manual_adjustment=race_row["csv_manual_adjustment"])
                     print("read race report for", race)
                 except FileNotFoundError:
@@ -79,7 +80,8 @@ class ChampionshipPoints:
                 drivers_points_table.loc[driver, (track, session)] = result_info
 
         # truncate results to only calculate up to rounds needed
-        drivers_points_table = drivers_points_table.iloc[:, 0:(rounds_to_include * len(self.series_race_sessions))]
+        drivers_points_table = drivers_points_table.iloc[:, 0:(self.rounds_to_include * len(self.series_race_sessions))]
+        print("created drivers points table")
         return drivers_points_table
 
     def __construct_drivers_totals_and_sort_drivers_points(self, drivers_points_table):
@@ -109,7 +111,7 @@ class ChampionshipPoints:
 
         drivers_totals_table["countback_str"] = drivers_points_table.apply(get_countback_str, axis=1)
 
-        if drop_week:
+        if self.drop_week:
             drivers_totals_table = drivers_totals_table.sort_values("countback_str", ascending=False)
             drivers_totals_table = drivers_totals_table.sort_values("total_with_drop_week", ascending=False,
                                                                     kind="mergesort")  # mergesort is required to stable sort
@@ -118,6 +120,7 @@ class ChampionshipPoints:
             drivers_totals_table = drivers_totals_table.sort_values("total", ascending=False, kind="mergesort")
 
         drivers_points_table_sorted = drivers_points_table.reindex(drivers_totals_table.index)
+        print("created drivers totals table")
         return drivers_totals_table, drivers_points_table_sorted
 
 
@@ -144,12 +147,3 @@ class DriverRaceResultInfo:
     def __repr__(self):
         return "DriverRaceResultInfo({},{},{},{},{})".format(self.pos, self.points, self.qualy_pos,
                                                              self.qualy_points, self.dnf)
-
-
-if __name__ == "__main__":
-    series = "F1H"
-    series_sessions = ["Qualify result", "Race 1 result", "Race 2 result"]
-    rounds_to_include = 4
-    drop_week = False
-
-    championship_points = ChampionshipPoints(series, series_sessions, rounds_to_include, drop_week)

@@ -121,11 +121,11 @@ class RaceReportWriter:
 
 
 if __name__ == "__main__":
-    test_series_directory = "MX5"
-    test_race_directory = "donington"
-    test_table_names = ["Qualify result", "Race 1 result", "Race 2 result"]
+    series_directory = "MX5"
+    race_directory = "donington"
+    table_names = ["Qualify result", "Race 1 result", "Race 2 result"]
 
-    testReport = RaceReport(test_table_names, test_series_directory, test_race_directory, csv_manual_adjustment=0)
-    testReportWriter = RaceReportWriter(testReport)
+    race_report = RaceReport(table_names, series_directory, race_directory, csv_manual_adjustment=0)
+    writer = RaceReportWriter(race_report)
 
-    testReportWriter.write_generated_tables()
+    writer.write_generated_tables()

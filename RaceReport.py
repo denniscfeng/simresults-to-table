@@ -10,7 +10,7 @@ import Utils
 class RaceReport:
 
     # Constructor, optionally pass in already-parsed drivers and points table info
-    def __init__(self, table_names, series_directory, race_directory, drivers_table=None, points_table=None,
+    def __init__(self, table_names, series_directory, race_directory, drivers_table=None, scoring_table=None,
                  csv_manual_adjustment=0):
 
         self.table_names = table_names
@@ -19,7 +19,7 @@ class RaceReport:
 
         self.drivers_table = drivers_table if drivers_table is not None else Utils.read_drivers_table(
             series_directory)
-        self.points_table = points_table if points_table is not None else Utils.read_points_table(series_directory)
+        self.scoring_table = scoring_table if scoring_table is not None else Utils.read_scoring_table(series_directory)
 
         self.race_directory_path = "{}/{}".format(series_directory, race_directory)
         assert os.path.isdir(self.race_directory_path), "Race directory path does not exist: {}".format(
@@ -101,11 +101,11 @@ class RaceReport:
 
             return race_table
 
-        # TODO remove quote stripping since quotechar fixes this for us
-        # Strip quotes and whitespace from strings, cast position and laps to integers, drop unnamed columns and rows for non-participants, convert fastest laps to datetimes
+        # Cast position and laps to integers, drop unnamed columns and rows for non-participants, convert fastest laps to datetimes
         for name, table_df in self.tables.items():
-            table_df = table_df.apply(lambda s: s.str.strip(' \'"'), axis=1)
-            table_df = table_df.rename(columns=lambda c: c.strip(' \'"'))
+            # Strip quotes and whitespace from strings?
+            # table_df = table_df.apply(lambda s: s.str.strip(' \'"'), axis=1)
+            # table_df = table_df.rename(columns=lambda c: c.strip(' \'"'))
             table_df = table_df.apply(lambda s: s.str.replace('(.*\d\d*\.\d{3})0$', r'\1'), axis=1)
 
             table_df["Pos"] = table_df["Pos"].astype(int)
@@ -126,7 +126,7 @@ class RaceReport:
         for name, table_df in self.tables.items():
 
             if name.startswith("Qualify"):
-                points_column = pd.Series(np.zeros(len(table_df))).add(self.points_table["qualy_points"].astype(int),
+                points_column = pd.Series(np.zeros(len(table_df))).add(self.scoring_table["qualy_points"].astype(int),
                                                                        fill_value=0)
                 table_df["Points"] = points_column.astype(int)
 
@@ -135,7 +135,7 @@ class RaceReport:
                 table_df["Time/Retired"] = table_df["Time/Retired"].str.replace('^\s*$', "")
                 table_df["Consistency"] = table_df["Consistency"].str.replace('^-$', "")
 
-                points_column = pd.Series(np.zeros(len(table_df) + 1)).add(self.points_table["points"].astype(int),
+                points_column = pd.Series(np.zeros(len(table_df) + 1)).add(self.scoring_table["points"].astype(int),
                                                                            fill_value=0)
                 table_df["Points"] = points_column.astype(int)
 
