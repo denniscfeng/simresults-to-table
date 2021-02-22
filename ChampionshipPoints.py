@@ -86,6 +86,31 @@ class ChampionshipPoints:
         print("created drivers points table")
         return drivers_points_table
 
+    def __get_countback_array(self, driver_all_results):
+        # convert driver results to an ascii string
+        # a "higher" string value means more higher finishing positions
+        countback_arr = np.zeros(len(self.series_drivers_table))
+        for pos in range(1, len(self.series_drivers_table) + 1):
+            num_finished_in_pos = driver_all_results.apply(lambda result_info: result_info.pos == pos).sum()
+            countback_arr[pos - 1] = num_finished_in_pos
+        return countback_arr
+
+    def __index_sort_countback_arrays(self, countback_arrays):
+        countback_arrays_stacked = np.stack(countback_arrays)
+        index_col = np.array(range(countback_arrays_stacked.shape[0])).reshape(-1, 1)
+        countback_arrays_sorted_with_index = np.hstack((index_col, countback_arrays_stacked))
+
+        for col_to_sort_by in range(countback_arrays_sorted_with_index.shape[0] - 1, 0, -1):
+            countback_arrays_sorted_with_index = countback_arrays_sorted_with_index[
+                countback_arrays_sorted_with_index[:, col_to_sort_by].argsort(kind='mergesort')]
+
+        return pd.Series(np.flip(countback_arrays_sorted_with_index[:, 0]))
+
+    def __add_countback_arrays(self, countback_arrays):
+        countback_arrays_stacked = np.stack(countback_arrays)
+        # must cast to list cause of Must produce aggregated value issue stackoverflow.com/questions/39840546/must-produce-aggregated-value-i-swear-that-i-am
+        return list(np.sum(countback_arrays_stacked, axis=0))
+
     def __construct_drivers_totals_and_sort_drivers_points(self, drivers_points_table):
 
         tracks = drivers_points_table.columns.unique(level="track")
@@ -102,33 +127,14 @@ class ChampionshipPoints:
         drivers_totals_table["total_with_drop_week"] = drivers_totals_table.apply(
             lambda driver_row: driver_row["total"] - (min(driver_row)), axis=1)
 
-        def get_countback_array(driver_all_results):
-            # convert driver results to an ascii string
-            # a "higher" string value means more higher finishing positions
-            countback_arr = np.zeros(len(self.series_drivers_table))
-            for pos in range(1, len(self.series_drivers_table) + 1):
-                num_finished_in_pos = driver_all_results.apply(lambda result_info: result_info.pos == pos).sum()
-                countback_arr[pos - 1] = num_finished_in_pos
-            return countback_arr
-
-        def index_sort_countback_arrays(countback_arrays):
-            countback_arrays_sorted = np.stack(countback_arrays)
-            index_col = np.array(range(countback_arrays_sorted.shape[0])).reshape(-1, 1)
-            countback_arrays_sorted_with_index = np.hstack((index_col, countback_arrays_sorted))
-
-            for col_to_sort_by in range(countback_arrays_sorted_with_index.shape[0] -1, 0, -1):
-                countback_arrays_sorted_with_index = countback_arrays_sorted_with_index[countback_arrays_sorted_with_index[:, col_to_sort_by].argsort(kind='mergesort')]
-
-            return pd.Series(np.flip(countback_arrays_sorted_with_index[:, 0]))
-
-        drivers_totals_table["countback_arrays"] = drivers_points_table.apply(get_countback_array, axis=1)
+        drivers_totals_table["countback_arrays"] = drivers_points_table.apply(self.__get_countback_array, axis=1)
+        drivers_totals_table = drivers_totals_table.sort_values("countback_arrays", key=lambda x: np.argsort(
+            self.__index_sort_countback_arrays(drivers_totals_table["countback_arrays"])))
 
         if self.drop_week:
-            drivers_totals_table = drivers_totals_table.sort_values("countback_arrays", key=lambda x: np.argsort(index_sort_countback_arrays(drivers_totals_table["countback_arrays"])))
             drivers_totals_table = drivers_totals_table.sort_values("total_with_drop_week", ascending=False,
                                                                     kind="mergesort")  # mergesort is required to stable sort
         else:
-            drivers_totals_table = drivers_totals_table.sort_values("countback_arrays", key=lambda x: np.argsort(index_sort_countback_arrays(drivers_totals_table["countback_arrays"])))
             drivers_totals_table = drivers_totals_table.sort_values("total", ascending=False, kind="mergesort")
 
         drivers_points_table_sorted = drivers_points_table.reindex(drivers_totals_table.index)
@@ -136,21 +142,24 @@ class ChampionshipPoints:
         return drivers_totals_table, drivers_points_table_sorted
 
     def __construct_teams_totals(self, drivers_totals_table):
-        teams_totals_table = drivers_totals_table.copy()
         drivers_teams_table = self.series_drivers_table[["team"]]
-        teams_totals_table = teams_totals_table.merge(drivers_teams_table, how='left', left_index=True, right_index=True)
-        teams_totals_table = teams_totals_table.groupby("team").sum()
+        drivers_totals_table_with_teams = drivers_totals_table.merge(drivers_teams_table, how='left', left_index=True,
+                                                                     right_index=True)
+        teams_totals_table = drivers_totals_table_with_teams.groupby("team").sum()
+
+        teams_totals_table["countback_arrays"] = drivers_totals_table_with_teams.groupby("team")[
+            "countback_arrays"].agg(self.__add_countback_arrays)
+        teams_totals_table["countback_arrays"] = teams_totals_table["countback_arrays"].apply(lambda lst: np.array(lst))
+        drivers_totals_table = drivers_totals_table.sort_values("countback_arrays", key=lambda x: np.argsort(
+            self.__index_sort_countback_arrays(drivers_totals_table["countback_arrays"])))
 
         if self.drop_week:
-            # drivers_totals_table = drivers_totals_table.sort_values("countback_str", ascending=False)
             teams_totals_table = teams_totals_table.sort_values("total_with_drop_week", ascending=False,
-                                                                    kind="mergesort")  # mergesort is required to stable sort
+                                                                kind="mergesort")  # mergesort is required to stable sort
         else:
-            # drivers_totals_table = drivers_totals_table.sort_values("countback_str", ascending=False)
-            teams_totals_table = drivers_totals_table.sort_values("total", ascending=False, kind="mergesort")
+            teams_totals_table = teams_totals_table.sort_values("total", ascending=False, kind="mergesort")
 
         return teams_totals_table
-
 
 
 # compressed race result info obj for a driver and session
