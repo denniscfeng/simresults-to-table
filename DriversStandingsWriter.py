@@ -1,7 +1,7 @@
 import re
 import textwrap
 
-from ChampionshipPoints import ChampionshipPoints
+from Championship import Championship
 
 
 class DriversPointsWriter:
@@ -32,24 +32,24 @@ class DriversPointsWriter:
     driver_row_result_format = """|(% style="background-color:{result_color}; text-align:center; vertical-align:middle; width:{result_width}px" %){result}"""
     driver_row_points_format = """|(% style="text-align:center; vertical-align:middle; width:{points_width}px" %){points}"""
 
-    def __init__(self, championship_points, output_file_name="drivers_standings.txt"):
-        self.championship_points = championship_points
+    def __init__(self, championship, output_file_name="drivers_standings.txt"):
+        self.championship = championship
         self.output_file_name = output_file_name
-        self.output_file = "{}/drivers_standings.txt".format(championship_points.series)
+        self.output_file = "{}/drivers_standings.txt".format(championship.series)
 
-        self.track_width = len(self.championship_points.series_race_sessions) * self.result_width
+        self.track_width = len(self.championship.series_race_sessions) * self.result_width
         self.table_width = self.pos_width + self.driver_width + len(
-            self.championship_points.series_tracks_table) * self.track_width + self.points_width
+            self.championship.series_tracks_table) * self.track_width + self.points_width
 
     def __generate_table_header(self):
         header_0 = self.header_0_format.format(table_width=self.table_width)
 
         header_1_substrings = [
             self.header_1_pos_driver_format.format(pos_width=self.pos_width, driver_width=self.driver_width)]
-        for track in self.championship_points.series_tracks_table.index:
+        for track in self.championship.series_tracks_table.index:
             header_1_track_flag_and_abbrev = self.header_1_track_flag_and_abbrev_format.format(
-                track_flag=self.championship_points.series_tracks_table.loc[track]["flag"],
-                track_abbrev=self.championship_points.series_tracks_table.loc[track]["abbrev"])
+                track_flag=self.championship.series_tracks_table.loc[track]["flag"],
+                track_abbrev=self.championship.series_tracks_table.loc[track]["abbrev"])
             header_1_track = self.header_1_track_format.format(track_width=self.track_width,
                                                                header_1_track_flag_and_abbrev=header_1_track_flag_and_abbrev)
             header_1_substrings.append(header_1_track)
@@ -57,8 +57,8 @@ class DriversPointsWriter:
         header_1 = "".join(header_1_substrings)
 
         header_2_substrings = []
-        for _ in self.championship_points.series_tracks_table.index:
-            for session in self.championship_points.series_race_sessions:
+        for _ in self.championship.series_tracks_table.index:
+            for session in self.championship.series_race_sessions:
                 session_number = re.findall('\d', session)[0]
                 session_abbrev = "R{}".format(session_number)
                 header_2_session = self.header_2_session_format.format(result_width=self.result_width,
@@ -72,12 +72,12 @@ class DriversPointsWriter:
     def __generate_driver_rows(self):
         lines_buffer = []
 
-        for pos, driver in enumerate(self.championship_points.drivers_points_table.index):
+        for pos, driver in enumerate(self.championship.drivers_points_table.index):
             pos += 1
 
             driver_row_pos = self.driver_row_pos_format.format(pos_width=self.pos_width, pos=pos)
 
-            driver_info = self.championship_points.series_drivers_table.loc[driver]
+            driver_info = self.championship.series_drivers_table.loc[driver]
             driver_flag = driver_info["flag"]
             driver_full_name = driver_info["name"]
             driver_row_driver = self.driver_row_driver_format.format(driver_width=self.driver_width,
@@ -86,20 +86,20 @@ class DriversPointsWriter:
 
             driver_row_substrings = [driver_row_pos, driver_row_driver]
 
-            for i in range(self.championship_points.num_total_races):
+            for i in range(self.championship.num_total_races):
 
                 result_string = ""
                 result_color = self.result_color_default
 
-                if i >= len(self.championship_points.drivers_points_table.columns):
+                if i >= len(self.championship.drivers_points_table.columns):
                     driver_row_result = self.driver_row_result_format.format(result_color=result_color,
                                                                              result_width=self.result_width,
                                                                              result=result_string)
                     driver_row_substrings.append(driver_row_result)
                     continue
 
-                result_info = self.championship_points.drivers_points_table.loc[
-                    driver, self.championship_points.drivers_points_table.columns[i]]
+                result_info = self.championship.drivers_points_table.loc[
+                    driver, self.championship.drivers_points_table.columns[i]]
 
                 if result_info.pos > 0:
                     result_color = self.result_color_no_points
@@ -119,10 +119,10 @@ class DriversPointsWriter:
                                                                          result=result_string)
                 driver_row_substrings.append(driver_row_result)
 
-            driver_totals = self.championship_points.drivers_totals_table.loc[driver]
+            driver_totals = self.championship.drivers_totals_table.loc[driver]
             driver_total = driver_totals["total"]
 
-            if not self.championship_points.drivers_points_table.loc[driver].apply(
+            if not self.championship.drivers_points_table.loc[driver].apply(
                     lambda r_info: r_info.participated).any():
                 continue
 
@@ -162,7 +162,7 @@ if __name__ == "__main__":
     rounds_to_include = 4
     drop_week = False
 
-    championship_points = ChampionshipPoints(series, series_sessions, rounds_to_include, drop_week)
-    writer = DriversPointsWriter(championship_points)
+    championship = Championship(series, series_sessions, rounds_to_include, drop_week)
+    writer = DriversPointsWriter(championship)
 
     writer.write_drivers_standings()

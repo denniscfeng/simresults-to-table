@@ -7,7 +7,7 @@ import Utils
 from RaceReport import RaceReport
 
 
-class ChampionshipPoints:
+class Championship:
 
     def __init__(self, series, series_sessions, rounds_to_include, drop_week):
         self.series = series
