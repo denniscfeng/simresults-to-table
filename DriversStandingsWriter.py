@@ -157,7 +157,7 @@ class DriversPointsWriter:
 
 
 if __name__ == "__main__":
-    series = "F1H"
+    series = "MX5"
     series_sessions = ["Qualify result", "Race 1 result", "Race 2 result"]
     rounds_to_include = 4
     drop_week = False
