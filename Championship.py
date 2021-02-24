@@ -150,8 +150,9 @@ class Championship:
         drivers_totals_table_with_teams = drivers_totals_table.merge(drivers_teams_table, how='left', left_index=True,
                                                                      right_index=True)
 
-        teams_totals_table = drivers_totals_table_with_teams.drop(columns="countback_array").groupby("team").agg(
-            self.__add_teams_driver_scores)
+        teams_totals_table = drivers_totals_table_with_teams[["total", "total_with_drop_week", "team"]].groupby(
+            "team").agg(self.__add_teams_driver_scores)
+        # individual weekend points totals for a team dont add up to the total, only top n drivers' points totals do, so columns arent included
 
         teams_totals_table["countback_array"] = drivers_totals_table_with_teams.groupby("team")[
             "countback_array"].agg(self.__add_countback_arrays)
