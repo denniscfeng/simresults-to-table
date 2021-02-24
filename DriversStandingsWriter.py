@@ -47,9 +47,13 @@ class DriversPointsWriter:
         header_1_substrings = [
             self.header_1_pos_driver_format.format(pos_width=self.pos_width, driver_width=self.driver_width)]
         for track in self.championship.series_tracks_table.index:
+            track_info = self.championship.series_tracks_table.loc[track]
+            track_abbrev = track_info["abbrev"]
+            if track in self.championship.race_reports:
+                track_abbrev = "[[{}>>{}]]".format(track_abbrev, self.championship.race_reports[track].simresults_url)
             header_1_track_flag_and_abbrev = self.header_1_track_flag_and_abbrev_format.format(
-                track_flag=self.championship.series_tracks_table.loc[track]["flag"],
-                track_abbrev=self.championship.series_tracks_table.loc[track]["abbrev"])
+                track_flag=track_info["flag"],
+                track_abbrev=track_abbrev)
             header_1_track = self.header_1_track_format.format(track_width=self.track_width,
                                                                header_1_track_flag_and_abbrev=header_1_track_flag_and_abbrev)
             header_1_substrings.append(header_1_track)
@@ -160,9 +164,8 @@ if __name__ == "__main__":
     series = "MX5"
     series_sessions = ["Qualify result", "Race 1 result", "Race 2 result"]
     rounds_to_include = 4
-    drop_week = False
 
-    championship = Championship(series, series_sessions, rounds_to_include, drop_week)
+    championship = Championship(series, series_sessions, rounds_to_include)
     writer = DriversPointsWriter(championship)
 
     writer.write_drivers_standings()

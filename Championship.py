@@ -9,11 +9,12 @@ from RaceReport import RaceReport
 
 class Championship:
 
-    def __init__(self, series, series_sessions, rounds_to_include, drop_week):
+    def __init__(self, series, series_sessions, rounds_to_include, drop_week=False, num_scoring_drivers_in_team=2):
         self.series = series
         self.series_sessions = series_sessions
         self.rounds_to_include = rounds_to_include
         self.drop_week = drop_week
+        self.num_scoring_drivers_in_team = num_scoring_drivers_in_team
 
         print("Creating championship points tables for:", series)
 
@@ -106,11 +107,6 @@ class Championship:
 
         return pd.Series(np.flip(countback_arrays_sorted_with_index[:, 0]))
 
-    def __add_countback_arrays(self, countback_arrays):
-        countback_arrays_stacked = np.stack(countback_arrays)
-        # must cast to list cause of Must produce aggregated value issue stackoverflow.com/questions/39840546/must-produce-aggregated-value-i-swear-that-i-am
-        return list(np.sum(countback_arrays_stacked, axis=0))
-
     def __construct_drivers_totals_and_sort_drivers_points(self, drivers_points_table):
 
         tracks = drivers_points_table.columns.unique(level="track")
@@ -127,9 +123,9 @@ class Championship:
         drivers_totals_table["total_with_drop_week"] = drivers_totals_table.apply(
             lambda driver_row: driver_row["total"] - (min(driver_row)), axis=1)
 
-        drivers_totals_table["countback_arrays"] = drivers_points_table.apply(self.__get_countback_array, axis=1)
-        drivers_totals_table = drivers_totals_table.sort_values("countback_arrays", key=lambda x: np.argsort(
-            self.__index_sort_countback_arrays(drivers_totals_table["countback_arrays"])))
+        drivers_totals_table["countback_array"] = drivers_points_table.apply(self.__get_countback_array, axis=1)
+        drivers_totals_table = drivers_totals_table.sort_values("countback_array", key=lambda x: np.argsort(
+            self.__index_sort_countback_arrays(drivers_totals_table["countback_array"])))
 
         if self.drop_week:
             drivers_totals_table = drivers_totals_table.sort_values("total_with_drop_week", ascending=False,
@@ -141,17 +137,27 @@ class Championship:
         print("created drivers totals table")
         return drivers_totals_table, drivers_points_table_sorted
 
+    def __add_teams_driver_scores(self, drivers_results):
+        return drivers_results.sort_values(ascending=False)[:self.num_scoring_drivers_in_team].sum()
+
+    def __add_countback_arrays(self, countback_arrays):
+        countback_arrays_stacked = np.stack(countback_arrays)
+        # must cast to list cause of Must produce aggregated value issue stackoverflow.com/questions/39840546/must-produce-aggregated-value-i-swear-that-i-am
+        return list(np.sum(countback_arrays_stacked, axis=0))
+
     def __construct_teams_totals(self, drivers_totals_table):
         drivers_teams_table = self.series_drivers_table[["team"]]
         drivers_totals_table_with_teams = drivers_totals_table.merge(drivers_teams_table, how='left', left_index=True,
                                                                      right_index=True)
-        teams_totals_table = drivers_totals_table_with_teams.groupby("team").sum()
 
-        teams_totals_table["countback_arrays"] = drivers_totals_table_with_teams.groupby("team")[
-            "countback_arrays"].agg(self.__add_countback_arrays)
-        teams_totals_table["countback_arrays"] = teams_totals_table["countback_arrays"].apply(lambda lst: np.array(lst))
-        drivers_totals_table = drivers_totals_table.sort_values("countback_arrays", key=lambda x: np.argsort(
-            self.__index_sort_countback_arrays(drivers_totals_table["countback_arrays"])))
+        teams_totals_table = drivers_totals_table_with_teams.drop(columns="countback_array").groupby("team").agg(
+            self.__add_teams_driver_scores)
+
+        teams_totals_table["countback_array"] = drivers_totals_table_with_teams.groupby("team")[
+            "countback_array"].agg(self.__add_countback_arrays)
+        teams_totals_table["countback_array"] = teams_totals_table["countback_array"].apply(lambda lst: np.array(lst))
+        drivers_totals_table = drivers_totals_table.sort_values("countback_array", key=lambda x: np.argsort(
+            self.__index_sort_countback_arrays(drivers_totals_table["countback_array"])))
 
         if self.drop_week:
             teams_totals_table = teams_totals_table.sort_values("total_with_drop_week", ascending=False,
