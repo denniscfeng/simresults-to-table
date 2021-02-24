@@ -107,6 +107,9 @@ class Championship:
 
         return pd.Series(np.flip(countback_arrays_sorted_with_index[:, 0]))
 
+    def __drop_lowest_score_for_driver(self, driver_row):
+        return driver_row["total"] - min(driver_row)
+
     def __construct_drivers_totals_and_sort_drivers_points(self, drivers_points_table):
 
         tracks = drivers_points_table.columns.unique(level="track")
@@ -120,12 +123,14 @@ class Championship:
             drivers_totals_table[track] = results_infos_for_weekend.apply(get_total_weekend_points, axis=1)
 
         drivers_totals_table["total"] = drivers_totals_table.agg(sum, axis=1)
-        drivers_totals_table["total_with_drop_week"] = drivers_totals_table.apply(
-            lambda driver_row: driver_row["total"] - (min(driver_row)), axis=1)
+        drivers_totals_table["total_with_drop_week"] = drivers_totals_table.apply(self.__drop_lowest_score_for_driver,
+                                                                                  axis=1)
 
         drivers_totals_table["countback_array"] = drivers_points_table.apply(self.__get_countback_array, axis=1)
         drivers_totals_table = drivers_totals_table.sort_values("countback_array", key=lambda x: np.argsort(
             self.__index_sort_countback_arrays(drivers_totals_table["countback_array"])))
+
+        drivers_totals_table = drivers_totals_table[["total", "total_with_drop_week", "countback_array"]]
 
         if self.drop_week:
             drivers_totals_table = drivers_totals_table.sort_values("total_with_drop_week", ascending=False,
@@ -138,7 +143,8 @@ class Championship:
         return drivers_totals_table, drivers_points_table_sorted
 
     def __add_teams_driver_scores(self, drivers_results):
-        return drivers_results.sort_values(ascending=False)[:self.num_scoring_drivers_in_team].sum()
+        # note pandas groupby is stable and preserves drivers sorted order
+        return drivers_results[:self.num_scoring_drivers_in_team].sum()
 
     def __add_countback_arrays(self, countback_arrays):
         countback_arrays_stacked = np.stack(countback_arrays)
@@ -152,13 +158,16 @@ class Championship:
 
         teams_totals_table = drivers_totals_table_with_teams[["total", "total_with_drop_week", "team"]].groupby(
             "team").agg(self.__add_teams_driver_scores)
-        # individual weekend points totals for a team dont add up to the total, only top n drivers' points totals do, so columns arent included
 
         teams_totals_table["countback_array"] = drivers_totals_table_with_teams.groupby("team")[
             "countback_array"].agg(self.__add_countback_arrays)
         teams_totals_table["countback_array"] = teams_totals_table["countback_array"].apply(lambda lst: np.array(lst))
         drivers_totals_table = drivers_totals_table.sort_values("countback_array", key=lambda x: np.argsort(
             self.__index_sort_countback_arrays(drivers_totals_table["countback_array"])))
+
+        teams_totals_table["drivers_list"] = drivers_totals_table_with_teams[["team"]].reset_index().groupby("team",
+                                                                                                             group_keys=True).agg(
+            list)
 
         if self.drop_week:
             teams_totals_table = teams_totals_table.sort_values("total_with_drop_week", ascending=False,

@@ -130,7 +130,7 @@ class DriversPointsWriter:
                     lambda r_info: r_info.participated).any():
                 continue
 
-            if drop_week:
+            if self.championship.drop_week:
                 driver_total_with_drop_week = driver_totals["total_with_drop_week"]
                 points_string = "**{}**".format(driver_total_with_drop_week)
                 if not driver_total_with_drop_week == driver_total:
