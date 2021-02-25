@@ -53,7 +53,7 @@ class DriverStandingsWriter(StandingsWriter):
                 driver_total_with_drop_week = driver_totals["total_with_drop_week"]
                 points_string = "**{}**".format(driver_total_with_drop_week)
                 if not driver_total_with_drop_week == driver_total:
-                    points_string = "{}^^{}^^".format(points_string, driver_totals["total"])
+                    points_string = "{}^^{}^^".format(points_string, driver_total)
             else:
                 points_string = "**{}**".format(driver_total)
 
