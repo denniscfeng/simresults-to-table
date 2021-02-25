@@ -61,6 +61,42 @@ class StandingsWriter:
                 header_2_sessions_list.append(header_2_session)
         return "".join(header_2_sessions_list)
 
+    def generate_standing_row_results_list(self, driver):
+        row_results_substrings = []
+        for i in range(self.championship.num_total_races):
+
+            result_string = ""
+            result_color = self.result_color_default
+
+            if i >= len(self.championship.drivers_points_table.columns):
+                driver_row_result = self.standing_row_result_format.format(result_color=result_color,
+                                                                           result_width=self.result_width,
+                                                                           result=result_string)
+                row_results_substrings.append(driver_row_result)
+                continue
+
+            result_info = self.championship.drivers_points_table.loc[
+                driver, self.championship.drivers_points_table.columns[i]]
+
+            if result_info.pos > 0:
+                result_color = self.result_color_no_points
+                result_string = str(result_info.pos)
+                if result_info.points > 0:
+                    result_color = self.result_color_points
+                if result_info.pos <= 3:
+                    result_color = self.result_color_top_3[result_info.pos - 1]
+                if result_info.dnf:
+                    result_string = "RET"
+                    result_color = self.result_color_ret
+                if result_info.qualy_points > 0:
+                    result_string = "{}^^{}^^".format(result_string, result_info.qualy_pos)
+
+            driver_row_result = self.standing_row_result_format.format(result_color=result_color,
+                                                                       result_width=self.result_width,
+                                                                       result=result_string)
+            row_results_substrings.append(driver_row_result)
+        return "".join(row_results_substrings)
+
     def generate_table_header(self):
         raise NotImplementedError
 

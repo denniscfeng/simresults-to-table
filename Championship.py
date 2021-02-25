@@ -58,7 +58,7 @@ class Championship:
 
         # loop through drivers index
         # construct series with the multindex
-        # go thorugh race reports and count up points
+        # go through race reports and count up points
 
         for driver in drivers_points_table.index:
             for track, session in drivers_points_table.columns:
@@ -81,6 +81,13 @@ class Championship:
                         result_info = DriverRaceResultInfo(pos, points, qualify_pos, qualify_points, dnf)
 
                 drivers_points_table.loc[driver, (track, session)] = result_info
+
+        # drop drivers without no results at all
+        no_shows = []
+        for driver in drivers_points_table.index:
+            if not drivers_points_table.loc[driver].apply(lambda r_info: r_info.participated).any():
+                no_shows.append(driver)
+        drivers_points_table = drivers_points_table.drop(index=no_shows)
 
         # truncate results to only calculate up to rounds needed
         drivers_points_table = drivers_points_table.iloc[:, 0:(self.rounds_to_include * len(self.series_race_sessions))]
@@ -113,7 +120,7 @@ class Championship:
     def _construct_drivers_totals_and_sort_drivers_points(self, drivers_points_table):
 
         tracks = drivers_points_table.columns.unique(level="track")
-        drivers_totals_table = pd.DataFrame(index=self.series_drivers_table.index, columns=tracks)
+        drivers_totals_table = pd.DataFrame(index=drivers_points_table.index, columns=tracks)
 
         def get_total_weekend_points(driver_session_results):
             return driver_session_results.apply(lambda result_info: result_info.total_points).sum()
@@ -153,11 +160,13 @@ class Championship:
 
     def _construct_teams_totals(self, drivers_totals_table):
         drivers_teams_table = self.series_drivers_table[["team"]]
-        drivers_totals_table_with_teams = drivers_totals_table.merge(drivers_teams_table, how='left', left_index=True,
+        drivers_totals_table_with_teams = drivers_totals_table.merge(drivers_teams_table, left_index=True,
                                                                      right_index=True)
 
         teams_totals_table = drivers_totals_table_with_teams[["total", "total_with_drop_week", "team"]].groupby(
             "team").agg(self._add_teams_driver_scores)
+        # drivers without teams are in the "Independent" team and don't participate in team scoring
+        teams_totals_table = teams_totals_table.drop(index="Independent")
 
         teams_totals_table["countback_array"] = drivers_totals_table_with_teams.groupby("team")[
             "countback_array"].agg(self._add_countback_arrays)

@@ -23,11 +23,12 @@ class TeamsStandingsWriter(StandingsWriter):
     def generate_table_header(self):
         header_0 = self.header_0_format.format(table_width=self.table_width)
 
-        header_1 = self.header_1_pos_format.format(pos_width=self.pos_width) + \
-                   self.header_1_team_format.format(team_width=self.team_width) + \
-                   self.header_1_number_format.format(number_width=self.number_width) + \
-                   self.generate_header_1_tracks_list() + \
-                   self.header_1_points_format.format(points_width=self.points_width)
+        header_1_substrings = [self.header_1_pos_format.format(pos_width=self.pos_width),
+                               self.header_1_team_format.format(team_width=self.team_width),
+                               self.header_1_number_format.format(number_width=self.number_width),
+                               self.generate_header_1_tracks_list(),
+                               self.header_1_points_format.format(points_width=self.points_width)]
+        header_1 = "".join(header_1_substrings)
 
         header_2 = self.generate_header_2_sessions_list()
 
@@ -37,74 +38,37 @@ class TeamsStandingsWriter(StandingsWriter):
     def generate_standing_rows(self):
         lines_buffer = []
 
-        for pos, driver in enumerate(self.championship.drivers_points_table.index):
-            pos += 1
-
-            driver_row_pos = self.result_row_pos_format.format(pos_width=self.pos_width, pos=pos)
-
-            driver_info = self.championship.series_drivers_table.loc[driver]
-            driver_flag = driver_info["flag"]
-            driver_full_name = driver_info["name"]
-            driver_row_driver = self.standing_row_driver_format.format(driver_width=self.team_width,
-                                                                       driver_flag=driver_flag,
-                                                                       driver=driver_full_name)
-
-            driver_row_substrings = [driver_row_pos, driver_row_driver]
-
-            for i in range(self.championship.num_total_races):
-
-                result_string = ""
-                result_color = self.result_color_default
-
-                if i >= len(self.championship.drivers_points_table.columns):
-                    driver_row_result = self.standing_row_result_format.format(result_color=result_color,
-                                                                               result_width=self.result_width,
-                                                                               result=result_string)
-                    driver_row_substrings.append(driver_row_result)
-                    continue
-
-                result_info = self.championship.drivers_points_table.loc[
-                    driver, self.championship.drivers_points_table.columns[i]]
-
-                if result_info.pos > 0:
-                    result_color = self.result_color_no_points
-                    result_string = str(result_info.pos)
-                    if result_info.points > 0:
-                        result_color = self.result_color_points
-                    if result_info.pos <= 3:
-                        result_color = self.result_color_top_3[result_info.pos - 1]
-                    if result_info.dnf:
-                        result_string = "RET"
-                        result_color = self.result_color_ret
-                    if result_info.qualy_points > 0:
-                        result_string = "{}^^{}^^".format(result_string, result_info.qualy_pos)
-
-                driver_row_result = self.standing_row_result_format.format(result_color=result_color,
-                                                                           result_width=self.result_width,
-                                                                           result=result_string)
-                driver_row_substrings.append(driver_row_result)
-
-            driver_totals = self.championship.drivers_totals_table.loc[driver]
-            driver_total = driver_totals["total"]
-
-            if not self.championship.drivers_points_table.loc[driver].apply(
-                    lambda r_info: r_info.participated).any():
-                continue
-
-            if self.championship.drop_week:
-                driver_total_with_drop_week = driver_totals["total_with_drop_week"]
-                points_string = "**{}**".format(driver_total_with_drop_week)
-                if not driver_total_with_drop_week == driver_total:
-                    points_string = "{}^^{}^^".format(points_string, driver_totals["total"])
-            else:
-                points_string = "**{}**".format(driver_total)
-
-            driver_row_points = self.result_row_points_format.format(points_width=self.points_width,
-                                                                     points=points_string)
-            driver_row_substrings.append(driver_row_points)
-
-            driver_row = "".join(driver_row_substrings)
-            lines_buffer.append(driver_row)
+        # for pos, driver in enumerate(self.championship.drivers_points_table.index): TODO print first driver with the pos and team name and points and second/third/etc driver only needs results
+        #     pos += 1
+        #
+        #     driver_row_pos = self.standing_row_pos_format.format(pos_width=self.pos_width, pos=pos)
+        #
+        #     driver_info = self.championship.series_drivers_table.loc[driver]
+        #     driver_flag = driver_info["flag"]
+        #     driver_full_name = driver_info["name"]
+        #     driver_row_driver = self.standing_row_driver_format.format(driver_width=self.driver_width,
+        #                                                                driver_flag=driver_flag,
+        #                                                                driver=driver_full_name)
+        #
+        #     driver_row_substrings = [driver_row_pos, driver_row_driver, self.generate_standing_row_results_list(driver)]
+        #
+        #     driver_totals = self.championship.drivers_totals_table.loc[driver]
+        #     driver_total = driver_totals["total"]
+        #
+        #     if self.championship.drop_week:
+        #         driver_total_with_drop_week = driver_totals["total_with_drop_week"]
+        #         points_string = "**{}**".format(driver_total_with_drop_week)
+        #         if not driver_total_with_drop_week == driver_total:
+        #             points_string = "{}^^{}^^".format(points_string, driver_totals["total"])
+        #     else:
+        #         points_string = "**{}**".format(driver_total)
+        #
+        #     driver_row_points = self.standing_row_points_format.format(points_width=self.points_width,
+        #                                                                points=points_string)
+        #     driver_row_substrings.append(driver_row_points)
+        #
+        #     driver_row = "".join(driver_row_substrings)
+        #     lines_buffer.append(driver_row)
 
         return lines_buffer
 
