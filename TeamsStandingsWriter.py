@@ -10,9 +10,9 @@ class TeamsStandingsWriter(StandingsWriter):
     header_1_team_format = """|=(% colspan="1" rowspan="2" style="border-color: rgb(0, 0, 0); text-align: center; vertical-align: middle; background-color: rgb(234, 236, 240); width: {team_width}px;" %)Team"""
     header_1_number_format = """|=(% colspan="1" rowspan="2" scope="row" style="border-color: rgb(0, 0, 0); text-align: center; vertical-align: middle; background-color: rgb(234, 236, 240); width: {number_width}px" %)No."""
 
-    result_row_pos_format = """|=(% colspan="1" rowspan="{num_drivers}" style="text-align: center; background-color: rgb(234, 236, 240); width: {pos_width}px; vertical-align: middle;" %){pos}"""
-    result_row_driver_format = """|(% colspan="1" rowspan="{num_drivers}" style="text-align:center; vertical-align:middle; width:{team_width}px" %){team}"""
-    result_row_points_format = """|(% colspan="1" rowspan="{num_drivers}" style="text-align:center; vertical-align:middle; width:{points_width}px" %){points}"""
+    standing_row_pos_format = """|=(% colspan="1" rowspan="{num_drivers}" style="text-align: center; background-color: rgb(234, 236, 240); width: {pos_width}px; vertical-align: middle;" %){pos}"""
+    standing_row_driver_format = """|(% colspan="1" rowspan="{num_drivers}" style="text-align:center; vertical-align:middle; width:{team_width}px" %){team}"""
+    standing_row_points_format = """|(% colspan="1" rowspan="{num_drivers}" style="text-align:center; vertical-align:middle; width:{points_width}px" %){points}"""
 
     def __init__(self, championship, output_file_name="teams_standings.txt"):
         super().__init__(championship, output_file_name)
@@ -34,7 +34,7 @@ class TeamsStandingsWriter(StandingsWriter):
         lines_buffer = [header_0, header_1, header_2]
         return lines_buffer
 
-    def __generate_driver_rows(self):
+    def generate_standing_rows(self):
         lines_buffer = []
 
         for pos, driver in enumerate(self.championship.drivers_points_table.index):
@@ -45,9 +45,9 @@ class TeamsStandingsWriter(StandingsWriter):
             driver_info = self.championship.series_drivers_table.loc[driver]
             driver_flag = driver_info["flag"]
             driver_full_name = driver_info["name"]
-            driver_row_driver = self.result_row_driver_format.format(driver_width=self.team_width,
-                                                                     driver_flag=driver_flag,
-                                                                     driver=driver_full_name)
+            driver_row_driver = self.standing_row_driver_format.format(driver_width=self.team_width,
+                                                                       driver_flag=driver_flag,
+                                                                       driver=driver_full_name)
 
             driver_row_substrings = [driver_row_pos, driver_row_driver]
 
@@ -57,9 +57,9 @@ class TeamsStandingsWriter(StandingsWriter):
                 result_color = self.result_color_default
 
                 if i >= len(self.championship.drivers_points_table.columns):
-                    driver_row_result = self.result_row_result_format.format(result_color=result_color,
-                                                                             result_width=self.result_width,
-                                                                             result=result_string)
+                    driver_row_result = self.standing_row_result_format.format(result_color=result_color,
+                                                                               result_width=self.result_width,
+                                                                               result=result_string)
                     driver_row_substrings.append(driver_row_result)
                     continue
 
@@ -79,9 +79,9 @@ class TeamsStandingsWriter(StandingsWriter):
                     if result_info.qualy_points > 0:
                         result_string = "{}^^{}^^".format(result_string, result_info.qualy_pos)
 
-                driver_row_result = self.result_row_result_format.format(result_color=result_color,
-                                                                         result_width=self.result_width,
-                                                                         result=result_string)
+                driver_row_result = self.standing_row_result_format.format(result_color=result_color,
+                                                                           result_width=self.result_width,
+                                                                           result=result_string)
                 driver_row_substrings.append(driver_row_result)
 
             driver_totals = self.championship.drivers_totals_table.loc[driver]
@@ -107,9 +107,6 @@ class TeamsStandingsWriter(StandingsWriter):
             lines_buffer.append(driver_row)
 
         return lines_buffer
-
-    def generate_table_strings(self):
-        return self.generate_table_header()
 
 
 if __name__ == "__main__":

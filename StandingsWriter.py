@@ -24,9 +24,9 @@ class StandingsWriter:
     result_color_ret = "#efcfff"
     result_color_default = "#ffffff"
 
-    result_row_pos_format = """|=(% style="text-align: center; vertical-align: middle; background-color: rgb(234, 236, 240); width:{pos_width}px" %){pos}"""
-    result_row_result_format = """|(% style="background-color:{result_color}; text-align:center; vertical-align:middle; width:{result_width}px" %){result}"""
-    result_row_points_format = """|(% style="text-align:center; vertical-align:middle; width:{points_width}px" %){points}"""
+    standing_row_pos_format = """|=(% style="text-align: center; vertical-align: middle; background-color: rgb(234, 236, 240); width:{pos_width}px" %){pos}"""
+    standing_row_result_format = """|(% style="background-color:{result_color}; text-align:center; vertical-align:middle; width:{result_width}px" %){result}"""
+    standing_row_points_format = """|(% style="text-align:center; vertical-align:middle; width:{points_width}px" %){points}"""
 
     def __init__(self, championship, output_file_name):
         self.championship = championship
@@ -64,8 +64,11 @@ class StandingsWriter:
     def generate_table_header(self):
         raise NotImplementedError
 
-    def generate_table_strings(self):
+    def generate_standing_rows(self):
         raise NotImplementedError
+
+    def generate_table_strings(self):
+        return self.generate_table_header() + self.generate_standing_rows()
 
     def write_standings(self, lines_buffer=None):
         if not lines_buffer:

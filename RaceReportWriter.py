@@ -21,7 +21,7 @@ class RaceReportWriter:
         self.output_file = "{}/{}".format(self.race_report.race_directory_path, output_file_name)
 
     # Generate quali table markdown from quali session dataframe, result is a list of lines
-    def __generate_qualy_table_strings(self, table_name):
+    def generate_qualy_table_strings(self, table_name):
 
         table_df = self.race_report.tables[table_name]
 
@@ -52,7 +52,7 @@ class RaceReportWriter:
         print("made {} rows for table: {}".format(len(lines_buffer), table_name))
         return lines_buffer
 
-    def __generate_race_table_strings(self, table_name):
+    def generate_race_table_strings(self, table_name):
 
         table_df = self.race_report.tables[table_name]
 
@@ -102,9 +102,9 @@ class RaceReportWriter:
         for name in self.race_report.table_names:
             lines_buffer = ["error!"]
             if name.startswith("Qualify"):
-                lines_buffer = self.__generate_qualy_table_strings(name)
+                lines_buffer = self.generate_qualy_table_strings(name)
             elif name.startswith("Race"):
-                lines_buffer = self.__generate_race_table_strings(name)
+                lines_buffer = self.generate_race_table_strings(name)
             tables_strings[name] = "\n".join(lines_buffer) + "\n\n"
 
         return tables_strings

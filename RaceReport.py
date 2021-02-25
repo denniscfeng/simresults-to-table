@@ -34,11 +34,11 @@ class RaceReport:
         self.simresults_url = "https://simresults.net/{}".format(simresults_code)
 
         self.csv_manual_adjustment = csv_manual_adjustment
-        self.tables = self.__read_results_tables()
-        self.__clean_results_tables()
+        self.tables = self._read_results_tables()
+        self._clean_results_tables()
 
     # Return race result pandas dataframes in dict keyed by table_names
-    def __read_results_tables(self):
+    def _read_results_tables(self):
 
         rows = {name: [0, 0] for name in self.table_names}
         with open(self.results_file) as fp:
@@ -70,7 +70,7 @@ class RaceReport:
         return tables
 
     # Clean race result dataframes, cast numerical columns to integers, join points information and starting positions to driver rows
-    def __clean_results_tables(self):
+    def _clean_results_tables(self):
 
         # Merge starting position info to grid column of a race table from either quali session or previous race, optionally adding quali points column
         def merge_qualy_info(race_table, qualy_table, add_qualy_points=False):
