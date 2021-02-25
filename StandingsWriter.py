@@ -1,3 +1,4 @@
+import re
 import textwrap
 
 
@@ -33,6 +34,35 @@ class StandingsWriter:
         self.output_file = "{}/{}".format(championship.series, output_file_name)
 
         self.track_width = len(self.championship.series_race_sessions) * self.result_width
+
+    def generate_header_1_tracks_list(self):
+        header_1_tracks_list = []
+        for track in self.championship.series_tracks_table.index:
+            track_info = self.championship.series_tracks_table.loc[track]
+            track_abbrev = track_info["abbrev"]
+            if track in self.championship.race_reports:
+                track_abbrev = "[[{}>>{}]]".format(track_abbrev, self.championship.race_reports[track].simresults_url)
+            header_1_track_flag_and_abbrev = self.header_1_track_flag_and_abbrev_format.format(
+                track_flag=track_info["flag"],
+                track_abbrev=track_abbrev)
+            header_1_track = self.header_1_track_format.format(track_width=self.track_width,
+                                                               header_1_track_flag_and_abbrev=header_1_track_flag_and_abbrev)
+            header_1_tracks_list.append(header_1_track)
+        return "".join(header_1_tracks_list)
+
+    def generate_header_2_sessions_list(self):
+        header_2_sessions_list = []
+        for _ in self.championship.series_tracks_table.index:
+            for session in self.championship.series_race_sessions:
+                session_number = re.findall('\d', session)[0]
+                session_abbrev = "R{}".format(session_number)
+                header_2_session = self.header_2_session_format.format(result_width=self.result_width,
+                                                                       session_abbrev=session_abbrev)
+                header_2_sessions_list.append(header_2_session)
+        return "".join(header_2_sessions_list)
+
+    def generate_table_header(self):
+        raise NotImplementedError
 
     def generate_table_strings(self):
         raise NotImplementedError
