@@ -39,7 +39,8 @@ class TeamsStandingsWriter(StandingsWriter):
     def _generate_driver_row(self, driver):
         driver_info = self.championship.series_drivers_table.loc[driver]
         driver_num = driver_info["number"]
-        standing_row_driver_num = self.standing_row_driver_num_format.format(driver_num_width=self.driver_num_width, driver_num=driver_num)
+        standing_row_driver_num = self.standing_row_driver_num_format.format(driver_num_width=self.driver_num_width,
+                                                                             driver_num=driver_num)
         return standing_row_driver_num + self.generate_standing_row_results_list(driver)
 
     def generate_standing_rows(self):
@@ -53,8 +54,10 @@ class TeamsStandingsWriter(StandingsWriter):
             drivers_list = team_totals["drivers_list"]
             num_drivers = len(drivers_list)
 
-            team_row_pos = self.standing_row_pos_format.format(num_drivers=num_drivers, pos_width=self.pos_width, pos=pos)
-            team_row_team = self.standing_row_team_format.format(num_drivers=num_drivers, team_width=self.team_width, team=team)
+            team_row_pos = self.standing_row_pos_format.format(num_drivers=num_drivers, pos_width=self.pos_width,
+                                                               pos=pos)
+            team_row_team = self.standing_row_team_format.format(num_drivers=num_drivers, team_width=self.team_width,
+                                                                 team=team)
 
             # the first driver's results go in the row with the pos, team name, and total points
             team_row_substrings = [team_row_pos, team_row_team, self._generate_driver_row(drivers_list[0])]
@@ -69,7 +72,9 @@ class TeamsStandingsWriter(StandingsWriter):
             else:
                 points_string = "**{}**".format(team_total)
 
-            team_row_points = self.standing_row_points_format.format(num_drivers=num_drivers, points_width=self.points_width, points=points_string)
+            team_row_points = self.standing_row_points_format.format(num_drivers=num_drivers,
+                                                                     points_width=self.points_width,
+                                                                     points=points_string)
             team_row_substrings.append(team_row_points)
 
             team_row = "".join(team_row_substrings)
@@ -83,11 +88,11 @@ class TeamsStandingsWriter(StandingsWriter):
 
 
 if __name__ == "__main__":
-    series = "MX5"
+    series = "PWC 2020"
     series_sessions = ["Qualify result", "Race 1 result", "Race 2 result"]
-    rounds_to_include = 4
+    rounds_to_include = 10
 
-    championship = Championship(series, series_sessions, rounds_to_include)
+    championship = Championship(series, series_sessions, rounds_to_include, drop_week=True)
     writer = TeamsStandingsWriter(championship)
 
     writer.write_standings()
