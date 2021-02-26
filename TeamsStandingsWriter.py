@@ -46,7 +46,6 @@ class TeamsStandingsWriter(StandingsWriter):
     def generate_standing_rows(self):
         lines_buffer = []
 
-        # TODO print first driver with the pos and team name and points and second/third/etc driver only needs results
         for pos, team in enumerate(self.championship.teams_totals_table.index):
             pos += 1
 
