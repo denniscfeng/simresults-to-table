@@ -114,6 +114,10 @@ class Championship:
 
         return pd.Series(np.flip(countback_arrays_sorted_with_index[:, 0]))
 
+    def _get_weekend_totals(self, weekend_results):
+        weekend_total_points = weekend_results.applymap(lambda result_info: result_info.total_points)
+        return weekend_total_points.sum(axis=1)
+
     def _get_drop_week_name(self, driver_row):
         return driver_row.index[np.argmin(driver_row)]
 
@@ -122,15 +126,7 @@ class Championship:
 
     def _construct_drivers_totals_and_sort_drivers_points(self, drivers_points_table):
 
-        tracks = drivers_points_table.columns.unique(level="track")
-        drivers_totals_table = pd.DataFrame(index=drivers_points_table.index, columns=tracks)
-
-        def get_total_weekend_points(driver_session_results):
-            return driver_session_results.apply(lambda result_info: result_info.total_points).sum()
-
-        for track in tracks:
-            results_infos_for_weekend = drivers_points_table[track]
-            drivers_totals_table[track] = results_infos_for_weekend.apply(get_total_weekend_points, axis=1) # TODO groupby level a better way to do this?
+        drivers_totals_table = drivers_points_table.groupby(level=0, axis=1).agg(self._get_weekend_totals)
 
         drivers_totals_table["drop_week"] = drivers_totals_table.agg(self._get_drop_week_name, axis=1)
         drivers_totals_table["total"] = drivers_totals_table.drop(columns="drop_week").sum(axis=1)
