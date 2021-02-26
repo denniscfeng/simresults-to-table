@@ -68,11 +68,11 @@ class DriverStandingsWriter(StandingsWriter):
 
 
 if __name__ == "__main__":
-    series = "PWC 2020"
+    series = "MX5"
     series_sessions = ["Qualify result", "Race 1 result", "Race 2 result"]
-    rounds_to_include = 10
+    rounds_to_include = 5
 
-    championship = Championship(series, series_sessions, rounds_to_include, drop_week=True)
+    championship = Championship(series, series_sessions, rounds_to_include)
     writer = DriverStandingsWriter(championship)
 
     writer.write_standings()

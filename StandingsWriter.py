@@ -4,7 +4,7 @@ import textwrap
 
 class StandingsWriter:
     pos_width = 55
-    result_width = 45
+    result_width = 50
     points_width = 92
 
     header_0_format = """(% border="1" cellpadding="1" style="width:{table_width}px"%)"""
