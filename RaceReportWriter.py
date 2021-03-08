@@ -37,7 +37,7 @@ class RaceReportWriter:
             number = driver_info["number"]
             flag = driver_info["flag"]
             name = driver_info["name"]
-            team = driver_info["team"]
+            team = driver_info["team"] if driver_info["team"] else "Independent"
             time = df_row["Best lap"]
             if position == 1:
                 time = "**{}**".format(time)

@@ -23,6 +23,7 @@ class Championship:
         self.series_tracks_table = Utils.read_tracks_table(series)
 
         self.race_reports = self._read_race_reports()
+        self.series_quali_sessions = list(self.race_reports.values())[0].quali_sessions
         self.series_race_sessions = list(self.race_reports.values())[0].race_sessions
         self.num_total_races = len(self.series_tracks_table) * len(self.series_race_sessions)
 
@@ -158,9 +159,9 @@ class Championship:
         drivers_teams_table = self.series_drivers_table[["team"]]
         drivers_totals_table_with_teams = drivers_totals_table.merge(drivers_teams_table, left_index=True,
                                                                      right_index=True)
-        # drivers without teams are in the "Independent" team and don't participate in team scoring
+        # drivers without teams don't participate in team scoring
         drivers_totals_table_with_teams = drivers_totals_table_with_teams[
-            drivers_totals_table_with_teams["team"] != "Independent"]
+            drivers_totals_table_with_teams["team"].isna()]
         drivers_weekend_totals_with_drop_week_and_teams = drivers_totals_table_with_teams.drop(
             columns=["total", "total_with_drop_week", "countback_array"])
 
@@ -198,20 +199,24 @@ class Championship:
     def _construct_summary(self):
         summary_table = pd.DataFrame(
             index=pd.MultiIndex.from_product([self.series_tracks_table.index, self.series_race_sessions],
-                                             names=["track", "session"]), columns=["link", "winner", "fastest", "pole"])
+                                             names=["track", "session"]), columns=["link", "pole", "fastest", "winner"])
         # truncate results to only calculate up to rounds needed
         summary_table = summary_table.iloc[0:(self.rounds_to_include * len(self.series_race_sessions))]
 
         for track, session in summary_table.index:
             race_report = self.race_reports[track]
             race_table = race_report.tables[session]
+
             summary_table.loc[(track, session), "link"] = race_report.simresults_url
             summary_table.loc[(track, session), "winner"] = race_table.iloc[0]["Driver"]
             summary_table.loc[(track, session), "fastest"] = race_table.sort_values("Best lap time").iloc[0]["Driver"]
-            summary_table.loc[(track, session), "pole"] = race_table.sort_values("Grid").iloc[0]["Driver"]
+            # only show pole driver if grid determined by a quali session
+            summary_table.loc[(track, session), "pole"] = None
+            if race_report.race_session_grid_determined_by[session] in self.series_quali_sessions:
+                summary_table.loc[(track, session), "pole"] = race_table.sort_values("Grid").iloc[0]["Driver"]
 
         drivers_teams_table = self.series_drivers_table[["team"]]
-        summary_table = summary_table.merge(drivers_teams_table, left_on="winner", right_index=True)
+        summary_table = summary_table.merge(drivers_teams_table, how='left', left_on="winner", right_index=True)
 
         print("computed results summary table")
         return summary_table

@@ -6,6 +6,8 @@ def read_drivers_table(series_directory):
     drivers_table_file = "{}/drivers_table.csv".format(series_directory)
     table = pd.read_csv(drivers_table_file, dtype=object)
     table = table.set_index("ign")
+    no_team = "Independent"  # drivers without teams are in the "Independent" team
+    table["team"] = table["team"].replace({no_team: None})
     return table
 
 
