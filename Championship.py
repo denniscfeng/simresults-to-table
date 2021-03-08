@@ -22,9 +22,9 @@ class Championship:
         self.series_scoring_table = Utils.read_scoring_table(series)
         self.series_tracks_table = Utils.read_tracks_table(series)
 
-        self.series_race_sessions = [session for session in series_sessions if session.startswith("Race")]
-        self.num_total_races = len(self.series_tracks_table) * len(self.series_race_sessions)
         self.race_reports = self._read_race_reports()
+        self.series_race_sessions = list(self.race_reports.values())[0].race_sessions
+        self.num_total_races = len(self.series_tracks_table) * len(self.series_race_sessions)
 
         drivers_points_table_unsorted = self._construct_drivers_points()
         self.drivers_totals_table, self.drivers_points_table = self._construct_drivers_totals_and_sort_drivers_points(
@@ -196,7 +196,6 @@ class Championship:
         return teams_totals_table
 
     def _construct_summary(self):
-        # TODO for every race report, for every race session, get driver with pole, lap, win, and their team
         summary_table = pd.DataFrame(
             index=pd.MultiIndex.from_product([self.series_tracks_table.index, self.series_race_sessions],
                                              names=["track", "session"]), columns=["link", "winner", "fastest", "pole"])
@@ -226,17 +225,17 @@ class Championship:
 # compressed race result info obj for a driver and session
 class DriverRaceResultInfo:
 
-    def __init__(self, pos=-1, points=0, qualy_pos=-1, qualy_points=0, dnf=False):
+    def __init__(self, pos=-1, points=0, quali_pos=-1, quali_points=0, dnf=False):
         self.pos = pos
         self.points = points
-        self.qualy_pos = qualy_pos
-        self.qualy_points = qualy_points
+        self.quali_pos = quali_pos
+        self.quali_points = quali_points
         self.dnf = dnf
-        self.participated = not bool(pos == -1 and qualy_pos == -1)
-        self.total_points = self.points + self.qualy_points
+        self.participated = not bool(pos == -1 and quali_pos == -1)
+        self.total_points = self.points + self.quali_points
 
     def __str__(self):
-        if (self.pos < 0) and (self.qualy_pos < 0):
+        if (self.pos < 0) and (self.quali_pos < 0):
             return "NP"
         elif self.dnf:
             return "DNF"
@@ -244,5 +243,5 @@ class DriverRaceResultInfo:
             return str(self.total_points)
 
     def __repr__(self):
-        return "DriverRaceResultInfo({},{},{},{},{})".format(self.pos, self.points, self.qualy_pos,
-                                                             self.qualy_points, self.dnf)
+        return "DriverRaceResultInfo({},{},{},{},{})".format(self.pos, self.points, self.quali_pos,
+                                                             self.quali_points, self.dnf)

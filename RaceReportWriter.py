@@ -2,12 +2,12 @@ from RaceReport import RaceReport
 
 
 class RaceReportWriter:
-    # Race report table format strings
-    qualy_row_0 = """(% border="1" style="width:554px" %)"""
-    qualy_row_1 = """|=(% scope="row" style="border-color: rgb(0, 0, 0); background-color: rgb(234, 236, 240); width: 41px; text-align: center;" %)Pos|=(% style="border-color: rgb(0, 0, 0); background-color: rgb(234, 236, 240); width: 44px; text-align: center;" %)No|=(% style="border-color: rgb(0, 0, 0); background-color: rgb(234, 236, 240); width: 155px; text-align: center;" %)Driver|=(% style="border-color: rgb(0, 0, 0); background-color: rgb(234, 236, 240); width: 233px; text-align: center;" %)Team|=(% style="border-color: rgb(0, 0, 0); background-color: rgb(234, 236, 240); width: 77px; text-align: center;" %)Time"""
-    qualy_row_2 = """|=(% style="border-color: rgb(0, 0, 0); background-color: rgb(234, 236, 240); text-align: center; width: 41px;" %){}|(% style="border-color:#000000; text-align:center; width:44px" %){}|(% style="border-color:#000000; width:155px" %)[[image:{}||height="14" width="23"]] {}|(% style="text-align:center; border-color:#000000; width:233px" %){}|(% style="text-align:center; border-color:#000000; width:77px" %){}"""
-    qualy_row = """|=(% style="background-color: rgb(234, 236, 240); text-align: center; width: 41px;" %){}|(% style="text-align:center; width:44px" %){}|(% style="width:155px" %)[[image:{}||height="14" width="23"]] {}|(% style="text-align:center; width:233px" %){}|(% style="text-align:center; width:77px" %){}"""
-    qualy_row_last = """|=(% colspan="5" style="border-color: rgb(0, 0, 0); background-color: rgb(234, 236, 240); text-align: center; width: 552px;" %)[[Source>>{}]]"""
+    # Race report table format strings TODO use parameterized print format like in standings
+    quali_row_0 = """(% border="1" style="width:554px" %)"""
+    quali_row_1 = """|=(% scope="row" style="border-color: rgb(0, 0, 0); background-color: rgb(234, 236, 240); width: 41px; text-align: center;" %)Pos|=(% style="border-color: rgb(0, 0, 0); background-color: rgb(234, 236, 240); width: 44px; text-align: center;" %)No|=(% style="border-color: rgb(0, 0, 0); background-color: rgb(234, 236, 240); width: 155px; text-align: center;" %)Driver|=(% style="border-color: rgb(0, 0, 0); background-color: rgb(234, 236, 240); width: 233px; text-align: center;" %)Team|=(% style="border-color: rgb(0, 0, 0); background-color: rgb(234, 236, 240); width: 77px; text-align: center;" %)Time"""
+    quali_row_2 = """|=(% style="border-color: rgb(0, 0, 0); background-color: rgb(234, 236, 240); text-align: center; width: 41px;" %){}|(% style="border-color:#000000; text-align:center; width:44px" %){}|(% style="border-color:#000000; width:155px" %)[[image:{}||height="14" width="23"]] {}|(% style="text-align:center; border-color:#000000; width:233px" %){}|(% style="text-align:center; border-color:#000000; width:77px" %){}"""
+    quali_row = """|=(% style="background-color: rgb(234, 236, 240); text-align: center; width: 41px;" %){}|(% style="text-align:center; width:44px" %){}|(% style="width:155px" %)[[image:{}||height="14" width="23"]] {}|(% style="text-align:center; width:233px" %){}|(% style="text-align:center; width:77px" %){}"""
+    quali_row_last = """|=(% colspan="5" style="border-color: rgb(0, 0, 0); background-color: rgb(234, 236, 240); text-align: center; width: 552px;" %)[[Source>>{}]]"""
     race_row_0 = """(% border="1" style="width:747px" %)"""
     race_row_1 = """|=(% scope="row" style="border-color: rgb(0, 0, 0); background-color: rgb(234, 236, 240); width: 41px; text-align: center;" %)Pos|=(% style="border-color: rgb(0, 0, 0); background-color: rgb(234, 236, 240); width: 44px; text-align: center;" %)No|=(% style="border-color: rgb(0, 0, 0); background-color: rgb(234, 236, 240); width: 155px; text-align: center;" %)Driver|=(% style="border-color: rgb(0, 0, 0); background-color: rgb(234, 236, 240); width: 229px; text-align: center;" %)Team|=(% style="border-color: rgb(0, 0, 0); background-color: rgb(234, 236, 240); width: 44px; text-align: center;" %)Laps|=(% style="border-color: rgb(0, 0, 0); background-color: rgb(234, 236, 240); width: 111px; text-align: center;" %)Time/Retired|=(% style="border-color: rgb(0, 0, 0); background-color: rgb(234, 236, 240); width: 53px; text-align: center;" %)Grid|=(% style="border-color: rgb(0, 0, 0); background-color: rgb(234, 236, 240); width: 62px; text-align: center;" %)Points"""
     race_row_2 = """|=(% style="border-color: rgb(0, 0, 0); background-color: rgb(234, 236, 240); text-align: center; width: 41px;" %){}|(% style="border-color:#000000; text-align:center; width:44px" %){}|(% style="border-color:#000000; width:155px" %)[[image:{}||height="14" width="23"]] {}|(% style="text-align:center; border-color:#000000; width:233px" %){}|(% style="text-align:center; border-color:#000000; width:44px" %){}|(% style="text-align:center; border-color:#000000; width:111px" %){}|(% style="text-align:center; border-color:#000000; width:53px" %){}|(% style="text-align:center; border-color:#000000; width:62px" %){}"""
@@ -21,11 +21,11 @@ class RaceReportWriter:
         self.output_file = "{}/{}".format(self.race_report.race_directory_path, output_file_name)
 
     # Generate quali table markdown from quali session dataframe, result is a list of lines
-    def generate_qualy_table_strings(self, table_name):
+    def generate_quali_table_strings(self, table_name):
 
         table_df = self.race_report.tables[table_name]
 
-        lines_buffer = [table_name, self.qualy_row_0, self.qualy_row_1]
+        lines_buffer = [table_name, self.quali_row_0, self.quali_row_1]
 
         for i, df_row in table_df.iterrows():
 
@@ -42,12 +42,12 @@ class RaceReportWriter:
             if position == 1:
                 time = "**{}**".format(time)
 
-            line = self.qualy_row_2.format(position, number, flag, name, team,
-                                           time) if i == 0 else self.qualy_row.format(position, number, flag, name,
+            line = self.quali_row_2.format(position, number, flag, name, team,
+                                           time) if i == 0 else self.quali_row.format(position, number, flag, name,
                                                                                       team, time)
             lines_buffer.append(line)
 
-        lines_buffer.append(self.qualy_row_last.format(self.race_report.simresults_url))
+        lines_buffer.append(self.quali_row_last.format(self.race_report.simresults_url))
 
         print("made {} rows for table: {}".format(len(lines_buffer), table_name))
         return lines_buffer
@@ -99,10 +99,10 @@ class RaceReportWriter:
     def generate_tables_strings(self):
         tables_strings = {}
 
-        for name in self.race_report.table_names:
+        for name in self.race_report.session_names:
             lines_buffer = ["error!"]
-            if name.startswith("Qualify"):
-                lines_buffer = self.generate_qualy_table_strings(name)
+            if name.startswith("Qualify"):  # TODO use new sessions lists
+                lines_buffer = self.generate_quali_table_strings(name)
             elif name.startswith("Race"):
                 lines_buffer = self.generate_race_table_strings(name)
             tables_strings[name] = "\n".join(lines_buffer) + "\n\n"
@@ -115,7 +115,7 @@ class RaceReportWriter:
             tables_strings = self.generate_tables_strings()
 
         with open(self.output_file, "w+") as fp:
-            for name in self.race_report.table_names:
+            for name in self.race_report.session_names:
                 fp.write(tables_strings[name])
                 print("wrote table {} to {}".format(name, self.output_file))
 

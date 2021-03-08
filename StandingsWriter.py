@@ -55,7 +55,7 @@ class StandingsWriter:
         for _ in self.championship.series_tracks_table.index:
             for session in self.championship.series_race_sessions:
                 session_number = re.findall('\d', session)[0]
-                session_abbrev = "R{}".format(session_number)
+                session_abbrev = "R{}".format(session_number)  # TODO move this to function to use in summary table
                 header_2_session = self.header_2_session_format.format(result_width=self.result_width,
                                                                        session_abbrev=session_abbrev)
                 header_2_sessions_list.append(header_2_session)
@@ -88,8 +88,8 @@ class StandingsWriter:
                 if result_info.dnf:
                     result_string = "RET"
                     result_color = self.result_color_ret
-                if result_info.qualy_points > 0:
-                    result_string = "{}^^{}^^".format(result_string, result_info.qualy_pos)
+                if result_info.quali_points > 0:
+                    result_string = "{}^^{}^^".format(result_string, result_info.quali_pos)
 
             driver_row_result = self.standing_row_result_format.format(result_color=result_color,
                                                                        result_width=self.result_width,
