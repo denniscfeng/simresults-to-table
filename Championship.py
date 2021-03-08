@@ -32,6 +32,7 @@ class Championship:
             drivers_points_table_unsorted)
         self.teams_totals_table = self._construct_teams_totals(self.drivers_totals_table)
         self.summary_table = self._construct_summary()
+        self.drivers_participation_table = self._construct_drivers_participation(self.drivers_points_table)
 
     def _read_race_reports(self):
         race_reports = {}
@@ -221,10 +222,38 @@ class Championship:
         print("computed results summary table")
         return summary_table
 
+    def _get_weekend_participation(self, weekend_results):
+        weekend_total_points = weekend_results.applymap(lambda result_info: result_info.participated)
+        return weekend_total_points.all(axis=1)
+
+    def _get_participation_string(self, driver_participations):
+        participation_sequences = []
+        sequence = None
+        for i, participated in enumerate(driver_participations):
+            if participated:
+                if sequence is None:
+                    sequence = [i + 1, i + 1]
+                else:
+                    sequence[1] = i + 1
+            elif sequence:
+                participation_sequences.append(sequence)
+                sequence = None
+        if sequence:
+            participation_sequences.append(sequence)
+
+        participation_string = ", ".join(
+            ["{}-{}".format(s[0], s[1]) if s[1] - s[0] > 0 else str(s[0]) for s in participation_sequences])
+        return participation_string
+
     def _construct_drivers_participation(self, drivers_points_table):
-        # TODO get their participated statuses, merge by each round (&& the participated status for each race), construct the pretty string
-        # TODO also merge in their team
-        pass
+        drivers_participation_table = drivers_points_table.groupby(level=0, axis=1).agg(self._get_weekend_participation)
+        drivers_participation_table["participation string"] = drivers_participation_table.apply(
+            self._get_participation_string, axis=1)
+
+        drivers_teams_table = self.series_drivers_table[["team"]]
+        drivers_participation_table = drivers_participation_table.merge(drivers_teams_table, left_index=True,
+                                                                        right_index=True)
+        return drivers_participation_table
 
 
 # compressed race result info obj for a driver and session
