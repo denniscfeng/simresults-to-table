@@ -30,6 +30,7 @@ class Championship:
         self.drivers_totals_table, self.drivers_points_table = self._construct_drivers_totals_and_sort_drivers_points(
             drivers_points_table_unsorted)
         self.teams_totals_table = self._construct_teams_totals(self.drivers_totals_table)
+        self.summary_table = self._construct_summary()
 
     def _read_race_reports(self):
         race_reports = {}
@@ -55,30 +56,26 @@ class Championship:
 
         drivers_points_table = pd.DataFrame(index=self.series_drivers_table.index, columns=pd.MultiIndex.from_product(
             [self.series_tracks_table.index, self.series_race_sessions], names=["track", "session"]))
-
-        # loop through drivers index
-        # construct series with the multindex
-        # go through race reports and count up points
+        # truncate table to only calculate up to rounds needed
+        drivers_points_table = drivers_points_table.iloc[:, 0:(self.rounds_to_include * len(self.series_race_sessions))]
 
         for driver in drivers_points_table.index:
             for track, session in drivers_points_table.columns:
 
                 result_info = DriverRaceResultInfo()
 
-                if track in self.race_reports:
+                race_table = self.race_reports[track].tables[session]
+                driver_race_result = race_table[race_table["Driver"] == driver]
 
-                    race_table = self.race_reports[track].tables[session]
-                    driver_race_result = race_table[race_table["Driver"] == driver]
+                if len(driver_race_result == 1):
+                    pos = driver_race_result.index[0]
+                    points = driver_race_result["Points"].item()
+                    qualify_pos = driver_race_result["Grid"].item()
+                    qualify_points = driver_race_result[
+                        "Qualify Points"].item() if "Qualify Points" in driver_race_result.columns else 0
+                    dnf = driver_race_result["DNF"].item()
 
-                    if len(driver_race_result == 1):
-                        pos = driver_race_result.index[0]
-                        points = driver_race_result["Points"].item()
-                        qualify_pos = driver_race_result["Grid"].item()
-                        qualify_points = driver_race_result[
-                            "Qualify Points"].item() if "Qualify Points" in driver_race_result.columns else 0
-                        dnf = driver_race_result["DNF"].item()
-
-                        result_info = DriverRaceResultInfo(pos, points, qualify_pos, qualify_points, dnf)
+                    result_info = DriverRaceResultInfo(pos, points, qualify_pos, qualify_points, dnf)
 
                 drivers_points_table.loc[driver, (track, session)] = result_info
 
@@ -89,9 +86,7 @@ class Championship:
                 no_shows.append(driver)
         drivers_points_table = drivers_points_table.drop(index=no_shows)
 
-        # truncate results to only calculate up to rounds needed
-        drivers_points_table = drivers_points_table.iloc[:, 0:(self.rounds_to_include * len(self.series_race_sessions))]
-        print("created drivers points table")
+        print("computed drivers points table")
         return drivers_points_table
 
     def _get_countback_array(self, driver_all_results):
@@ -144,7 +139,7 @@ class Championship:
             drivers_totals_table = drivers_totals_table.sort_values("total", ascending=False, kind="mergesort")
 
         drivers_points_table_sorted = drivers_points_table.reindex(drivers_totals_table.index)
-        print("created drivers totals table")
+        print("computed drivers totals table")
         return drivers_totals_table, drivers_points_table_sorted
 
     def _add_teams_driver_scores(self, drivers_results):
@@ -197,8 +192,35 @@ class Championship:
                                                                 kind="mergesort")  # mergesort is required to stable sort
         else:
             teams_totals_table = teams_totals_table.sort_values("total", ascending=False, kind="mergesort")
-
+        print("computed teams totals table")
         return teams_totals_table
+
+    def _construct_summary(self):
+        # TODO for every race report, for every race session, get driver with pole, lap, win, and their team
+        summary_table = pd.DataFrame(
+            index=pd.MultiIndex.from_product([self.series_tracks_table.index, self.series_race_sessions],
+                                             names=["track", "session"]), columns=["link", "winner", "fastest", "pole"])
+        # truncate results to only calculate up to rounds needed
+        summary_table = summary_table.iloc[0:(self.rounds_to_include * len(self.series_race_sessions))]
+
+        for track, session in summary_table.index:
+            race_report = self.race_reports[track]
+            race_table = race_report.tables[session]
+            summary_table.loc[(track, session), "link"] = race_report.simresults_url
+            summary_table.loc[(track, session), "winner"] = race_table.iloc[0]["Driver"]
+            summary_table.loc[(track, session), "fastest"] = race_table.sort_values("Best lap time").iloc[0]["Driver"]
+            summary_table.loc[(track, session), "pole"] = race_table.sort_values("Grid").iloc[0]["Driver"]
+
+        drivers_teams_table = self.series_drivers_table[["team"]]
+        summary_table = summary_table.merge(drivers_teams_table, left_on="winner", right_index=True)
+
+        print("computed results summary table")
+        return summary_table
+
+    def _construct_drivers_participation(self, drivers_points_table):
+        # TODO get their participated statuses, merge by each round (&& the participated status for each race), construct the pretty string
+        # TODO also merge in their team
+        pass
 
 
 # compressed race result info obj for a driver and session
