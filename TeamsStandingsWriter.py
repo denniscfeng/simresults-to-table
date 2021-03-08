@@ -1,8 +1,8 @@
 from Championship import Championship
-from StandingsWriter import StandingsWriter
+from TableWriter import TableWriter
 
 
-class TeamsStandingsWriter(StandingsWriter):
+class TeamsStandingsWriter(TableWriter):
     pos_width = 60
     team_width = 270
     driver_num_width = 55
@@ -43,7 +43,7 @@ class TeamsStandingsWriter(StandingsWriter):
                                                                              driver_num=driver_num)
         return standing_row_driver_num + self.generate_standing_row_results_list(driver)
 
-    def generate_standing_rows(self):
+    def generate_table_rows(self):
         lines_buffer = []
 
         for pos, team in enumerate(self.championship.teams_totals_table.index):
@@ -94,4 +94,4 @@ if __name__ == "__main__":
     championship = Championship(series, series_sessions, rounds_to_include)
     writer = TeamsStandingsWriter(championship)
 
-    writer.write_standings()
+    writer.write_lines()

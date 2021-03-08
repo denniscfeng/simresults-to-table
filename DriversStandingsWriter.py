@@ -1,13 +1,13 @@
 from Championship import Championship
-from StandingsWriter import StandingsWriter
+from TableWriter import TableWriter
 
 
-class DriverStandingsWriter(StandingsWriter):
+class DriverStandingsWriter(TableWriter):
     driver_width = 170
 
     header_1_driver_format = """|=(% colspan="1" rowspan="2" style="border-color: rgb(0, 0, 0); text-align: center; vertical-align: middle; background-color: rgb(234, 236, 240); width: {driver_width}px;" %)Driver"""
 
-    standing_row_driver_format = """|(% style="width:{driver_width}px" %)[[image:{driver_flag}||height="14" width="23"]] {driver}"""
+    standing_row_driver_format = """|(% style="width:{driver_width}px" %)[[image:{driver_flag}||height="14" width="23"]] {driver}"""  # TODO move to tablewriter so that summary can use it
 
     def __init__(self, championship, output_file_name="drivers_standings.txt"):
         super().__init__(championship, output_file_name)
@@ -29,7 +29,7 @@ class DriverStandingsWriter(StandingsWriter):
         lines_buffer = [header_0, header_1, header_2]
         return lines_buffer
 
-    def generate_standing_rows(self):
+    def generate_table_rows(self):
         lines_buffer = []
 
         for pos, driver in enumerate(self.championship.drivers_points_table.index):
@@ -75,4 +75,4 @@ if __name__ == "__main__":
     championship = Championship(series, series_sessions, rounds_to_include)
     writer = DriverStandingsWriter(championship)
 
-    writer.write_standings()
+    writer.write_lines()

@@ -2,7 +2,7 @@ import re
 import textwrap
 
 
-class StandingsWriter:
+class TableWriter:
     pos_width = 55
     result_width = 50
     points_width = 92
@@ -100,17 +100,17 @@ class StandingsWriter:
     def generate_table_header(self):
         raise NotImplementedError
 
-    def generate_standing_rows(self):
+    def generate_table_rows(self):
         raise NotImplementedError
 
-    def generate_table_strings(self):
-        return self.generate_table_header() + self.generate_standing_rows()
+    def generate_lines(self):
+        return self.generate_table_header() + self.generate_table_rows()
 
-    def write_standings(self, lines_buffer=None):
+    def write_lines(self, lines_buffer=None):
         if not lines_buffer:
-            lines_buffer = self.generate_table_strings()
+            lines_buffer = self.generate_lines()
 
         with open(self.output_file, "w+") as fp:
             table_string = "\n".join(lines_buffer) + "\n\n"
             fp.write(table_string)
-            print("wrote standings:", self.output_file)
+            print("wrote table:", self.output_file)

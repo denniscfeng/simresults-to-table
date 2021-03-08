@@ -161,7 +161,7 @@ class Championship:
                                                                      right_index=True)
         # drivers without teams don't participate in team scoring
         drivers_totals_table_with_teams = drivers_totals_table_with_teams[
-            drivers_totals_table_with_teams["team"].isna()]
+            -drivers_totals_table_with_teams["team"].isna()]
         drivers_weekend_totals_with_drop_week_and_teams = drivers_totals_table_with_teams.drop(
             columns=["total", "total_with_drop_week", "countback_array"])
 
