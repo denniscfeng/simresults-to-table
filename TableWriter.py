@@ -8,6 +8,7 @@ class TableWriter:
     points_width = 92
 
     empty_cell_format = """|(% style="width:{width}px" %)"""
+    empty_multirow_cell_format = """|(% colspan="1" rowspan="{rows}" style="width:{width}px" %)"""
 
     header_0_format = """(% border="1" cellpadding="1" style="width:{table_width}px"%)"""
     header_1_pos_format = """|=(% colspan="1" rowspan="2" scope="row" style="border-color: rgb(0, 0, 0); text-align: center; vertical-align: middle; background-color: rgb(234, 236, 240); width: {pos_width}px" %)Pos"""

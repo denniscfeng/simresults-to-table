@@ -25,6 +25,8 @@ class SummaryTableWriter(TableWriter):
     row_winning_team_format = """|(% style="text-align:center; vertical-align:middle; width:{team_width}px" %){team}"""
     row_results_link_format = """|(% colspan="1" rowspan="{num_race_sessions}" style="text-align:center; vertical-align:middle; width:{link_width}px" %)[[Result>>{link}]]"""
 
+    row_session_drivers_and_team_empty = "".join([TableWriter.empty_cell_format.format(width=pole_width), TableWriter.empty_cell_format.format(width=fastest_lap_width), TableWriter.empty_cell_format.format(width=winner_width), TableWriter.empty_cell_format.format(width=team_width)])
+
     def __init__(self, championship, output_file_name="summary_table.txt"):
         super().__init__(championship, output_file_name)
 
@@ -36,7 +38,7 @@ class SummaryTableWriter(TableWriter):
         lines_buffer = [header_0, header_1]
         return lines_buffer
 
-    def _generate_summary_session_row(self, track, session):
+    def _generate_summary_row_drivers_and_team(self, track, session):
         summary_table_row = self.championship.summary_table.loc[(track, session)]
 
         pole_driver = summary_table_row["pole"]
@@ -59,7 +61,8 @@ class SummaryTableWriter(TableWriter):
     def _generate_table_rows(self):
         lines_buffer = []
 
-        for i, track in enumerate(self.championship.summary_table.index.unique(level=0)):
+        for i, track in enumerate(self.championship.series_tracks_table.index):
+
             round_number = i + 1
             row_round_number = self.row_round_number_format.format(num_race_sessions=self.num_race_sessions, round_number_width=self.round_number_width, round_number=round_number)
             first_session = self.championship.series_race_sessions[0]
@@ -70,19 +73,27 @@ class SummaryTableWriter(TableWriter):
             track_info = self.championship.series_tracks_table.loc[track]
             row_circuit = self.row_circuit_format.format(num_race_sessions=self.num_race_sessions, circuit_width=self.circuit_width, track_flag=track_info["flag"], track_name=track_info["full_name"])
 
-            results_link = self.championship.summary_table.loc[(track, first_session), "link"]
-            row_results_link = self.row_results_link_format.format(num_race_sessions=self.num_race_sessions, link_width=self.link_width, link=results_link)
+            row_results_link = self.empty_multirow_cell_format.format(rows=self.num_race_sessions, width=self.link_width)
+            row_session_drivers_and_team = self.row_session_drivers_and_team_empty
+            if i<self.championship.rounds_to_include:
+                results_link = self.championship.summary_table.loc[(track, first_session), "link"]
+                row_results_link = self.row_results_link_format.format(num_race_sessions=self.num_race_sessions, link_width=self.link_width, link=results_link)
+                row_session_drivers_and_team = self._generate_summary_row_drivers_and_team(track, first_session)
 
-            summary_row_substrings = [row_round_number, row_round_race, row_circuit, self._generate_summary_session_row(track, first_session), row_results_link]
+            summary_row_substrings = [row_round_number, row_round_race, row_circuit, row_session_drivers_and_team, row_results_link]
             summary_row = "".join(summary_row_substrings)
 
             lines_buffer.append(summary_row)
 
             for session in self.championship.series_race_sessions[1:]:
                 session_abbrev = self._get_race_session_abbrev(session)
-                row_round_race = self.row_round_race_format.format(round_race_width=self.round_race_width, session_abbrev=session_abbrev)
+                round_race = self.row_round_race_format.format(round_race_width=self.round_race_width, session_abbrev=session_abbrev)
 
-                substrings = [row_round_race, self._generate_summary_session_row(track, session)]
+                row_session_drivers_and_team = self.row_session_drivers_and_team_empty
+                if i < self.championship.rounds_to_include:
+                    row_session_drivers_and_team = self._generate_summary_row_drivers_and_team(track, first_session)
+
+                substrings = [round_race, row_session_drivers_and_team]
                 row = "".join(substrings)
                 lines_buffer.append(row)
 
