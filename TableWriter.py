@@ -48,7 +48,9 @@ class TableWriter:
             header_1_track_flag_and_abbrev = self.header_1_track_flag_and_abbrev_format.format(
                 track_flag=track_info["flag"],
                 track_abbrev=track_abbrev)
-            header_1_track = self.header_1_track_format.format(num_race_sessions=self.num_race_sessions, track_width=self.track_width, header_1_track_flag_and_abbrev=header_1_track_flag_and_abbrev)
+            header_1_track = self.header_1_track_format.format(num_race_sessions=self.num_race_sessions,
+                                                               track_width=self.track_width,
+                                                               header_1_track_flag_and_abbrev=header_1_track_flag_and_abbrev)
             header_1_tracks_list.append(header_1_track)
         return "".join(header_1_tracks_list)
 
