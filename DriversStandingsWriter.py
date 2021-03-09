@@ -7,7 +7,9 @@ class DriverStandingsWriter(TableWriter):
 
     header_1_driver_format = """|=(% colspan="1" rowspan="2" style="border-color: rgb(0, 0, 0); text-align: center; vertical-align: middle; background-color: rgb(234, 236, 240); width: {driver_width}px;" %)Driver"""
 
-    standing_row_driver_format = """|(% style="width:{driver_width}px" %)[[image:{driver_flag}||height="14" width="23"]] {driver}"""  # TODO move to tablewriter so that summary can use it
+    standing_row_driver_format = """|(% style="width:{driver_width}px" %)[[image:{driver_flag}||height="14" width="23"]] {driver}"""
+    standing_row_pos_format = """|=(% style="text-align: center; vertical-align: middle; background-color: rgb(234, 236, 240); width:{pos_width}px" %){pos}"""
+    standing_row_points_format = """|(% style="text-align:center; vertical-align:middle; width:{points_width}px" %){points}"""
 
     def __init__(self, championship, output_file_name="drivers_standings.txt"):
         super().__init__(championship, output_file_name)
@@ -15,21 +17,21 @@ class DriverStandingsWriter(TableWriter):
         self.table_width = self.pos_width + self.driver_width + len(
             self.championship.series_tracks_table) * self.track_width + self.points_width
 
-    def generate_table_header(self):
+    def _generate_table_header(self):
         header_0 = self.header_0_format.format(table_width=self.table_width)
 
         header_1_substrings = [self.header_1_pos_format.format(pos_width=self.pos_width),
                                self.header_1_driver_format.format(driver_width=self.driver_width),
-                               self.generate_header_1_tracks_list(),
+                               self._generate_header_1_tracks_list(),
                                self.header_1_points_format.format(points_width=self.points_width)]
         header_1 = "".join(header_1_substrings)
 
-        header_2 = self.generate_header_2_sessions_list()
+        header_2 = self._generate_header_2_sessions_list()
 
         lines_buffer = [header_0, header_1, header_2]
         return lines_buffer
 
-    def generate_table_rows(self):
+    def _generate_table_rows(self):
         lines_buffer = []
 
         for pos, driver in enumerate(self.championship.drivers_points_table.index):
@@ -44,7 +46,7 @@ class DriverStandingsWriter(TableWriter):
                                                                        driver_flag=driver_flag,
                                                                        driver=driver_full_name)
 
-            driver_row_substrings = [driver_row_pos, driver_row_driver, self.generate_standing_row_results_list(driver)]
+            driver_row_substrings = [driver_row_pos, driver_row_driver, self._generate_standing_row_results_list(driver)]
 
             driver_totals = self.championship.drivers_totals_table.loc[driver]
             driver_total = driver_totals["total"]

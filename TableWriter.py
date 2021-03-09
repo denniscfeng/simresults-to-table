@@ -24,9 +24,7 @@ class TableWriter:
     result_color_ret = "#efcfff"
     result_color_default = "#ffffff"
 
-    standing_row_pos_format = """|=(% style="text-align: center; vertical-align: middle; background-color: rgb(234, 236, 240); width:{pos_width}px" %){pos}"""
     standing_row_result_format = """|(% style="background-color:{result_color}; text-align:center; vertical-align:middle; width:{result_width}px" %){result}"""
-    standing_row_points_format = """|(% style="text-align:center; vertical-align:middle; width:{points_width}px" %){points}"""
 
     def __init__(self, championship, output_file_name):
         self.championship = championship
@@ -35,7 +33,7 @@ class TableWriter:
 
         self.track_width = len(self.championship.series_race_sessions) * self.result_width
 
-    def generate_header_1_tracks_list(self):
+    def _generate_header_1_tracks_list(self):
         header_1_tracks_list = []
         for track in self.championship.series_tracks_table.index:
             track_info = self.championship.series_tracks_table.loc[track]
@@ -50,7 +48,7 @@ class TableWriter:
             header_1_tracks_list.append(header_1_track)
         return "".join(header_1_tracks_list)
 
-    def generate_header_2_sessions_list(self):
+    def _generate_header_2_sessions_list(self):
         header_2_sessions_list = []
         for _ in self.championship.series_tracks_table.index:
             for session in self.championship.series_race_sessions:
@@ -61,7 +59,7 @@ class TableWriter:
                 header_2_sessions_list.append(header_2_session)
         return "".join(header_2_sessions_list)
 
-    def generate_standing_row_results_list(self, driver):
+    def _generate_standing_row_results_list(self, driver):
         row_results_substrings = []
         for i in range(self.championship.num_total_races):
 
@@ -97,18 +95,18 @@ class TableWriter:
             row_results_substrings.append(driver_row_result)
         return "".join(row_results_substrings)
 
-    def generate_table_header(self):
+    def _generate_table_header(self):
         raise NotImplementedError
 
-    def generate_table_rows(self):
+    def _generate_table_rows(self):
         raise NotImplementedError
 
-    def generate_lines(self):
-        return self.generate_table_header() + self.generate_table_rows()
+    def _generate_lines(self):
+        return self._generate_table_header() + self._generate_table_rows()
 
     def write_lines(self, lines_buffer=None):
         if not lines_buffer:
-            lines_buffer = self.generate_lines()
+            lines_buffer = self._generate_lines()
 
         with open(self.output_file, "w+") as fp:
             table_string = "\n".join(lines_buffer) + "\n\n"

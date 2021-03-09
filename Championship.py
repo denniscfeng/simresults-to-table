@@ -55,7 +55,6 @@ class Championship:
         return race_reports
 
     def _construct_drivers_points(self):
-
         drivers_points_table = pd.DataFrame(index=self.series_drivers_table.index, columns=pd.MultiIndex.from_product(
             [self.series_tracks_table.index, self.series_race_sessions], names=["track", "session"]))
         # truncate table to only calculate up to rounds needed
@@ -122,7 +121,6 @@ class Championship:
         return driver_row["total"] - driver_row.loc[driver_row["drop_week"]]
 
     def _construct_drivers_totals_and_sort_drivers_points(self, drivers_points_table):
-
         drivers_totals_table = drivers_points_table.groupby(level=0, axis=1).agg(self._get_weekend_totals)
 
         drivers_totals_table["drop_week"] = drivers_totals_table.agg(self._get_drop_week_name, axis=1)

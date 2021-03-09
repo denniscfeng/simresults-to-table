@@ -21,17 +21,17 @@ class TeamsStandingsWriter(TableWriter):
         self.table_width = self.pos_width + self.team_width + self.driver_num_width + len(
             self.championship.series_tracks_table) * self.track_width + self.points_width
 
-    def generate_table_header(self):
+    def _generate_table_header(self):
         header_0 = self.header_0_format.format(table_width=self.table_width)
 
         header_1_substrings = [self.header_1_pos_format.format(pos_width=self.pos_width),
                                self.header_1_team_format.format(team_width=self.team_width),
                                self.header_1_number_format.format(number_width=self.driver_num_width),
-                               self.generate_header_1_tracks_list(),
+                               self._generate_header_1_tracks_list(),
                                self.header_1_points_format.format(points_width=self.points_width)]
         header_1 = "".join(header_1_substrings)
 
-        header_2 = self.generate_header_2_sessions_list()
+        header_2 = self._generate_header_2_sessions_list()
 
         lines_buffer = [header_0, header_1, header_2]
         return lines_buffer
@@ -41,9 +41,9 @@ class TeamsStandingsWriter(TableWriter):
         driver_num = driver_info["number"]
         standing_row_driver_num = self.standing_row_driver_num_format.format(driver_num_width=self.driver_num_width,
                                                                              driver_num=driver_num)
-        return standing_row_driver_num + self.generate_standing_row_results_list(driver)
+        return standing_row_driver_num + self._generate_standing_row_results_list(driver)
 
-    def generate_table_rows(self):
+    def _generate_table_rows(self):
         lines_buffer = []
 
         for pos, team in enumerate(self.championship.teams_totals_table.index):
