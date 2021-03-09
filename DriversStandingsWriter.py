@@ -7,7 +7,6 @@ class DriverStandingsWriter(TableWriter):
 
     header_1_driver_format = """|=(% colspan="1" rowspan="2" style="border-color: rgb(0, 0, 0); text-align: center; vertical-align: middle; background-color: rgb(234, 236, 240); width: {driver_width}px;" %)Driver"""
 
-    standing_row_driver_format = """|(% style="width:{driver_width}px" %)[[image:{driver_flag}||height="14" width="23"]] {driver}"""
     standing_row_pos_format = """|=(% style="text-align: center; vertical-align: middle; background-color: rgb(234, 236, 240); width:{pos_width}px" %){pos}"""
     standing_row_points_format = """|(% style="text-align:center; vertical-align:middle; width:{points_width}px" %){points}"""
 
@@ -38,15 +37,10 @@ class DriverStandingsWriter(TableWriter):
             pos += 1
 
             driver_row_pos = self.standing_row_pos_format.format(pos_width=self.pos_width, pos=pos)
+            driver_row_driver = self._generate_driver_flag_and_name(driver, self.driver_width)
+            driver_row_results_list = self._generate_standing_row_results_list(driver)
 
-            driver_info = self.championship.series_drivers_table.loc[driver]
-            driver_flag = driver_info["flag"]
-            driver_full_name = driver_info["name"]
-            driver_row_driver = self.standing_row_driver_format.format(driver_width=self.driver_width,
-                                                                       driver_flag=driver_flag,
-                                                                       driver=driver_full_name)
-
-            driver_row_substrings = [driver_row_pos, driver_row_driver, self._generate_standing_row_results_list(driver)]
+            driver_row_substrings = [driver_row_pos, driver_row_driver, driver_row_results_list]
 
             driver_totals = self.championship.drivers_totals_table.loc[driver]
             driver_total = driver_totals["total"]

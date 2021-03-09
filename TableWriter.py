@@ -7,9 +7,11 @@ class TableWriter:
     result_width = 50
     points_width = 92
 
+    empty_cell_format = """|(% style="width:{width}px" %)"""
+
     header_0_format = """(% border="1" cellpadding="1" style="width:{table_width}px"%)"""
     header_1_pos_format = """|=(% colspan="1" rowspan="2" scope="row" style="border-color: rgb(0, 0, 0); text-align: center; vertical-align: middle; background-color: rgb(234, 236, 240); width: {pos_width}px" %)Pos"""
-    header_1_track_format = """|=(% colspan="2" rowspan="1" style="border-color: rgb(0, 0, 0); text-align: center; vertical-align: middle; background-color: rgb(234, 236, 240); width: {track_width}px" %)((({header_1_track_flag_and_abbrev})))"""
+    header_1_track_format = """|=(% colspan="{num_race_sessions}" rowspan="1" style="border-color: rgb(0, 0, 0); text-align: center; vertical-align: middle; background-color: rgb(234, 236, 240); width: {track_width}px" %)((({header_1_track_flag_and_abbrev})))"""
     header_1_track_flag_and_abbrev_format = textwrap.dedent("""
     [[image:{track_flag}||height="14" width="23"]]
 
@@ -24,6 +26,7 @@ class TableWriter:
     result_color_ret = "#efcfff"
     result_color_default = "#ffffff"
 
+    row_driver_flag_and_name = """|(% style="width:{width}px" %)[[image:{driver_flag}||height="14" width="23"]] {driver}"""
     standing_row_result_format = """|(% style="background-color:{result_color}; text-align:center; vertical-align:middle; width:{result_width}px" %){result}"""
 
     def __init__(self, championship, output_file_name):
@@ -31,7 +34,8 @@ class TableWriter:
         self.output_file_name = output_file_name
         self.output_file = "{}/{}".format(championship.series, output_file_name)
 
-        self.track_width = len(self.championship.series_race_sessions) * self.result_width
+        self.num_race_sessions = len(self.championship.series_race_sessions)
+        self.track_width = self.num_race_sessions * self.result_width
 
     def _generate_header_1_tracks_list(self):
         header_1_tracks_list = []
@@ -43,21 +47,29 @@ class TableWriter:
             header_1_track_flag_and_abbrev = self.header_1_track_flag_and_abbrev_format.format(
                 track_flag=track_info["flag"],
                 track_abbrev=track_abbrev)
-            header_1_track = self.header_1_track_format.format(track_width=self.track_width,
-                                                               header_1_track_flag_and_abbrev=header_1_track_flag_and_abbrev)
+            header_1_track = self.header_1_track_format.format(num_race_sessions=self.num_race_sessions, track_width=self.track_width, header_1_track_flag_and_abbrev=header_1_track_flag_and_abbrev)
             header_1_tracks_list.append(header_1_track)
         return "".join(header_1_tracks_list)
+
+    def _get_race_session_abbrev(self, session):
+        session_number = re.findall('\d', session)[0]
+        return "R{}".format(session_number)
 
     def _generate_header_2_sessions_list(self):
         header_2_sessions_list = []
         for _ in self.championship.series_tracks_table.index:
             for session in self.championship.series_race_sessions:
-                session_number = re.findall('\d', session)[0]
-                session_abbrev = "R{}".format(session_number)  # TODO move this to function to use in summary table
+                session_abbrev = self._get_race_session_abbrev(session)
                 header_2_session = self.header_2_session_format.format(result_width=self.result_width,
                                                                        session_abbrev=session_abbrev)
                 header_2_sessions_list.append(header_2_session)
         return "".join(header_2_sessions_list)
+
+    def _generate_driver_flag_and_name(self, driver, width):
+        driver_info = self.championship.series_drivers_table.loc[driver]
+        driver_flag = driver_info["flag"]
+        driver_full_name = driver_info["name"]
+        return self.row_driver_flag_and_name.format(width=width, driver_flag=driver_flag, driver=driver_full_name)
 
     def _generate_standing_row_results_list(self, driver):
         row_results_substrings = []
