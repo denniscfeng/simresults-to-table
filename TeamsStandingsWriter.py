@@ -50,7 +50,7 @@ class TeamsStandingsWriter(TableWriter):
             pos += 1
 
             team_totals = self.championship.teams_totals_table.loc[team]
-            drivers_list = team_totals["drivers_list"]
+            drivers_list = self.championship.teams_and_drivers_table.loc[team, "drivers"]
             num_drivers = len(drivers_list)
 
             team_row_pos = self.standing_row_pos_format.format(num_drivers=num_drivers, pos_width=self.pos_width,

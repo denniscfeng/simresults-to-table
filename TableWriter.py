@@ -27,7 +27,7 @@ class TableWriter:
     result_color_ret = "#efcfff"
     result_color_default = "#ffffff"
 
-    row_driver_flag_and_name = """|(% style="width:{width}px" %)[[image:{driver_flag}||height="14" width="23"]] {driver}"""
+    row_driver_flag_and_name_format = """|(% style="width:{width}px" %)[[image:{driver_flag}||height="14" width="23"]] {driver}"""
     standing_row_result_format = """|(% style="background-color:{result_color}; text-align:center; vertical-align:middle; width:{result_width}px" %){result}"""
 
     def __init__(self, championship, output_file_name):
@@ -72,7 +72,7 @@ class TableWriter:
         driver_info = self.championship.series_drivers_table.loc[driver]
         driver_flag = driver_info["flag"]
         driver_full_name = driver_info["name"]
-        return self.row_driver_flag_and_name.format(width=width, driver_flag=driver_flag, driver=driver_full_name)
+        return self.row_driver_flag_and_name_format.format(width=width, driver_flag=driver_flag, driver=driver_full_name)
 
     def _generate_standing_row_results_list(self, driver):
         row_results_substrings = []

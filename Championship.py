@@ -21,6 +21,7 @@ class Championship:
         self.series_drivers_table = Utils.read_drivers_table(series)
         self.series_scoring_table = Utils.read_scoring_table(series)
         self.series_tracks_table = Utils.read_tracks_table(series)
+        self.teams_and_drivers_table = self._construct_teams_and_drivers_table()
 
         self.race_reports = self._read_race_reports()
         self.series_quali_sessions = list(self.race_reports.values())[0].quali_sessions
@@ -53,6 +54,12 @@ class Championship:
                 print("no directory found for", race)
 
         return race_reports
+
+    def _construct_teams_and_drivers_table(self):
+        teams_and_drivers_table = self.series_drivers_table[["team"]].reset_index()
+        teams_and_drivers_table = teams_and_drivers_table.groupby("team").agg(lambda drivers: sorted(drivers.values))
+        teams_and_drivers_table = teams_and_drivers_table.sort_index().rename(columns={"ign": "drivers_list"})
+        return teams_and_drivers_table
 
     def _construct_drivers_points(self):
         drivers_points_table = pd.DataFrame(index=self.series_drivers_table.index, columns=pd.MultiIndex.from_product(
@@ -177,12 +184,9 @@ class Championship:
         countback_array_column = drivers_totals_table_with_teams.groupby("team")["countback_array"].agg(
             self._add_countback_arrays).apply(lambda lst: np.array(lst))
 
-        drivers_list_column = drivers_totals_table_with_teams[["team"]].reset_index().groupby("team",
-                                                                                              group_keys=True).agg(list)
-
         teams_totals_table = pd.concat(
-            [total_column, total_with_drop_week_column, countback_array_column, drivers_list_column], axis=1)
-        teams_totals_table.columns = ["total", "total_with_drop_week", "countback_array", "drivers_list"]
+            [total_column, total_with_drop_week_column, countback_array_column], axis=1)
+        teams_totals_table.columns = ["total", "total_with_drop_week", "countback_array"]
 
         drivers_totals_table = drivers_totals_table.sort_values("countback_array", key=lambda x: np.argsort(
             self._index_sort_countback_arrays(drivers_totals_table["countback_array"])))
@@ -245,12 +249,7 @@ class Championship:
 
     def _construct_drivers_participation(self, drivers_points_table):
         drivers_participation_table = drivers_points_table.groupby(level=0, axis=1).agg(self._get_weekend_participation)
-        drivers_participation_table["participation string"] = drivers_participation_table.apply(
-            self._get_participation_string, axis=1)
-
-        drivers_teams_table = self.series_drivers_table[["team"]]
-        drivers_participation_table = drivers_participation_table.merge(drivers_teams_table, left_index=True,
-                                                                        right_index=True)
+        drivers_participation_table["participation_string"] = drivers_participation_table.apply(self._get_participation_string, axis=1)
         return drivers_participation_table
 
 
