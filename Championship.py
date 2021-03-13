@@ -21,7 +21,6 @@ class Championship:
         self.series_drivers_table = Utils.read_drivers_table(series)
         self.series_scoring_table = Utils.read_scoring_table(series)
         self.series_tracks_table = Utils.read_tracks_table(series)
-        self.teams_and_drivers_table = self._construct_teams_and_drivers_table()
 
         self.race_reports = self._read_race_reports()
         self.series_quali_sessions = list(self.race_reports.values())[0].quali_sessions
@@ -31,6 +30,7 @@ class Championship:
         drivers_points_table_unsorted = self._construct_drivers_points()
         self.drivers_totals_table, self.drivers_points_table = self._construct_drivers_totals_and_sort_drivers_points(
             drivers_points_table_unsorted)
+        self.teams_and_drivers_table = self._construct_teams_and_drivers_table(self.drivers_totals_table)
         self.teams_totals_table = self._construct_teams_totals(self.drivers_totals_table)
         self.summary_table = self._construct_summary()
         self.drivers_participation_table = self._construct_drivers_participation(self.drivers_points_table)
@@ -54,12 +54,6 @@ class Championship:
                 print("no directory found for", race)
 
         return race_reports
-
-    def _construct_teams_and_drivers_table(self):
-        teams_and_drivers_table = self.series_drivers_table[["team"]].reset_index()
-        teams_and_drivers_table = teams_and_drivers_table.groupby("team").agg(lambda drivers: sorted(drivers.values))
-        teams_and_drivers_table = teams_and_drivers_table.sort_index().rename(columns={"ign": "drivers_list"})
-        return teams_and_drivers_table
 
     def _construct_drivers_points(self):
         drivers_points_table = pd.DataFrame(index=self.series_drivers_table.index, columns=pd.MultiIndex.from_product(
@@ -97,9 +91,20 @@ class Championship:
         print("computed drivers points table")
         return drivers_points_table
 
+    def _construct_teams_and_drivers_table(self, drivers_points_table):
+        # note that this will contains only drivers that have participated at anything
+        drivers_teams_table = self.series_drivers_table[["team"]]
+        teams_and_drivers_table = drivers_points_table.merge(drivers_teams_table, left_index=True, right_index=True)
+        teams_and_drivers_table = teams_and_drivers_table.reset_index()[["ign", "team"]]
+        teams_and_drivers_table = teams_and_drivers_table.groupby("team").agg(lambda drivers: sorted(drivers.values))
+        teams_and_drivers_table = teams_and_drivers_table.sort_index().rename(columns={"ign": "drivers_list"})
+        if Utils.NO_TEAM in teams_and_drivers_table.index:
+            index = teams_and_drivers_table.index.tolist()
+            index.remove(Utils.NO_TEAM)
+            teams_and_drivers_table = teams_and_drivers_table.reindex(index + [Utils.NO_TEAM])
+        return teams_and_drivers_table
+
     def _get_countback_array(self, driver_all_results):
-        # convert driver results to an ascii string
-        # a "higher" string value means more higher finishing positions
         countback_arr = np.zeros(len(self.series_drivers_table))
         for pos in range(1, len(self.series_drivers_table) + 1):
             num_finished_in_pos = driver_all_results.apply(lambda result_info: result_info.pos == pos).sum()
@@ -166,8 +171,7 @@ class Championship:
         drivers_totals_table_with_teams = drivers_totals_table.merge(drivers_teams_table, left_index=True,
                                                                      right_index=True)
         # drivers without teams don't participate in team scoring
-        drivers_totals_table_with_teams = drivers_totals_table_with_teams[
-            -drivers_totals_table_with_teams["team"].isna()]
+        drivers_totals_table_with_teams = drivers_totals_table_with_teams[-(drivers_totals_table_with_teams["team"] == Utils.NO_TEAM)]
         drivers_weekend_totals_with_drop_week_and_teams = drivers_totals_table_with_teams.drop(
             columns=["total", "total_with_drop_week", "countback_array"])
 

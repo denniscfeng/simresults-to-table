@@ -15,7 +15,7 @@ class RaceReport:
 
         self.session_names = session_names
         self.debug = debug
-        print("Creating race report:", series_directory, race_directory)
+        print("creating race report:", series_directory, race_directory)
 
         self.drivers_table = drivers_table if drivers_table is not None else Utils.read_drivers_table(
             series_directory)

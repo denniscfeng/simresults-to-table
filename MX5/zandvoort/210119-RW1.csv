@@ -32,7 +32,7 @@ Pos,   Class, Team, Vehicle, Driver, Laps, Best lap, Gap
 "16",   "", "", "ks_mazda_mx5_cup", "Viperion_NZ", "7", "01:58.9300", "00:01.6230",
 "17",   "", "", "ks_mazda_mx5_cup", "marzen224", "4", "01:59.2830", "00:01.9760",
 "18",   "", "", "ks_mazda_mx5_cup", "Horanjo", "7", "01:59.3840", "00:02.0770",
-"19",   "", "", "ks_mazda_mx5_cup", "BarricadeTTT", "6", "02:00.4030", "00:03.0960",
+"19",   "", "", "ks_mazda_mx5_cup", "Barricade", "6", "02:00.4030", "00:03.0960",
 "20",   "", "", "ks_mazda_mx5_cup", "mitski s", "3", "02:00.7910", "00:03.4840",
 "21",   "", "", "ks_mazda_mx5_cup", "Smartpipe", "0", "-", "-",
 "22",   "", "", "ks_mazda_mx5_cup", "PilotLouie", "0", "-", "-",
@@ -207,7 +207,7 @@ Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,
 "7 ", ks_mazda_mx5_cup, no,"0", "02:00.1010", "54.4150", "65.6860", "-",  "F:H - R:H",     
 
 Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
-"BarricadeTTT"
+"Barricade"
 "1 ", ks_mazda_mx5_cup, no,"0", "02:37.7870", "73.9170", "83.8700", "-",  "F:H - R:H",     
 "2 ", ks_mazda_mx5_cup, no,"0", "02:00.9220", "54.9480", "65.9740", "-",  "F:H - R:H",     
 "3 ", ks_mazda_mx5_cup, no,"0", "02:00.4030", "54.3120", "66.0910", "-",  "F:H - R:H",     
@@ -280,7 +280,7 @@ Driver, Vehicle, Time, Gap,
 "Viperion_NZ", "ks_mazda_mx5_cup", "01:58.9300", "1.623"
 "marzen224", "ks_mazda_mx5_cup", "01:59.2830", "1.976"
 "Horanjo", "ks_mazda_mx5_cup", "01:59.3840", "2.077"
-"BarricadeTTT", "ks_mazda_mx5_cup", "02:00.4030", "3.096"
+"Barricade", "ks_mazda_mx5_cup", "02:00.4030", "3.096"
 "mitski s", "ks_mazda_mx5_cup", "02:00.7910", "3.484"
 
 
@@ -297,7 +297,7 @@ Driver, Vehicle, Consistency,
 "Viperion_NZ", "ks_mazda_mx5_cup", "99.34%  0.7903",
 "NotJames", "ks_mazda_mx5_cup", "99.33%  0.7917",
 "Trempale", "ks_mazda_mx5_cup", "99.31%  0.8157",
-"BarricadeTTT", "ks_mazda_mx5_cup", "99.24%  0.92",
+"Barricade", "ks_mazda_mx5_cup", "99.24%  0.92",
 "McLarenTim", "ks_mazda_mx5_cup", "99.09%  1.074",
 "Horanjo", "ks_mazda_mx5_cup", "99.01%  1.1812",
 "NihonTiger", "ks_mazda_mx5_cup", "98.96%  1.2268",
@@ -337,7 +337,7 @@ Driver, Vehicle, Time, Gap,
 "MrGrinder", "ks_mazda_mx5_cup", "54.0470", "0.8480"
 "Viperion_NZ", "ks_mazda_mx5_cup", "54.1160", "0.9170"
 "gunciz", "ks_mazda_mx5_cup", "54.1330", "0.9340"
-"BarricadeTTT", "ks_mazda_mx5_cup", "54.3120", "1.1130"
+"Barricade", "ks_mazda_mx5_cup", "54.3120", "1.1130"
 "mitski s", "ks_mazda_mx5_cup", "54.6950", "1.4960"
 '------------------------
 Sector 2
@@ -361,7 +361,7 @@ Driver, Vehicle, Time, Gap,
 "Viperion_NZ", "ks_mazda_mx5_cup", "64.8140", "0.9910"
 "marzen224", "ks_mazda_mx5_cup", "64.9850", "1.1620"
 "Horanjo", "ks_mazda_mx5_cup", "65.2510", "1.4280"
-"BarricadeTTT", "ks_mazda_mx5_cup", "65.9740", "2.1510"
+"Barricade", "ks_mazda_mx5_cup", "65.9740", "2.1510"
 "mitski s", "ks_mazda_mx5_cup", "66.0780", "2.2550"
 '------------------------
 Sector 3
@@ -416,7 +416,7 @@ Pos,    Class, Team, Vehicle, Driver, Laps, Time/Retired, Best lap, Consistency,
 "18",  "", "", "ks_mazda_mx5_cup", "marzen224", "8", "  '+00:38.4870", "01:58.1480", "96.96%", "0", "0", 
 "19",  "", "", "ks_mazda_mx5_cup", "mitski s", "3", " ", "02:11.0170", "90.31%", "0", "0", 
 "20",  "", "", "ks_mazda_mx5_cup", "Smartpipe", "0", " DNF", "-", "-", "0", "0", 
-"21",  "", "", "ks_mazda_mx5_cup", "BarricadeTTT", "0", " DNF", "-", "-", "0", "0", 
+"21",  "", "", "ks_mazda_mx5_cup", "Barricade", "0", " DNF", "-", "-", "0", "0", 
 "22",  "", "", "ks_mazda_mx5_cup", "PilotLouie", "0", " DNF", "-", "-", "0", "0", 
 
 
@@ -631,7 +631,7 @@ Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,
 No laps for this driver
 
 Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
-"BarricadeTTT"
+"Barricade"
 No laps for this driver
 
 Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
@@ -715,7 +715,7 @@ Driver, Vehicle, Consistency,
 "marzen224", "ks_mazda_mx5_cup", "96.96%  3.5882",
 "mitski s", "ks_mazda_mx5_cup", "90.31%  12.691",
 "Smartpipe", "ks_mazda_mx5_cup", "-",
-"BarricadeTTT", "ks_mazda_mx5_cup", "-",
+"Barricade", "ks_mazda_mx5_cup", "-",
 "PilotLouie", "ks_mazda_mx5_cup", "-",
 
 
@@ -822,7 +822,7 @@ Pos,    Class, Team, Vehicle, Driver, Laps, Time/Retired, Best lap, Consistency,
 "18",  "", "", "ks_mazda_mx5_cup", "Trempale", "13", "  '+01:00.8020", "01:58.5610", "97.19%", "0", "0", 
 "19",  "", "", "ks_mazda_mx5_cup", "marzen224", "5", " ", "01:59.8430", "93.93%", "0", "0", 
 "20",  "", "", "ks_mazda_mx5_cup", "mitski s", "0", " DNF", "-", "-", "0", "0", 
-"21",  "", "", "ks_mazda_mx5_cup", "BarricadeTTT", "0", " DNF", "-", "-", "0", "0", 
+"21",  "", "", "ks_mazda_mx5_cup", "Barricade", "0", " DNF", "-", "-", "0", "0", 
 "22",  "", "", "ks_mazda_mx5_cup", "PilotLouie", "0", " DNF", "-", "-", "0", "0", 
 
 
@@ -1129,7 +1129,7 @@ Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,
 No laps for this driver
 
 Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
-"BarricadeTTT"
+"Barricade"
 No laps for this driver
 
 Lap, Vehicle, Pit, Pit time, Time, Sector 1, Sector 2, Sector 3,  Compound,     
@@ -1213,7 +1213,7 @@ Driver, Vehicle, Consistency,
 "Trempale", "ks_mazda_mx5_cup", "97.19%  3.3266",
 "marzen224", "ks_mazda_mx5_cup", "93.93%  7.2803",
 "mitski s", "ks_mazda_mx5_cup", "-",
-"BarricadeTTT", "ks_mazda_mx5_cup", "-",
+"Barricade", "ks_mazda_mx5_cup", "-",
 "PilotLouie", "ks_mazda_mx5_cup", "-",
 
 

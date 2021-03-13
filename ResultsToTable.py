@@ -8,7 +8,7 @@ from TeamsStandingsWriter import TeamsStandingsWriter
 def run():
     series = "MX5"
     series_sessions = ["Qualify result", "Race 1 result", "Race 2 result"]
-    rounds_to_include = 5
+    rounds_to_include = 8
 
     championship = Championship(series, series_sessions, rounds_to_include)
 
