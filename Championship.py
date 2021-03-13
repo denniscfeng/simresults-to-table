@@ -93,10 +93,11 @@ class Championship:
 
     def _construct_teams_and_drivers_table(self, drivers_points_table):
         # note that this will contains only drivers that have participated at anything
+        # drivers_lists will be in order of highest points scorers, but teams will be alphabetically sorted
         drivers_teams_table = self.series_drivers_table[["team"]]
         teams_and_drivers_table = drivers_points_table.merge(drivers_teams_table, left_index=True, right_index=True)
         teams_and_drivers_table = teams_and_drivers_table.reset_index()[["ign", "team"]]
-        teams_and_drivers_table = teams_and_drivers_table.groupby("team").agg(lambda drivers: sorted(drivers.values))
+        teams_and_drivers_table = teams_and_drivers_table.groupby("team").agg(lambda drivers: drivers.values.tolist())
         teams_and_drivers_table = teams_and_drivers_table.sort_index().rename(columns={"ign": "drivers_list"})
         if Utils.NO_TEAM in teams_and_drivers_table.index:
             index = teams_and_drivers_table.index.tolist()
