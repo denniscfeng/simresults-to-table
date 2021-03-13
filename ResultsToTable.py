@@ -6,7 +6,7 @@ from TeamsStandingsWriter import TeamsStandingsWriter
 
 
 def run():
-    series = "MX5"
+    series = "F1H"
     series_sessions = ["Qualify result", "Race 1 result", "Race 2 result"]
     rounds_to_include = 8
 
