@@ -72,7 +72,8 @@ class TableWriter:
         driver_info = self.championship.series_drivers_table.loc[driver]
         driver_flag = driver_info["flag"]
         driver_full_name = driver_info["name"]
-        return self.row_driver_flag_and_name_format.format(width=width, driver_flag=driver_flag, driver=driver_full_name)
+        return self.row_driver_flag_and_name_format.format(width=width, driver_flag=driver_flag,
+                                                           driver=driver_full_name)
 
     def _generate_standing_row_results_list(self, driver):
         row_results_substrings = []

@@ -1,8 +1,8 @@
 from Championship import Championship
 from TableWriter import TableWriter
 
-class ParticpationTableWriter(TableWriter):
 
+class ParticpationTableWriter(TableWriter):
     team_width = 230
     number_width = 55
     driver_width = 165
@@ -21,7 +21,8 @@ class ParticpationTableWriter(TableWriter):
     def _generate_table_header(self):
         header_0 = self.header_0_format.format(table_width=self.table_width)
 
-        header_1 = self.header_1_format.format(team_width=self.team_width, number_width=self.number_width, driver_width=self.driver_width, rounds_width=self.rounds_width)
+        header_1 = self.header_1_format.format(team_width=self.team_width, number_width=self.number_width,
+                                               driver_width=self.driver_width, rounds_width=self.rounds_width)
 
         lines_buffer = [header_0, header_1]
         return lines_buffer

@@ -249,7 +249,8 @@ class Championship:
 
     def _construct_drivers_participation(self, drivers_points_table):
         drivers_participation_table = drivers_points_table.groupby(level=0, axis=1).agg(self._get_weekend_participation)
-        drivers_participation_table["participation_string"] = drivers_participation_table.apply(self._get_participation_string, axis=1)
+        drivers_participation_table["participation_string"] = drivers_participation_table.apply(
+            self._get_participation_string, axis=1)
         return drivers_participation_table
 
 
