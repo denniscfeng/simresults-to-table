@@ -133,7 +133,7 @@ class Championship:
         return driver_row["total"] - driver_row.loc[driver_row["drop_week"]]
 
     def _construct_drivers_totals_and_sort_drivers_points(self, drivers_points_table):
-        drivers_totals_table = drivers_points_table.groupby(level=0, axis=1).agg(self._get_weekend_totals)
+        drivers_totals_table = drivers_points_table.groupby(level=0, axis=1, sort=False).agg(self._get_weekend_totals)
 
         drivers_totals_table["drop_week"] = drivers_totals_table.agg(self._get_drop_week_name, axis=1)
         drivers_totals_table["total"] = drivers_totals_table.drop(columns="drop_week").sum(axis=1)
@@ -171,7 +171,8 @@ class Championship:
         drivers_totals_table_with_teams = drivers_totals_table.merge(drivers_teams_table, left_index=True,
                                                                      right_index=True)
         # drivers without teams don't participate in team scoring
-        drivers_totals_table_with_teams = drivers_totals_table_with_teams[-(drivers_totals_table_with_teams["team"] == Utils.NO_TEAM)]
+        drivers_totals_table_with_teams = drivers_totals_table_with_teams[
+            -(drivers_totals_table_with_teams["team"] == Utils.NO_TEAM)]
         drivers_weekend_totals_with_drop_week_and_teams = drivers_totals_table_with_teams.drop(
             columns=["total", "total_with_drop_week", "countback_array"])
 
@@ -252,7 +253,8 @@ class Championship:
         return participation_string
 
     def _construct_drivers_participation(self, drivers_points_table):
-        drivers_participation_table = drivers_points_table.groupby(level=0, axis=1).agg(self._get_weekend_participation)
+        drivers_participation_table = drivers_points_table.groupby(level=0, axis=1, sort=False).agg(
+            self._get_weekend_participation)
         drivers_participation_table["participation_string"] = drivers_participation_table.apply(
             self._get_participation_string, axis=1)
         return drivers_participation_table

@@ -2,6 +2,7 @@ import pandas as pd
 
 NO_TEAM = "Independent"  # drivers without teams are in the "Independent" team
 
+
 # Read series drivers info
 def read_drivers_table(series_directory):
     drivers_table_file = "{}/drivers_table.csv".format(series_directory)
