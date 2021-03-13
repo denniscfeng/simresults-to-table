@@ -9,11 +9,12 @@ import Utils
 
 class RaceReport:
 
-    # Constructor, optionally pass in already-parsed drivers and points table info
+    # Constructor, optionally pass in already-parsed drivers and points table info and whether to debug print csv lines when parsing
     def __init__(self, session_names, series_directory, race_directory, drivers_table=None, scoring_table=None,
-                 csv_manual_adjustment=0):
+                 csv_manual_adjustment=0, debug=False):
 
         self.session_names = session_names
+        self.debug = debug
         print("Creating race report:", series_directory, race_directory)
 
         self.drivers_table = drivers_table if drivers_table is not None else Utils.read_drivers_table(
@@ -77,7 +78,7 @@ class RaceReport:
                         print("ending line {}".format(rows[current_table][1]))
                         current_table = ""
                     elif i >= rows[current_table][0]:
-                        print(row, end="")
+                        if self.debug: print(row, end="")
                 else:
                     for name in self.session_names:
                         if row.startswith(name):
@@ -100,8 +101,7 @@ class RaceReport:
     def _clean_results_tables(self):
 
         # Merge starting position info to grid column of a race table from either quali session or previous race, optionally adding quali points column
-        # TODO doesnt work with reverse grid
-        # TODO first need to determine which races are reverse grid
+        # TODO doesnt work with reverse grid!
         def merge_quali_info(race_table, quali_table, add_quali_points=False):
 
             quali_table = quali_table.reset_index()

@@ -2,7 +2,7 @@ from Championship import Championship
 from TableWriter import TableWriter
 
 
-class ParticpationTableWriter(TableWriter):
+class ParticipationTableWriter(TableWriter):
     team_width = 230
     number_width = 55
     driver_width = 165
@@ -64,6 +64,6 @@ if __name__ == "__main__":
     rounds_to_include = 5
 
     championship = Championship(series, series_sessions, rounds_to_include)
-    writer = ParticpationTableWriter(championship)
+    writer = ParticipationTableWriter(championship)
 
     writer.write_lines()
