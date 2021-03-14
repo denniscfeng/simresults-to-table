@@ -29,3 +29,5 @@ def read_tracks_table(series_directory):
     table["csv_manual_adjustment"] = table["csv_manual_adjustment"].astype(int)
     table = table.set_index("directory")
     return table
+
+# TODO testing utility with known series and output?
