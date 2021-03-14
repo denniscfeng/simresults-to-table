@@ -1,3 +1,4 @@
+import os
 import re
 import textwrap
 
@@ -33,7 +34,7 @@ class TableWriter:
     def __init__(self, championship, output_file_name):
         self.championship = championship
         self.output_file_name = output_file_name
-        self.output_file = "{}/{}".format(championship.series, output_file_name)
+        self.output_file = os.path.join(championship.series, output_file_name)
 
         self.num_race_sessions = len(self.championship.series_race_sessions)
         self.track_width = self.num_race_sessions * self.result_width

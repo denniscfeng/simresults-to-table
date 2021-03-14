@@ -1,8 +1,10 @@
+import os
+
 from RaceReport import RaceReport
 
 
 class RaceReportWriter:
-    # Race report table format strings TODO use parameterized print format like in standings
+    # Race report table format strings TODO use parameterized print format like in TableWriter
     quali_row_0 = """(% border="1" style="width:554px" %)"""
     quali_row_1 = """|=(% scope="row" style="border-color: rgb(0, 0, 0); background-color: rgb(234, 236, 240); width: 41px; text-align: center;" %)Pos|=(% style="border-color: rgb(0, 0, 0); background-color: rgb(234, 236, 240); width: 44px; text-align: center;" %)No|=(% style="border-color: rgb(0, 0, 0); background-color: rgb(234, 236, 240); width: 155px; text-align: center;" %)Driver|=(% style="border-color: rgb(0, 0, 0); background-color: rgb(234, 236, 240); width: 233px; text-align: center;" %)Team|=(% style="border-color: rgb(0, 0, 0); background-color: rgb(234, 236, 240); width: 77px; text-align: center;" %)Time"""
     quali_row_2 = """|=(% style="border-color: rgb(0, 0, 0); background-color: rgb(234, 236, 240); text-align: center; width: 41px;" %){}|(% style="border-color:#000000; text-align:center; width:44px" %){}|(% style="border-color:#000000; width:155px" %)[[image:{}||height="14" width="23"]] {}|(% style="text-align:center; border-color:#000000; width:233px" %){}|(% style="text-align:center; border-color:#000000; width:77px" %){}"""
@@ -18,7 +20,8 @@ class RaceReportWriter:
     def __init__(self, race_report, output_file_name="wiki_tables.txt"):
         self.race_report = race_report
         self.output_file_name = output_file_name
-        self.output_file = "{}/{}".format(self.race_report.race_directory_path, output_file_name)
+        self.output_file = os.path.join(self.race_report.race_directory_path, output_file_name)
+        print("writing race report tables to:", self.output_file)
 
     # Generate quali table markdown from quali session dataframe, result is a list of lines
     def generate_quali_table_strings(self, table_name):
@@ -49,7 +52,6 @@ class RaceReportWriter:
 
         lines_buffer.append(self.quali_row_last.format(self.race_report.simresults_url))
 
-        print("made {} rows for table: {}".format(len(lines_buffer), table_name))
         return lines_buffer
 
     def generate_race_table_strings(self, table_name):
@@ -92,7 +94,6 @@ class RaceReportWriter:
         fastest_time = table_df.loc[table_df["Driver"] == fastest_driver]["Best lap"].item()
         lines_buffer.append(self.race_row_fastestlap.format(fastest_driver_flag, fastest_driver, fastest_time))
 
-        print("made {} rows for table: {}".format(len(lines_buffer), table_name))
         return lines_buffer
 
     # Generate table markdown for all table_names, result is map from table names to table markdown string
@@ -110,14 +111,14 @@ class RaceReportWriter:
         return tables_strings
 
     # Write table markdown for all table_names, optionally provide the generated table strings
-    def write_generated_tables(self, tables_strings=None):
+    def write_generated_tables(self, tables_strings=None): # TODO rename stuff to 'align' with TableWriter interface
         if not tables_strings:
             tables_strings = self.generate_tables_strings()
 
         with open(self.output_file, "w+") as fp:
             for name in self.race_report.session_names:
                 fp.write(tables_strings[name])
-                print("wrote table {} to {}".format(name, self.output_file))
+                print("appended table {} to {}".format(name, self.output_file))
 
 
 if __name__ == "__main__":

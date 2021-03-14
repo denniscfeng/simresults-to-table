@@ -9,18 +9,21 @@ from RaceReport import RaceReport
 
 class Championship:
 
-    def __init__(self, series, series_sessions, rounds_to_include, drop_week=False, num_scoring_drivers_in_team=2):
+    def __init__(self, series, series_sessions, rounds_to_include, drop_week=False, num_scoring_drivers_in_team=2, debug_csv_parse=False):
         self.series = series
         self.series_sessions = series_sessions
         self.rounds_to_include = rounds_to_include
         self.drop_week = drop_week
         self.num_scoring_drivers_in_team = num_scoring_drivers_in_team
+        self.debug_csv_parse=False
 
-        print("Creating championship points tables for:", series)
+        print("creating championship points tables for:", series)
 
         self.series_drivers_table = Utils.read_drivers_table(series)
         self.series_scoring_table = Utils.read_scoring_table(series)
         self.series_tracks_table = Utils.read_tracks_table(series)
+        assert 1<=self.rounds_to_include<=len(self.series_tracks_table), "rounds_to_include must be between 1 and {}".format(len(self.series_tracks_table))
+        assert 1<=self.num_scoring_drivers_in_team<=len(self.series_drivers_table), "rounds_to_include must be between 1 and {}".format(len(self.series_drivers_table))
 
         self.race_reports = self._read_race_reports()
         self.series_quali_sessions = list(self.race_reports.values())[0].quali_sessions
@@ -38,16 +41,16 @@ class Championship:
     def _read_race_reports(self):
         race_reports = {}
 
-        for race, race_row in self.series_tracks_table.iterrows():
+        for i, race_and_race_row in enumerate(self.series_tracks_table.iterrows()):
+            if i==self.rounds_to_include:
+                break
 
-            race_path = "{}/{}".format(self.series, race)
+            race, race_row = race_and_race_row
+            race_path = os.path.join(self.series, race)
             if os.path.isdir(race_path):
                 try:
-                    race_reports[race] = RaceReport(self.series_sessions, self.series, race,
-                                                    drivers_table=self.series_drivers_table,
-                                                    scoring_table=self.series_scoring_table,
-                                                    csv_manual_adjustment=race_row["csv_manual_adjustment"])
-                    print("read race report for", race)
+                    race_reports[race] = RaceReport(self.series_sessions, self.series, race, drivers_table=self.series_drivers_table, scoring_table=self.series_scoring_table, csv_manual_adjustment=race_row["csv_manual_adjustment"], debug_csv_parse=self.debug_csv_parse)
+                    print("read race report for", race_path)
                 except FileNotFoundError:
                     print("no csv found for", race)
             else:
@@ -258,6 +261,8 @@ class Championship:
             self._get_weekend_participation)
         drivers_participation_table["participation_string"] = drivers_participation_table.apply(
             self._get_participation_string, axis=1)
+
+        print("computed drivers participation table")
         return drivers_participation_table
 
 

@@ -11,26 +11,28 @@ class RaceReport:
 
     # Constructor, optionally pass in already-parsed drivers and points table info and whether to debug print csv lines when parsing
     def __init__(self, session_names, series_directory, race_directory, drivers_table=None, scoring_table=None,
-                 csv_manual_adjustment=0, debug=False):
+                 csv_manual_adjustment=0, debug_csv_parse=False):
 
         self.session_names = session_names
-        self.debug = debug
-        print("creating race report:", series_directory, race_directory)
+        self.debug_csv_parse = debug_csv_parse
 
         self.drivers_table = drivers_table if drivers_table is not None else Utils.read_drivers_table(
             series_directory)
         self.scoring_table = scoring_table if scoring_table is not None else Utils.read_scoring_table(series_directory)
 
-        self.race_directory_path = "{}/{}".format(series_directory, race_directory)
+        self.race_directory_path = os.path.join(series_directory, race_directory)
         assert os.path.isdir(self.race_directory_path), "Race directory path does not exist: {}".format(
             self.race_directory_path)
+        print("creating race report:", self.race_directory_path)
 
         csv_files = [file for file in os.listdir(self.race_directory_path) if file.endswith(".csv")]
         if len(csv_files) < 1:
             raise FileNotFoundError()
         simresults_file_name = [file for file in os.listdir(self.race_directory_path) if file.endswith(".csv")][0]
         simresults_code = os.path.splitext(simresults_file_name)[0]
-        self.results_file = "{}/{}.csv".format(self.race_directory_path, simresults_code)
+        self.results_file = os.path.join(self.race_directory_path, "{}.csv".format(simresults_code))
+        print("reading results file:", self.results_file)
+
         self.simresults_url = "https://simresults.net/{}".format(simresults_code)
 
         self.race_sessions = [name for name in session_names if name.startswith("Race")]
@@ -78,7 +80,7 @@ class RaceReport:
                         print("ending line {}".format(rows[current_table][1]))
                         current_table = ""
                     elif i >= rows[current_table][0]:
-                        if self.debug: print(row, end="")
+                        if self.debug_csv_parse: print(row, end="")
                 else:
                     for name in self.session_names:
                         if row.startswith(name):
