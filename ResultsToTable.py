@@ -10,7 +10,7 @@ from TeamsStandingsWriter import TeamsStandingsWriter
 
 def parse_args():
     parser = argparse.ArgumentParser(
-        description="Read Simresults CSVs, calculate driver's and team's standings, and print XWiki tables to text files. Please see README.md for complete usage",
+        description="Read Simresults exported `.csv`s, calculate drivers' and teams' championship standings, and generate XWiki markdown text for championship standings tables and race reports. Please see README.md for complete usage.",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
     required_args = parser.add_argument_group(title="Required Arguments")
