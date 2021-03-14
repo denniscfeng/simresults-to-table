@@ -2,5 +2,5 @@
 /.idea
 /__pycache__
 *.ipynb
-data/*
-!data/*.csv
+simresults/**/*.*
+!simresults/**/*.csv

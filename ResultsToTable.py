@@ -15,7 +15,7 @@ def parse_args():
 
     required_args = parser.add_argument_group(title="Required Arguments")
     required_args.add_argument("--series", required=True, type=str,
-                               help='Name of directory containing series data. (e.x. "data/MX5")')
+                               help='Name of directory containing series data. (e.x. "simresults/MX5")')
     required_args.add_argument("--sessions", required=True, nargs="+",
                                help='List of names of session tables in results CSVs from this series. Space separate with double quotes. (e.x. "Qualify result" "Race 1 result" "Race 2 result")')
     required_args.add_argument("--rounds-to-include", required=True, type=int,
