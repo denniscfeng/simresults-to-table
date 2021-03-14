@@ -111,7 +111,7 @@ class RaceReportWriter:
         return tables_strings
 
     # Write table markdown for all table_names, optionally provide the generated table strings
-    def write_generated_tables(self, tables_strings=None): # TODO rename stuff to 'align' with TableWriter interface
+    def write_generated_tables(self, tables_strings=None):  # TODO rename stuff to 'align' with TableWriter interface
         if not tables_strings:
             tables_strings = self.generate_tables_strings()
 
