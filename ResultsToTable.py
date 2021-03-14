@@ -1,7 +1,7 @@
 import argparse
 
 from Championship import Championship
-from DriversStandingsWriter import DriverStandingsWriter
+from DriversStandingsWriter import DriversStandingsWriter
 from ParticipationTableWriter import ParticipationTableWriter
 from RaceReportWriter import RaceReportWriter
 from SummaryTableWriter import SummaryTableWriter
@@ -37,7 +37,7 @@ def parse_args():
 def run(args):
     championship = Championship(args.series, args.sessions, args.rounds_to_include, args.drop_week,
                                 args.num_scoring_drivers_in_team, args.debug_csv_parse)
-    driver_standings_writer = DriverStandingsWriter(championship)
+    driver_standings_writer = DriversStandingsWriter(championship)
     driver_standings_writer.write_lines()
 
     teams_standings_writer = TeamsStandingsWriter(championship)

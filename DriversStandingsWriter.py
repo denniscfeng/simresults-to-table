@@ -2,7 +2,7 @@ from Championship import Championship
 from TableWriter import TableWriter
 
 
-class DriverStandingsWriter(TableWriter):
+class DriversStandingsWriter(TableWriter):
     driver_width = 170
 
     header_1_driver_format = """|=(% colspan="1" rowspan="2" style="border-color: rgb(0, 0, 0); text-align: center; vertical-align: middle; background-color: rgb(234, 236, 240); width: {driver_width}px;" %)Driver"""
@@ -69,6 +69,6 @@ if __name__ == "__main__":
     rounds_to_include = 5
 
     championship = Championship(series, series_sessions, rounds_to_include)
-    writer = DriverStandingsWriter(championship)
+    writer = DriversStandingsWriter(championship)
 
     writer.write_lines()
