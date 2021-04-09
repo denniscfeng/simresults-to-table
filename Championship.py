@@ -234,7 +234,10 @@ class Championship:
             # only show pole driver if grid determined by a quali session
             summary_table.loc[(track, session), "pole"] = None
             if race_report.race_session_grid_determined_by[session] in self.series_quali_sessions:
-                summary_table.loc[(track, session), "pole"] = race_table.sort_values("Grid").iloc[0]["Driver"]
+                # need to drop dnq (grid == -1) from determining pole
+                race_table_sorted_by_grid = race_table.sort_values("Grid")
+                race_table_sorted_by_grid = race_table_sorted_by_grid[race_table_sorted_by_grid["Grid"] > 0]
+                summary_table.loc[(track, session), "pole"] = race_table_sorted_by_grid.iloc[0]["Driver"]
 
         drivers_teams_table = self.series_drivers_table[["team"]]
         summary_table = summary_table.merge(drivers_teams_table, how='left', left_on="winner", right_index=True)
